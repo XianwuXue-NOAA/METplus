@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>5.1.20.2. StatAnalysis: Using Python Embedding &mdash; METplus 4.0.0-rc1-dev documentation</title>
+  <title>5.1.20.2. StatAnalysis: Using Python Embedding &mdash; METplus 4.0.0-beta4-dev documentation</title>
   
 
   
@@ -45,7 +45,7 @@
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="METplus 4.0.0-rc1-dev documentation" href="../../../index.html"/>
+    <link rel="top" title="METplus 4.0.0-beta4-dev documentation" href="../../../index.html"/>
         <link rel="up" title="5.1. MET tools" href="../index.html"/>
         <link rel="next" title="5.1.21.1. TCGen: Basic Use Case" href="../TCGen/TCGen.html"/>
         <link rel="prev" title="5.1.20.1. StatAnalysis: Basic Use Case" href="StatAnalysis.html"/> 
@@ -540,6 +540,8 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 <span class="nv">vif_flag</span>       <span class="o">=</span> FALSE<span class="p">;</span>
 <span class="nv">tmp_dir</span>        <span class="o">=</span> <span class="s2">&quot;/tmp&quot;</span><span class="p">;</span>
 //version        <span class="o">=</span> <span class="s2">&quot;V10.0&quot;</span><span class="p">;</span>
+
+<span class="si">${</span><span class="nv">METPLUS_MET_CONFIG_OVERRIDES</span><span class="si">}</span>
 </pre></div>
 </div>
 <p>Note the following variables can be referenced in the MET configuration file.
@@ -584,7 +586,7 @@ these MET configuration file settings.</p>
 <h2>Running METplus<a class="headerlink" href="#running-metplus" title="Permalink to this headline">¶</a></h2>
 <p>It is recommended to run this use case by:</p>
 <p>Passing in StatAnalysis_python_embedding.conf then a user-specific system configuration file:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>master_metplus.py -c /path/to/StatAnalysis_python_embedding.conf -c /path/to/user_system.conf
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>run_metplus.py -c /path/to/StatAnalysis_python_embedding.conf -c /path/to/user_system.conf
 </pre></div>
 </div>
 <p>The following METplus configuration variables must be set correctly to run this example.:</p>
@@ -661,7 +663,7 @@ and will contain the following file:</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2020, UCAR/NCAR, NOAA, CSU/CIRA, and CU/CIRES.
-      Last updated on Feb 11, 2021, 5:54:52 PM.
+      Last updated on Feb 25, 2021, 3:54:36 PM.
 
     </p>
   </div>

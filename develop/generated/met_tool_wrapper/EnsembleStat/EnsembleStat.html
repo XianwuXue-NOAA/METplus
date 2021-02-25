@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>5.1.3.2. EnsembleStat: Basic Use Case &mdash; METplus 4.0.0-rc1-dev documentation</title>
+  <title>5.1.3.2. EnsembleStat: Basic Use Case &mdash; METplus 4.0.0-beta4-dev documentation</title>
   
 
   
@@ -45,7 +45,7 @@
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="METplus 4.0.0-rc1-dev documentation" href="../../../index.html"/>
+    <link rel="top" title="METplus 4.0.0-beta4-dev documentation" href="../../../index.html"/>
         <link rel="up" title="5.1. MET tools" href="../index.html"/>
         <link rel="next" title="5.1.4.1. Example: Introductory Use Case" href="../Example/Example.html"/>
         <link rel="prev" title="5.1.3.1. EnsembleStat: Using Python Embedding" href="EnsembleStat_python_embedding.html"/> 
@@ -336,6 +336,8 @@ with the -c option, i.e. -c parm/use_cases/met_tool_wrapper/EnsembleStat/Ensembl
 <span class="c1"># Used in the MET config file for:  model, output_prefix</span>
 <span class="nv">MODEL</span> <span class="o">=</span> WRF
 
+<span class="nv">ENSEMBLE_STAT_DESC</span> <span class="o">=</span> NA
+
 <span class="c1"># Name to identify observation data in output</span>
 <span class="nv">OBTYPE</span> <span class="o">=</span> MC_PCP
 
@@ -362,7 +364,6 @@ with the -c option, i.e. -c parm/use_cases/met_tool_wrapper/EnsembleStat/Ensembl
 
 <span class="c1"># ens.vld_thresh value in the MET config file</span>
 <span class="nv">ENSEMBLE_STAT_ENS_VLD_THRESH</span> <span class="o">=</span> <span class="m">1</span>.0
-
 
 <span class="nv">ENSEMBLE_STAT_OUTPUT_PREFIX</span> <span class="o">=</span> 
 
@@ -790,6 +791,8 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 //version          <span class="o">=</span> <span class="s2">&quot;V9.0&quot;</span><span class="p">;</span>
 
 ////////////////////////////////////////////////////////////////////////////////
+
+<span class="si">${</span><span class="nv">METPLUS_MET_CONFIG_OVERRIDES</span><span class="si">}</span>
 </pre></div>
 </div>
 <p>Note the following variables are referenced in the MET configuration file.</p>
@@ -812,7 +815,7 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 <h2>Running METplus<a class="headerlink" href="#running-metplus" title="Permalink to this headline">¶</a></h2>
 <p>It is recommended to run this use case by:</p>
 <p>Passing in EnsembleStat.conf then a user-specific system configuration file:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>master_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/EnsembleStat/EnsembleStat.conf -c /path/to/user_system.conf
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>run_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/EnsembleStat/EnsembleStat.conf -c /path/to/user_system.conf
 </pre></div>
 </div>
 <p>The following METplus configuration variables must be set correctly to run this example.:</p>
@@ -898,7 +901,7 @@ and will contain the following files:</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2020, UCAR/NCAR, NOAA, CSU/CIRA, and CU/CIRES.
-      Last updated on Feb 11, 2021, 5:54:52 PM.
+      Last updated on Feb 25, 2021, 3:54:36 PM.
 
     </p>
   </div>

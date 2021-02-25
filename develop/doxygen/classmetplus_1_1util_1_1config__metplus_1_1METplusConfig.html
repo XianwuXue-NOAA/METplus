@@ -241,9 +241,9 @@ Static Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="config__metplus_8py_source.html#l00701">701</a> of file <a class="el" href="config__metplus_8py_source.html">config_metplus.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="config__metplus_8py_source.html#l00700">700</a> of file <a class="el" href="config__metplus_8py_source.html">config_metplus.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="config__metplus_8py_source.html#l00808">metplus.util.config_metplus.METplusConfig.getbool()</a>, <a class="el" href="config__metplus_8py_source.html#l00758">metplus.util.config_metplus.METplusConfig.getdir()</a>, <a class="el" href="config__metplus_8py_source.html#l00868">metplus.util.config_metplus.METplusConfig.getfloat()</a>, <a class="el" href="config__metplus_8py_source.html#l00838">metplus.util.config_metplus.METplusConfig.getint()</a>, <a class="el" href="config__metplus_8py_source.html#l00898">metplus.util.config_metplus.METplusConfig.getseconds()</a>, and <a class="el" href="config__metplus_8py_source.html#l00787">metplus.util.config_metplus.METplusConfig.getstr()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="config__metplus_8py_source.html#l00807">metplus.util.config_metplus.METplusConfig.getbool()</a>, <a class="el" href="config__metplus_8py_source.html#l00757">metplus.util.config_metplus.METplusConfig.getdir()</a>, <a class="el" href="config__metplus_8py_source.html#l00867">metplus.util.config_metplus.METplusConfig.getfloat()</a>, <a class="el" href="config__metplus_8py_source.html#l00837">metplus.util.config_metplus.METplusConfig.getint()</a>, <a class="el" href="config__metplus_8py_source.html#l00897">metplus.util.config_metplus.METplusConfig.getseconds()</a>, and <a class="el" href="config__metplus_8py_source.html#l00786">metplus.util.config_metplus.METplusConfig.getstr()</a>.</p>
 
 </div>
 </div>
@@ -352,7 +352,7 @@ Static Public Attributes</h2></td></tr>
 <p>Wraps produtil getbool. </p>
 <p>Config variable is checked with a default value of None because if the config is not set and a default is specified, it will just return that value. We want to log that a default was used and set it in the config so it will show up in the final conf that is generated at the end of execution. If no default was specified in the call, the NoOptionError is raised again. </p><dl class="section return"><dt>Returns</dt><dd>None if value is not a boolean (or yes/no), value if set, default if not set </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="config__metplus_8py_source.html#l00808">808</a> of file <a class="el" href="config__metplus_8py_source.html">config_metplus.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="config__metplus_8py_source.html#l00807">807</a> of file <a class="el" href="config__metplus_8py_source.html">config_metplus.py</a>.</p>
 
 </div>
 </div>
@@ -385,7 +385,7 @@ Static Public Attributes</h2></td></tr>
 <p>Wraps produtil exe with checks to see if option is set and if exe actually exists. </p>
 <p>Returns None if not found instead of exiting </p>
 
-<p class="definition">Definition at line <a class="el" href="config__metplus_8py_source.html#l00732">732</a> of file <a class="el" href="config__metplus_8py_source.html">config_metplus.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="config__metplus_8py_source.html#l00731">731</a> of file <a class="el" href="config__metplus_8py_source.html">config_metplus.py</a>.</p>
 
 </div>
 </div>
@@ -448,7 +448,7 @@ Static Public Attributes</h2></td></tr>
 <p>Wraps produtil getint to gracefully report if variable is not set and no default value is specified. </p>
 <dl class="section return"><dt>Returns</dt><dd>Value if set, default of missing value if not set, None if value is an incorrect type </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="config__metplus_8py_source.html#l00868">868</a> of file <a class="el" href="config__metplus_8py_source.html">config_metplus.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="config__metplus_8py_source.html#l00867">867</a> of file <a class="el" href="config__metplus_8py_source.html">config_metplus.py</a>.</p>
 
 </div>
 </div>
@@ -511,7 +511,7 @@ Static Public Attributes</h2></td></tr>
 <p>Wraps produtil getint to gracefully report if variable is not set and no default value is specified. </p>
 <dl class="section return"><dt>Returns</dt><dd>Value if set, default of missing value if not set, None if value is an incorrect type </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="config__metplus_8py_source.html#l00838">838</a> of file <a class="el" href="config__metplus_8py_source.html">config_metplus.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="config__metplus_8py_source.html#l00837">837</a> of file <a class="el" href="config__metplus_8py_source.html">config_metplus.py</a>.</p>
 
 </div>
 </div>
@@ -635,9 +635,9 @@ Raw string or empty string if function calls itself too many times
 <p>Wraps produtil getstr. </p>
 <p>Config variable is checked with a default value of None because if the config is not set and a default is specified, it will just return that value. We want to log that a default was used and set it in the config so it will show up in the final conf that is generated at the end of execution. If no default was specified in the call, the NoOptionError is raised again. Replace double forward slash with single to prevent error that occurs if that is found inside a MET config file (because it considers // the start of a comment </p>
 
-<p class="definition">Definition at line <a class="el" href="config__metplus_8py_source.html#l00787">787</a> of file <a class="el" href="config__metplus_8py_source.html">config_metplus.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="config__metplus_8py_source.html#l00786">786</a> of file <a class="el" href="config__metplus_8py_source.html">config_metplus.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="config__metplus_8py_source.html#l00808">metplus.util.config_metplus.METplusConfig.getbool()</a>, <a class="el" href="config__metplus_8py_source.html#l00758">metplus.util.config_metplus.METplusConfig.getdir()</a>, <a class="el" href="config__metplus_8py_source.html#l00732">metplus.util.config_metplus.METplusConfig.getexe()</a>, <a class="el" href="config__metplus_8py_source.html#l00868">metplus.util.config_metplus.METplusConfig.getfloat()</a>, <a class="el" href="config__metplus_8py_source.html#l00838">metplus.util.config_metplus.METplusConfig.getint()</a>, and <a class="el" href="config__metplus_8py_source.html#l00898">metplus.util.config_metplus.METplusConfig.getseconds()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="config__metplus_8py_source.html#l00807">metplus.util.config_metplus.METplusConfig.getbool()</a>, <a class="el" href="config__metplus_8py_source.html#l00757">metplus.util.config_metplus.METplusConfig.getdir()</a>, <a class="el" href="config__metplus_8py_source.html#l00731">metplus.util.config_metplus.METplusConfig.getexe()</a>, <a class="el" href="config__metplus_8py_source.html#l00867">metplus.util.config_metplus.METplusConfig.getfloat()</a>, <a class="el" href="config__metplus_8py_source.html#l00837">metplus.util.config_metplus.METplusConfig.getint()</a>, and <a class="el" href="config__metplus_8py_source.html#l00897">metplus.util.config_metplus.METplusConfig.getseconds()</a>.</p>
 
 </div>
 </div>
@@ -703,7 +703,7 @@ Raw string or empty string if function calls itself too many times
 <b>Initial value:</b><div class="fragment"><div class="line">=  [<span class="stringliteral">&#39;dir&#39;</span>,</div><div class="line">                    <span class="stringliteral">&#39;exe&#39;</span>,</div><div class="line">                    <span class="stringliteral">&#39;filename_templates&#39;</span>,</div><div class="line">                    <span class="stringliteral">&#39;regex_pattern&#39;</span>,</div><div class="line">                    ]</div></div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="config__metplus_8py_source.html#l00572">572</a> of file <a class="el" href="config__metplus_8py_source.html">config_metplus.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="config__metplus_8py_source.html#l00627">metplus.util.config_metplus.METplusConfig.find_section()</a>, <a class="el" href="config__metplus_8py_source.html#l00808">metplus.util.config_metplus.METplusConfig.getbool()</a>, <a class="el" href="config__metplus_8py_source.html#l00758">metplus.util.config_metplus.METplusConfig.getdir()</a>, <a class="el" href="config__metplus_8py_source.html#l00868">metplus.util.config_metplus.METplusConfig.getfloat()</a>, <a class="el" href="config__metplus_8py_source.html#l00838">metplus.util.config_metplus.METplusConfig.getint()</a>, <a class="el" href="config__metplus_8py_source.html#l00651">metplus.util.config_metplus.METplusConfig.getraw()</a>, <a class="el" href="config__metplus_8py_source.html#l00898">metplus.util.config_metplus.METplusConfig.getseconds()</a>, <a class="el" href="config__metplus_8py_source.html#l00787">metplus.util.config_metplus.METplusConfig.getstr()</a>, and <a class="el" href="config__metplus_8py_source.html#l00610">metplus.util.config_metplus.METplusConfig.move_all_to_config_section()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="config__metplus_8py_source.html#l00627">metplus.util.config_metplus.METplusConfig.find_section()</a>, <a class="el" href="config__metplus_8py_source.html#l00807">metplus.util.config_metplus.METplusConfig.getbool()</a>, <a class="el" href="config__metplus_8py_source.html#l00757">metplus.util.config_metplus.METplusConfig.getdir()</a>, <a class="el" href="config__metplus_8py_source.html#l00867">metplus.util.config_metplus.METplusConfig.getfloat()</a>, <a class="el" href="config__metplus_8py_source.html#l00837">metplus.util.config_metplus.METplusConfig.getint()</a>, <a class="el" href="config__metplus_8py_source.html#l00651">metplus.util.config_metplus.METplusConfig.getraw()</a>, <a class="el" href="config__metplus_8py_source.html#l00897">metplus.util.config_metplus.METplusConfig.getseconds()</a>, <a class="el" href="config__metplus_8py_source.html#l00786">metplus.util.config_metplus.METplusConfig.getstr()</a>, and <a class="el" href="config__metplus_8py_source.html#l00610">metplus.util.config_metplus.METplusConfig.move_all_to_config_section()</a>.</p>
 
 </div>
 </div>

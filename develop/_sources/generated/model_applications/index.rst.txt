@@ -323,6 +323,39 @@ Observational data used as part of the initial conditions for numerical weather 
 
 
 
+.. _sphx_glr_generated_model_applications_marine_and_coastal:
+
+Marine and Coastal
+------------------
+Data related to verification involving marine and coastal systems, excluding cryosphere work
+
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="model_applications/marine_and_coastal/PlotDataPlane_obsHYCOM_coordTripolar.conf">
+
+.. only:: html
+
+ .. figure:: /generated/model_applications/marine_and_coastal/images/thumb/sphx_glr_PlotDataPlane_obsHYCOM_coordTripolar_thumb.png
+
+     :ref:`sphx_glr_generated_model_applications_marine_and_coastal_PlotDataPlane_obsHYCOM_coordTripolar.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /generated/model_applications/marine_and_coastal/PlotDataPlane_obsHYCOM_coordTripolar
+.. raw:: html
+
+    <div class="sphx-glr-clear"></div>
+
+
+
 .. _sphx_glr_generated_model_applications_medium_range:
 
 Medium Range
@@ -802,6 +835,46 @@ Any field that is associated with Tropical Cyclone and Extra-tropical Cyclones
    :hidden:
 
    /generated/model_applications/tc_and_extra_tc/Plotter_fcstGFS_obsGFS_ExtraTC
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="model_applications/tc_and_extra_tc/UserScript_ASCII2NC_PointStat_fcstHAFS_obsFRD _NetCDF.conf">
+
+.. only:: html
+
+ .. figure:: /generated/model_applications/tc_and_extra_tc/images/thumb/sphx_glr_UserScript_ASCII2NC_PointStat_fcstHAFS_obsFRD_NetCDF_thumb.png
+
+     :ref:`sphx_glr_generated_model_applications_tc_and_extra_tc_UserScript_ASCII2NC_PointStat_fcstHAFS_obsFRD_NetCDF.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /generated/model_applications/tc_and_extra_tc/UserScript_ASCII2NC_PointStat_fcstHAFS_obsFRD_NetCDF
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="model_applications/tc_and_extra_tc/CyclonePlotter_fcstGFS_obsGFS_OPC.conf">
+
+.. only:: html
+
+ .. figure:: /generated/model_applications/tc_and_extra_tc/images/thumb/sphx_glr_CyclonePlotter_fcstGFS_obsGFS_OPC_thumb.png
+
+     :ref:`sphx_glr_generated_model_applications_tc_and_extra_tc_CyclonePlotter_fcstGFS_obsGFS_OPC.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /generated/model_applications/tc_and_extra_tc/CyclonePlotter_fcstGFS_obsGFS_OPC
 
 .. raw:: html
 

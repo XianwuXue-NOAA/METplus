@@ -66,6 +66,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classmetplus_1_1wrappers_1_1tc__gen__wrapper_1_1TCGenWrapper-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">metplus.wrappers.tc_gen_wrapper.TCGenWrapper Class Reference</div>  </div>
@@ -95,9 +96,6 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>create_c_dict</b> (sel
 def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1tc__gen__wrapper_1_1TCGenWrapper.html#a959fa6252def4c1a96f9033429872506">get_filter_values</a> (self)</td></tr>
 <tr class="memdesc:a959fa6252def4c1a96f9033429872506"><td class="mdescLeft">&#160;</td><td class="mdescRight">find all TC_GEN_FILTER_&lt;n&gt; values in the config files <br /></td></tr>
 <tr class="separator:a959fa6252def4c1a96f9033429872506"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a5adc9be61d8184d50b045071bdbb66"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1tc__gen__wrapper_1_1TCGenWrapper.html#a7a5adc9be61d8184d50b045071bdbb66">set_environment_variables</a> (self, time_info)</td></tr>
-<tr class="memdesc:a7a5adc9be61d8184d50b045071bdbb66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set environment variables that will be read by the MET config file.  <a href="#a7a5adc9be61d8184d50b045071bdbb66">More...</a><br /></td></tr>
-<tr class="separator:a7a5adc9be61d8184d50b045071bdbb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a994df82ce18ee54cd2792b997d31c38e"><td class="memItemLeft" align="right" valign="top"><a id="a994df82ce18ee54cd2792b997d31c38e"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>get_command</b> (self)</td></tr>
 <tr class="separator:a994df82ce18ee54cd2792b997d31c38e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,6 +123,11 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a45bcefd9ec04cb751feb4f5b4db82e5e"><td class="memItemLeft" align="right" valign="top"><a id="a45bcefd9ec04cb751feb4f5b4db82e5e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>app_path</b></td></tr>
 <tr class="separator:a45bcefd9ec04cb751feb4f5b4db82e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ae50897b718ffc2c01d71a63b739b514a"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><b>WRAPPER_ENV_VAR_KEYS</b></td></tr>
+<tr class="separator:ae50897b718ffc2c01d71a63b739b514a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae2637c3ef67be3ead42c4c4b6cbee909"></a>
@@ -154,7 +157,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get track and genesis files and set c_dict items. </p>
-<p>Also format forecast lead sequence to be read by the MET configuration file and set c_dict. Args: </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Also format forecast lead sequence to be read by the MET configuration file and set c_dict.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">time_info</td><td>time dictionary to use for string substitution </td></tr>
   </table>
@@ -162,9 +166,9 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if all inputs were found, False if not. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="tc__gen__wrapper_8py_source.html#l00313">313</a> of file <a class="el" href="tc__gen__wrapper_8py_source.html">tc_gen_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tc__gen__wrapper_8py_source.html#l00360">360</a> of file <a class="el" href="tc__gen__wrapper_8py_source.html">tc_gen_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="tcrmw__wrapper_8py_source.html#l00282">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time_once()</a>, and <a class="el" href="tc__gen__wrapper_8py_source.html#l00291">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.run_at_time_once()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="tcrmw__wrapper_8py_source.html#l00229">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time_once()</a>, and <a class="el" href="tc__gen__wrapper_8py_source.html#l00338">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.run_at_time_once()</a>.</p>
 
 </div>
 </div>
@@ -185,14 +189,15 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Runs the MET application for a given run time. </p>
-<p>This function loops over the list of forecast leads and runs the application for each. Args: </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This function loops over the list of forecast leads and runs the application for each.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">input_dict</td><td>dictionary containing timing information </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="tc__gen__wrapper_8py_source.html#l00261">261</a> of file <a class="el" href="tc__gen__wrapper_8py_source.html">tc_gen_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tc__gen__wrapper_8py_source.html#l00308">308</a> of file <a class="el" href="tc__gen__wrapper_8py_source.html">tc_gen_wrapper.py</a>.</p>
 
 </div>
 </div>
@@ -230,9 +235,9 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="tc__gen__wrapper_8py_source.html#l00272">272</a> of file <a class="el" href="tc__gen__wrapper_8py_source.html">tc_gen_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tc__gen__wrapper_8py_source.html#l00319">319</a> of file <a class="el" href="tc__gen__wrapper_8py_source.html">tc_gen_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="tc__pairs__wrapper_8py_source.html#l00178">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.run_all_times()</a>, and <a class="el" href="tc__gen__wrapper_8py_source.html#l00261">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.run_all_times()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="tc__pairs__wrapper_8py_source.html#l00254">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.run_all_times()</a>, and <a class="el" href="tc__gen__wrapper_8py_source.html#l00308">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.run_all_times()</a>.</p>
 
 </div>
 </div>
@@ -270,49 +275,34 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="tc__gen__wrapper_8py_source.html#l00291">291</a> of file <a class="el" href="tc__gen__wrapper_8py_source.html">tc_gen_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tc__gen__wrapper_8py_source.html#l00338">338</a> of file <a class="el" href="tc__gen__wrapper_8py_source.html">tc_gen_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="runtime__freq__wrapper_8py_source.html#l00100">metplus.wrappers.runtime_freq_wrapper.RuntimeFreqWrapper.run_all_times_custom()</a>, <a class="el" href="runtime__freq__wrapper_8py_source.html#l00196">metplus.wrappers.runtime_freq_wrapper.RuntimeFreqWrapper.run_at_time()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00261">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time()</a>, and <a class="el" href="tc__gen__wrapper_8py_source.html#l00272">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.run_at_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="runtime__freq__wrapper_8py_source.html#l00100">metplus.wrappers.runtime_freq_wrapper.RuntimeFreqWrapper.run_all_times_custom()</a>, <a class="el" href="runtime__freq__wrapper_8py_source.html#l00196">metplus.wrappers.runtime_freq_wrapper.RuntimeFreqWrapper.run_at_time()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00208">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time()</a>, and <a class="el" href="tc__gen__wrapper_8py_source.html#l00319">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.run_at_time()</a>.</p>
 
 </div>
 </div>
-<a id="a7a5adc9be61d8184d50b045071bdbb66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a5adc9be61d8184d50b045071bdbb66">&#9670;&nbsp;</a></span>set_environment_variables()</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae50897b718ffc2c01d71a63b739b514a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae50897b718ffc2c01d71a63b739b514a">&#9670;&nbsp;</a></span>WRAPPER_ENV_VAR_KEYS</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">def metplus.wrappers.tc_gen_wrapper.TCGenWrapper.set_environment_variables </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>time_info</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">list metplus.wrappers.tc_gen_wrapper.TCGenWrapper.WRAPPER_ENV_VAR_KEYS</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
-<p>Set environment variables that will be read by the MET config file. </p>
-<p>Reformat as needed. Print list of variables that were set and their values. Args: </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">time_info</td><td>dictionary containing timing info from current run </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="tc__gen__wrapper_8py_source.html#l00172">172</a> of file <a class="el" href="tc__gen__wrapper_8py_source.html">tc_gen_wrapper.py</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="make__plots__wrapper_8py_source.html#l00092">metplus.wrappers.make_plots_wrapper.MakePlotsWrapper.create_c_dict()</a>, <a class="el" href="pcp__combine__wrapper_8py_source.html#l00401">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.get_accumulation()</a>, <a class="el" href="tc__pairs__wrapper_8py_source.html#l00178">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.run_all_times()</a>, <a class="el" href="py__embed__ingest__wrapper_8py_source.html#l00125">metplus.wrappers.py_embed_ingest_wrapper.PyEmbedIngestWrapper.run_at_time()</a>, <a class="el" href="tc__stat__wrapper_8py_source.html#l00174">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.run_at_time()</a>, <a class="el" href="gen__vx__mask__wrapper_8py_source.html#l00158">metplus.wrappers.gen_vx_mask_wrapper.GenVxMaskWrapper.run_at_time_all()</a>, <a class="el" href="tc__pairs__wrapper_8py_source.html#l00238">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.run_at_time_loop_string()</a>, <a class="el" href="user__script__wrapper_8py_source.html#l00056">metplus.wrappers.user_script_wrapper.UserScriptWrapper.run_at_time_once()</a>, <a class="el" href="plot__data__plane__wrapper_8py_source.html#l00140">metplus.wrappers.plot_data_plane_wrapper.PlotDataPlaneWrapper.run_at_time_once()</a>, <a class="el" href="point2grid__wrapper_8py_source.html#l00176">metplus.wrappers.point2grid_wrapper.Point2GridWrapper.run_at_time_once()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00282">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time_once()</a>, <a class="el" href="tc__gen__wrapper_8py_source.html#l00291">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.run_at_time_once()</a>, <a class="el" href="regrid__data__plane__wrapper_8py_source.html#l00412">metplus.wrappers.regrid_data_plane_wrapper.RegridDataPlaneWrapper.run_at_time_once()</a>, and <a class="el" href="stat__analysis__wrapper_8py_source.html#l01674">metplus.wrappers.stat_analysis_wrapper.StatAnalysisWrapper.run_stat_analysis_job()</a>.</p>
+<b>Initial value:</b><div class="fragment"><div class="line">=  [</div><div class="line">        <span class="stringliteral">&#39;METPLUS_INIT_FREQ&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_LEAD_WINDOW_DICT&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_MIN_DURATION&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_FCST_GENESIS_DICT&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_BEST_GENESIS_DICT&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_OPER_GENESIS_DICT&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_FILTER&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_DESC&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_MODEL&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_STORM_ID&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_STORM_NAME&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_INIT_BEG&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_INIT_END&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_VALID_BEG&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_VALID_END&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_INIT_HOUR&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_LEAD_LIST&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_VX_MASK&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_GENESIS_WINDOW_DICT&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_GENESIS_RADIUS&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_DLAND_FILE&#39;</span>,</div><div class="line">    ]</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="tc__gen__wrapper_8py_source.html#l00030">30</a> of file <a class="el" href="tc__gen__wrapper_8py_source.html">tc_gen_wrapper.py</a>.</p>
 
 </div>
 </div>

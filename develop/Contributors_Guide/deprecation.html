@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>5. Deprecating an Old Config Variable &mdash; METplus 4.0.0-rc1-dev documentation</title>
+  <title>5. Deprecating an Old Config Variable &mdash; METplus 4.0.0-beta4-dev documentation</title>
   
 
   
@@ -45,7 +45,7 @@
         <link rel="index" title="Index"
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="METplus 4.0.0-rc1-dev documentation" href="../index.html"/>
+    <link rel="top" title="METplus 4.0.0-beta4-dev documentation" href="../index.html"/>
         <link rel="up" title="Contributor’s Guide" href="index.html"/>
         <link rel="next" title="6. GitHub Workflow" href="github_workflow.html"/>
         <link rel="prev" title="4. Instructions for the Conda Environment" href="conda_env.html"/> 
@@ -263,7 +263,7 @@ not set, check for the old config as well.</p>
 should use LOOP_ORDER, but it is not required to change
 immediately. If you do this, you should check for LOOP_ORDER and then
 check for LOOP_METHOD if it is not set.</p>
-<p>In master_metplus.py:</p>
+<p>In run_metplus.py:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">loop_order</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">getstr</span><span class="p">(</span><span class="s1">&#39;config&#39;</span><span class="p">,</span> <span class="s1">&#39;LOOP_ORDER&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">loop_order</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">:</span>
     <span class="n">loop_order</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">getstr</span><span class="p">(</span><span class="s1">&#39;config&#39;</span><span class="p">,</span> <span class="s1">&#39;LOOP_METHOD&#39;</span><span class="p">)</span>
@@ -295,7 +295,7 @@ check for LOOP_METHOD if it is not set.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2020, UCAR/NCAR, NOAA, CSU/CIRA, and CU/CIRES.
-      Last updated on Feb 11, 2021, 5:54:52 PM.
+      Last updated on Feb 25, 2021, 3:54:36 PM.
 
     </p>
   </div>

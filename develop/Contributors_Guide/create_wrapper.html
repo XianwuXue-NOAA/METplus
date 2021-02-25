@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3. How to Create Your Own Wrapper &mdash; METplus 4.0.0-rc1-dev documentation</title>
+  <title>3. How to Create Your Own Wrapper &mdash; METplus 4.0.0-beta4-dev documentation</title>
   
 
   
@@ -45,7 +45,7 @@
         <link rel="index" title="Index"
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="METplus 4.0.0-rc1-dev documentation" href="../index.html"/>
+    <link rel="top" title="METplus 4.0.0-beta4-dev documentation" href="../index.html"/>
         <link rel="up" title="Contributor’s Guide" href="index.html"/>
         <link rel="next" title="4. Instructions for the Conda Environment" href="conda_env.html"/>
         <link rel="prev" title="2. Basic Components of METplus Python Wrappers" href="basic_components.html"/> 
@@ -286,7 +286,7 @@ You can copy example_wrapper.py or ascii2nc_wrapper.py to start.</p></li>
 <li><p>The function self.set_environment_variables should be called by all wrappers even if the MET tool does not have a config file. This is done to set environment variables that MET expects to be set when running, such as MET_TMP_DIR and MET_PYTHON_EXE. If no environment variables need to be set specific to the wrapper, you do not need to write your own implementation of the function in the wrapper. You can call the implementation of the function from CommandBuilder, which sets the environment variables defined in the [user_env_vars] section of the configuration file and outputs DEBUG logs for each environment variable that has been set in the wrapper. MET_TMP_DIR is automatically set for each wrapper.</p></li>
 <li><p>Once you have provided all the necessary information to create the MET command, call self.build_and_run_command(). This calls self.get_command() to assemble the command and verify that the command your wrapper generated contains all of the required arguments.  You may need to override get_command() in your wrapper if your MET application is different from the example.  For instance, some MET tools require flags such as -f to precede the input filename.  You can override get_command in the wrapper to prepend the required flag to the filename in your constructed MET command.</p></li>
 <li><p>Call self.clear() at the beginning of each loop iteration that tries to build/run a MET command to prevent inadvertently reusing/re-running commands that were previously created.</p></li>
-<li><p>Update the METplus/ush/master_metplus.py file to recognize your wrapper by adding an import statement:</p>
+<li><p>Update the METplus/ush/run_metplus.py file to recognize your wrapper by adding an import statement:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">new_tool_wrapper</span> <span class="kn">import</span> <span class="n">NewToolWrapper</span>
 </pre></div>
 </div>
@@ -389,7 +389,7 @@ The PROCESS_LIST is located under the [config] section header in your use case a
   <div role="contentinfo">
     <p>
         &copy; Copyright 2020, UCAR/NCAR, NOAA, CSU/CIRA, and CU/CIRES.
-      Last updated on Feb 11, 2021, 5:54:52 PM.
+      Last updated on Feb 25, 2021, 3:54:36 PM.
 
     </p>
   </div>

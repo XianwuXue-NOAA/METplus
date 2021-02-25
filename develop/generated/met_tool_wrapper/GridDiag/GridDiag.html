@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>5.1.8.1. GridDiag: Basic Use Case &mdash; METplus 4.0.0-rc1-dev documentation</title>
+  <title>5.1.8.1. GridDiag: Basic Use Case &mdash; METplus 4.0.0-beta4-dev documentation</title>
   
 
   
@@ -45,7 +45,7 @@
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="METplus 4.0.0-rc1-dev documentation" href="../../../index.html"/>
+    <link rel="top" title="METplus 4.0.0-beta4-dev documentation" href="../../../index.html"/>
         <link rel="up" title="5.1. MET tools" href="../index.html"/>
         <link rel="next" title="5.1.9.1. GridStat: Using Python Embedding" href="../GridStat/GridStat_python_embedding.html"/>
         <link rel="prev" title="5.1.7.3. GenVxMask: Basic Use Case" href="../GenVxMask/GenVxMask.html"/> 
@@ -328,6 +328,8 @@ with the -c option, i.e. -c parm/use_cases/met_tool_wrapper/GridDiag/GridDiag.co
 <span class="c1">#GRID_DIAG_REGRID_VLD_THRESH = 0.5</span>
 <span class="c1">#GRID_DIAG_REGRID_SHAPE = SQUARE</span>
 
+<span class="nv">GRID_DIAG_MASK_POLY</span> <span class="o">=</span> MET_BASE/poly/SAO.poly
+
 <span class="c1">#</span>
 <span class="c1">#  DIRECTORIES</span>
 <span class="c1">#</span>
@@ -345,8 +347,6 @@ with the -c option, i.e. -c parm/use_cases/met_tool_wrapper/GridDiag/GridDiag.co
 <span class="nv">GRID_DIAG_INPUT_TEMPLATE</span> <span class="o">=</span> gfs.subset.t00z.pgrb2.0p25.f<span class="o">{</span>lead?fmt<span class="o">=</span>%H<span class="o">}</span>, gfs.subset.t00z.pgrb2.0p25.f<span class="o">{</span>lead?fmt<span class="o">=</span>%H<span class="o">}</span>
 
 <span class="nv">GRID_DIAG_OUTPUT_TEMPLATE</span> <span class="o">=</span> grid_diag_out.nc
-
-<span class="nv">GRID_DIAG_VERIFICATION_MASK_TEMPLATE</span> <span class="o">=</span> MET_BASE/poly/SAO.poly
 </pre></div>
 </div>
 </div>
@@ -358,7 +358,7 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 //
 // Grid-Diag configuration file.
 //
-// For additional information, see the MET_BASE/config/README file.
+// For additional information, see the MET_BASE/config/GridDiagConfig_default file.
 //
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -379,28 +379,17 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 //
 // May be <span class="nb">set</span> separately in each <span class="s2">&quot;field&quot;</span> entry
 //
-<span class="nv">censor_thresh</span> <span class="o">=</span> <span class="o">[]</span><span class="p">;</span>
-<span class="nv">censor_val</span>    <span class="o">=</span> <span class="o">[]</span><span class="p">;</span>
+<span class="si">${</span><span class="nv">METPLUS_CENSOR_THRESH</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_CENSOR_VAL</span><span class="si">}</span>
 
 //
 // Data fields
 //
-<span class="nv">data</span> <span class="o">=</span> <span class="o">{</span>
-   <span class="nv">field</span> <span class="o">=</span> <span class="o">[</span> <span class="si">${</span><span class="nv">DATA_FIELD</span><span class="si">}</span> <span class="o">]</span><span class="p">;</span>
-<span class="o">}</span>
+<span class="si">${</span><span class="nv">METPLUS_DATA_DICT</span><span class="si">}</span>
 
-////////////////////////////////////////////////////////////////////////////////
+<span class="si">${</span><span class="nv">METPLUS_MASK_DICT</span><span class="si">}</span>
 
-<span class="nv">mask</span> <span class="o">=</span> <span class="o">{</span>
-   <span class="nv">grid</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
-   <span class="si">${</span><span class="nv">VERIF_MASK</span><span class="si">}</span>
-<span class="o">}</span>
-
-////////////////////////////////////////////////////////////////////////////////
-
-//version <span class="o">=</span> <span class="s2">&quot;V10.0&quot;</span><span class="p">;</span>
-
-////////////////////////////////////////////////////////////////////////////////
+<span class="si">${</span><span class="nv">METPLUS_MET_CONFIG_OVERRIDES</span><span class="si">}</span>
 </pre></div>
 </div>
 </div>
@@ -409,12 +398,12 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 <p>This use case can be run two ways:</p>
 <ol class="arabic">
 <li><p>Passing in GridDiag.conf then a user-specific system configuration file:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>master_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/GridDiag/GridDiag.conf -c /path/to/user_system.conf
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>run_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/GridDiag/GridDiag.conf -c /path/to/user_system.conf
 </pre></div>
 </div>
 </li>
 <li><p>Modifying the configurations in parm/metplus_config, then passing in GridDiag.conf:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>master_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/GridDiag/GridDiag.conf
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>run_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/GridDiag/GridDiag.conf
 </pre></div>
 </div>
 </li>
@@ -490,7 +479,7 @@ and will contain the following files:</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2020, UCAR/NCAR, NOAA, CSU/CIRA, and CU/CIRES.
-      Last updated on Feb 11, 2021, 5:54:52 PM.
+      Last updated on Feb 25, 2021, 3:54:36 PM.
 
     </p>
   </div>

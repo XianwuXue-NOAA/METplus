@@ -15,7 +15,7 @@ var searchData=
   ['grid_5fstat_5fwrapper',['grid_stat_wrapper',['../namespacemetplus_1_1wrappers_1_1grid__stat__wrapper.html',1,'metplus::wrappers']]],
   ['metplus_20scripts',['METplus Scripts',['../index.html',1,'']]],
   ['metplus_20installation_20guide',['METplus Installation Guide',['../install.html',1,'']]],
-  ['main',['main',['../namespacemaster__metplus.html#acc3a174689c5cebb174c93223abc7fee',1,'master_metplus.main()'],['../namespaceconfdoc.html#a62272865412be6aea1e81dabc44b503e',1,'confdoc.main()']]],
+  ['main',['main',['../namespacemaster__metplus.html#acc3a174689c5cebb174c93223abc7fee',1,'master_metplus.main()'],['../namespacerun__metplus.html#a42a4937f553b427d036e4ff83826328b',1,'run_metplus.main()'],['../namespaceconfdoc.html#a62272865412be6aea1e81dabc44b503e',1,'confdoc.main()']]],
   ['make_5fbrief',['make_brief',['../classconfdoc_1_1docbase.html#aad3f35ecc96acf77af5e506fa246cd2f',1,'confdoc::docbase']]],
   ['make_5fplots_5fwrapper',['make_plots_wrapper',['../namespacemetplus_1_1wrappers_1_1make__plots__wrapper.html',1,'metplus::wrappers']]],
   ['makeplotswrapper',['MakePlotsWrapper',['../classmetplus_1_1wrappers_1_1make__plots__wrapper_1_1MakePlotsWrapper.html',1,'metplus::wrappers::make_plots_wrapper']]],

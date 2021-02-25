@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>5.2.6.7. UserScript: Calculate the Difficulty Index &mdash; METplus 4.0.0-rc1-dev documentation</title>
+  <title>5.2.7.7. UserScript: Calculate the Difficulty Index &mdash; METplus 4.0.0-beta4-dev documentation</title>
   
 
   
@@ -45,10 +45,10 @@
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="METplus 4.0.0-rc1-dev documentation" href="../../../index.html"/>
+    <link rel="top" title="METplus 4.0.0-beta4-dev documentation" href="../../../index.html"/>
         <link rel="up" title="5.2. Model Applications" href="../index.html"/>
-        <link rel="next" title="5.2.6.8. Multi_Tool: Feature Relative by Init" href="TCStat_SeriesAnalysis_fcstGFS_obsGFS_FeatureRelative_SeriesByInit.html"/>
-        <link rel="prev" title="5.2.6.6. Grid-Stat: Standard Verification of Surface Fields" href="GridStat_fcstGFS_obsGFS_Sfc_MultiField.html"/> 
+        <link rel="next" title="5.2.7.8. Multi_Tool: Feature Relative by Init" href="TCStat_SeriesAnalysis_fcstGFS_obsGFS_FeatureRelative_SeriesByInit.html"/>
+        <link rel="prev" title="5.2.7.6. Grid-Stat: Standard Verification of Surface Fields" href="GridStat_fcstGFS_obsGFS_Sfc_MultiField.html"/> 
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
@@ -132,11 +132,12 @@
 <li class="toctree-l4"><a class="reference internal" href="../index.html#convection-allowing-models">5.2.3. Convection Allowing Models</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../index.html#cryosphere">5.2.4. Cryosphere</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../index.html#data-assimilation">5.2.5. Data Assimilation</a></li>
-<li class="toctree-l4 current"><a class="reference internal" href="../index.html#medium-range">5.2.6. Medium Range</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#precipitation">5.2.7. Precipitation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#subseasonal-to-seasonal">5.2.8. Subseasonal to Seasonal</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#space-weather">5.2.9. Space Weather</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#tropical-cyclone-and-extra-tropical-cyclone">5.2.10. Tropical Cyclone and Extra Tropical Cyclone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#marine-and-coastal">5.2.6. Marine and Coastal</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="../index.html#medium-range">5.2.7. Medium Range</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#precipitation">5.2.8. Precipitation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#subseasonal-to-seasonal">5.2.9. Subseasonal to Seasonal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#space-weather">5.2.10. Space Weather</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#tropical-cyclone-and-extra-tropical-cyclone">5.2.11. Tropical Cyclone and Extra Tropical Cyclone</a></li>
 </ul>
 </li>
 </ul>
@@ -200,7 +201,7 @@
         
           <li><a href="../index.html"><span class="section-number">5.2. </span>Model Applications</a> &raquo;</li>
         
-      <li><span class="section-number">5.2.6.7. </span>UserScript: Calculate the Difficulty Index</li>
+      <li><span class="section-number">5.2.7.7. </span>UserScript: Calculate the Difficulty Index</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -221,7 +222,7 @@
             
   
 <div class="sphx-glr-example-title section" id="userscript-calculate-the-difficulty-index">
-<span id="sphx-glr-generated-model-applications-medium-range-userscript-fcstgefs-difficulty-index-py"></span><h1><span class="section-number">5.2.6.7. </span>UserScript: Calculate the Difficulty Index<a class="headerlink" href="#userscript-calculate-the-difficulty-index" title="Permalink to this headline">¶</a></h1>
+<span id="sphx-glr-generated-model-applications-medium-range-userscript-fcstgefs-difficulty-index-py"></span><h1><span class="section-number">5.2.7.7. </span>UserScript: Calculate the Difficulty Index<a class="headerlink" href="#userscript-calculate-the-difficulty-index" title="Permalink to this headline">¶</a></h1>
 <p>model_applications/medium_range/
 UserScript_fcstGEFS
 _Difficulty_Index.conf</p>
@@ -586,14 +587,14 @@ with the -c option, i.e. -c parm/use_cases/model_applications/medium_range/UserS
 <p>This use case can be run two ways:</p>
 <p>1) Passing in UserScript_fcstGEFS_Difficulty_Index.conf,
 then a user-specific system configuration file:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">master_metplus</span><span class="o">.</span><span class="n">py</span> \
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">run_metplus</span><span class="o">.</span><span class="n">py</span> \
 <span class="o">-</span><span class="n">c</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">METplus</span><span class="o">/</span><span class="n">parm</span><span class="o">/</span><span class="n">use_cases</span><span class="o">/</span><span class="n">model_applications</span><span class="o">/</span><span class="n">medium_range</span><span class="o">/</span><span class="n">UserScript_fcstGEFS_Difficulty_Index</span><span class="o">.</span><span class="n">conf</span> \
 <span class="o">-</span><span class="n">c</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">user_system</span><span class="o">.</span><span class="n">conf</span>
 </pre></div>
 </div>
 <ol class="arabic" start="2">
 <li><p>Modifying the configurations in parm/metplus_config, then passing in UserScript_fcstGEFS_Difficulty_Index.conf:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">master_metplus</span><span class="o">.</span><span class="n">py</span> \
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">run_metplus</span><span class="o">.</span><span class="n">py</span> \
 <span class="o">-</span><span class="n">c</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">METplus</span><span class="o">/</span><span class="n">parm</span><span class="o">/</span><span class="n">use_cases</span><span class="o">/</span><span class="n">model_applications</span><span class="o">/</span><span class="n">medium_range</span><span class="o">/</span><span class="n">UserScript_fcstGEFS_Difficulty_Index</span><span class="o">.</span><span class="n">conf</span>
 </pre></div>
 </div>
@@ -672,10 +673,10 @@ DIFF_INDEX_SAVE_THRESH_STOP which are defined in UserScript_fcstGEFS_Difficulty_
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="TCStat_SeriesAnalysis_fcstGFS_obsGFS_FeatureRelative_SeriesByInit.html" class="btn btn-neutral float-right" title="5.2.6.8. Multi_Tool: Feature Relative by Init" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="TCStat_SeriesAnalysis_fcstGFS_obsGFS_FeatureRelative_SeriesByInit.html" class="btn btn-neutral float-right" title="5.2.7.8. Multi_Tool: Feature Relative by Init" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="GridStat_fcstGFS_obsGFS_Sfc_MultiField.html" class="btn btn-neutral" title="5.2.6.6. Grid-Stat: Standard Verification of Surface Fields" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="GridStat_fcstGFS_obsGFS_Sfc_MultiField.html" class="btn btn-neutral" title="5.2.7.6. Grid-Stat: Standard Verification of Surface Fields" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -685,7 +686,7 @@ DIFF_INDEX_SAVE_THRESH_STOP which are defined in UserScript_fcstGEFS_Difficulty_
   <div role="contentinfo">
     <p>
         &copy; Copyright 2020, UCAR/NCAR, NOAA, CSU/CIRA, and CU/CIRES.
-      Last updated on Feb 11, 2021, 5:54:52 PM.
+      Last updated on Feb 25, 2021, 3:54:36 PM.
 
     </p>
   </div>

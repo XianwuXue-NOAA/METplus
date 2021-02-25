@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>5.2.10.2. TCRMW: Hurricane Gonzalo &mdash; METplus 4.0.0-rc1-dev documentation</title>
+  <title>5.2.11.4. TCRMW: Hurricane Gonzalo &mdash; METplus 4.0.0-beta4-dev documentation</title>
   
 
   
@@ -45,10 +45,10 @@
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="METplus 4.0.0-rc1-dev documentation" href="../../../index.html"/>
+    <link rel="top" title="METplus 4.0.0-beta4-dev documentation" href="../../../index.html"/>
         <link rel="up" title="5.2. Model Applications" href="../index.html"/>
-        <link rel="next" title="5.2.10.3. Track and Intensity Plotter: Generate mean, median and box plots" href="Plotter_fcstGFS_obsGFS_RPlotting.html"/>
-        <link rel="prev" title="5.2.10.1. Cyclone Plotter: From TC-Pairs Output" href="Plotter_fcstGFS_obsGFS_ExtraTC.html"/> 
+        <link rel="next" title="5.2.11.5. Track and Intensity Plotter: Generate mean, median and box plots" href="Plotter_fcstGFS_obsGFS_RPlotting.html"/>
+        <link rel="prev" title="5.2.11.3. CyclonePlotter: Use Case for OPC (EMC) cyclone data" href="CyclonePlotter_fcstGFS_obsGFS_OPC.html"/> 
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
@@ -132,11 +132,12 @@
 <li class="toctree-l4"><a class="reference internal" href="../index.html#convection-allowing-models">5.2.3. Convection Allowing Models</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../index.html#cryosphere">5.2.4. Cryosphere</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../index.html#data-assimilation">5.2.5. Data Assimilation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#medium-range">5.2.6. Medium Range</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#precipitation">5.2.7. Precipitation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#subseasonal-to-seasonal">5.2.8. Subseasonal to Seasonal</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#space-weather">5.2.9. Space Weather</a></li>
-<li class="toctree-l4 current"><a class="reference internal" href="../index.html#tropical-cyclone-and-extra-tropical-cyclone">5.2.10. Tropical Cyclone and Extra Tropical Cyclone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#marine-and-coastal">5.2.6. Marine and Coastal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#medium-range">5.2.7. Medium Range</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#precipitation">5.2.8. Precipitation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#subseasonal-to-seasonal">5.2.9. Subseasonal to Seasonal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#space-weather">5.2.10. Space Weather</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="../index.html#tropical-cyclone-and-extra-tropical-cyclone">5.2.11. Tropical Cyclone and Extra Tropical Cyclone</a></li>
 </ul>
 </li>
 </ul>
@@ -200,7 +201,7 @@
         
           <li><a href="../index.html"><span class="section-number">5.2. </span>Model Applications</a> &raquo;</li>
         
-      <li><span class="section-number">5.2.10.2. </span>TCRMW: Hurricane Gonzalo</li>
+      <li><span class="section-number">5.2.11.4. </span>TCRMW: Hurricane Gonzalo</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -221,7 +222,7 @@
             
   
 <div class="sphx-glr-example-title section" id="tcrmw-hurricane-gonzalo">
-<span id="sphx-glr-generated-model-applications-tc-and-extra-tc-tcrmw-fcstgfs-fcstonly-gonzalo-py"></span><h1><span class="section-number">5.2.10.2. </span>TCRMW: Hurricane Gonzalo<a class="headerlink" href="#tcrmw-hurricane-gonzalo" title="Permalink to this headline">¶</a></h1>
+<span id="sphx-glr-generated-model-applications-tc-and-extra-tc-tcrmw-fcstgfs-fcstonly-gonzalo-py"></span><h1><span class="section-number">5.2.11.4. </span>TCRMW: Hurricane Gonzalo<a class="headerlink" href="#tcrmw-hurricane-gonzalo" title="Permalink to this headline">¶</a></h1>
 <p>model_applications/tc_and_extra_tc/TCRMW_fcstGFS_fcstOnly
 _gonzolo.conf</p>
 <div class="section" id="scientific-objective">
@@ -453,20 +454,20 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 // <span class="si">${</span><span class="nv">VALID_HOUR_LIST</span><span class="si">}</span> sets <span class="s2">&quot;valid_hour = [&lt;user setting&gt;];&quot;</span>
 // <span class="si">${</span><span class="nv">LEAD_LIST</span><span class="si">}</span> sets <span class="s2">&quot;lead = [&lt;user setting&gt;];&quot;</span>
 
-<span class="si">${</span><span class="nv">MODEL</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_MODEL</span><span class="si">}</span>
 
-<span class="si">${</span><span class="nv">STORM_ID</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">BASIN</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">CYCLONE</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">INIT_INCLUDE</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_STORM_ID</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_BASIN</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_CYCLONE</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_INIT_INCLUDE</span><span class="si">}</span>
 
-<span class="si">${</span><span class="nv">VALID_BEG</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">VALID_END</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">VALID_INCLUDE_LIST</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">VALID_EXCLUDE_LIST</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_VALID_BEG</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_VALID_END</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_VALID_INCLUDE_LIST</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_VALID_EXCLUDE_LIST</span><span class="si">}</span>
 
-<span class="si">${</span><span class="nv">VALID_HOUR_LIST</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">LEAD_LIST</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_VALID_HOUR_LIST</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_LEAD_LIST</span><span class="si">}</span>
 
 //
 // May be <span class="nb">set</span> separately in each <span class="s2">&quot;field&quot;</span> entry
@@ -478,9 +479,9 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 // Data fields
 //
 <span class="nv">data</span> <span class="o">=</span> <span class="o">{</span>
-   <span class="si">${</span><span class="nv">DATA_FILE_TYPE</span><span class="si">}</span>
+   <span class="si">${</span><span class="nv">METPLUS_DATA_FILE_TYPE</span><span class="si">}</span>
 
-   <span class="nv">field</span> <span class="o">=</span> <span class="o">[</span> <span class="si">${</span><span class="nv">DATA_FIELD</span><span class="si">}</span> <span class="o">]</span><span class="p">;</span>
+   <span class="si">${</span><span class="nv">METPLUS_DATA_FIELD</span><span class="si">}</span>
 <span class="o">}</span>
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -503,17 +504,19 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 // <span class="si">${</span><span class="nv">DELTA_RANGE_KM</span><span class="si">}</span> sets <span class="s2">&quot;delta_range_km = &lt;user setting&gt;;&quot;</span>
 // <span class="si">${</span><span class="nv">RMW_SCALE</span><span class="si">}</span> sets <span class="s2">&quot;rmw_scale = &lt;user setting&gt;;&quot;</span>
 
-<span class="si">${</span><span class="nv">N_RANGE</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">N_AZIMUTH</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">MAX_RANGE_KM</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">DELTA_RANGE_KM</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">RMW_SCALE</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_N_RANGE</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_N_AZIMUTH</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_MAX_RANGE_KM</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_DELTA_RANGE_KM</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_RMW_SCALE</span><span class="si">}</span>
 
 ////////////////////////////////////////////////////////////////////////////////
 
 //version <span class="o">=</span> <span class="s2">&quot;V10.0&quot;</span><span class="p">;</span>
 
 ////////////////////////////////////////////////////////////////////////////////
+
+<span class="si">${</span><span class="nv">METPLUS_MET_CONFIG_OVERRIDES</span><span class="si">}</span>
 </pre></div>
 </div>
 <p>See the Python Wrapper section of the User’s Guide for more information on the environment variables set in this file.</p>
@@ -523,12 +526,12 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 <p>This use case can be run two ways:</p>
 <ol class="arabic">
 <li><p>Passing in the use case configuration file then a user-specific system configuration file:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>master_metplus.py -c /path/to/METplus/parm/model_applications/tc_and_extra_tc/TCRMW_fcstGFS_fcstOnly_gonzalo.conf -c /path/to/user_system.conf
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>run_metplus.py -c /path/to/METplus/parm/model_applications/tc_and_extra_tc/TCRMW_fcstGFS_fcstOnly_gonzalo.conf -c /path/to/user_system.conf
 </pre></div>
 </div>
 </li>
 <li><p>Modifying the configurations in parm/metplus_config, then passing in use case configuration file:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>master_metplus.py -c /path/to/METplus/parm/use_cases/model_applications/tc_and_extra_tc/TCRMW_fcstGFS_fcstOnly_gonzalo.conf
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>run_metplus.py -c /path/to/METplus/parm/use_cases/model_applications/tc_and_extra_tc/TCRMW_fcstGFS_fcstOnly_gonzalo.conf
 </pre></div>
 </div>
 </li>
@@ -592,10 +595,10 @@ and will contain the following files:</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Plotter_fcstGFS_obsGFS_RPlotting.html" class="btn btn-neutral float-right" title="5.2.10.3. Track and Intensity Plotter: Generate mean, median and box plots" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Plotter_fcstGFS_obsGFS_RPlotting.html" class="btn btn-neutral float-right" title="5.2.11.5. Track and Intensity Plotter: Generate mean, median and box plots" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Plotter_fcstGFS_obsGFS_ExtraTC.html" class="btn btn-neutral" title="5.2.10.1. Cyclone Plotter: From TC-Pairs Output" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="CyclonePlotter_fcstGFS_obsGFS_OPC.html" class="btn btn-neutral" title="5.2.11.3. CyclonePlotter: Use Case for OPC (EMC) cyclone data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -605,7 +608,7 @@ and will contain the following files:</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2020, UCAR/NCAR, NOAA, CSU/CIRA, and CU/CIRES.
-      Last updated on Feb 11, 2021, 5:54:52 PM.
+      Last updated on Feb 25, 2021, 3:54:36 PM.
 
     </p>
   </div>

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>5.1.25.1. TCStat: Basic Use Case &mdash; METplus 4.0.0-rc1-dev documentation</title>
+  <title>5.1.25.1. TCStat: Basic Use Case &mdash; METplus 4.0.0-beta4-dev documentation</title>
   
 
   
@@ -45,7 +45,7 @@
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="METplus 4.0.0-rc1-dev documentation" href="../../../index.html"/>
+    <link rel="top" title="METplus 4.0.0-beta4-dev documentation" href="../../../index.html"/>
         <link rel="up" title="5.1. MET tools" href="../index.html"/>
         <link rel="next" title="5.1.26.1. UserScript: Run Once Per Lead Use Case" href="../UserScript/UserScript_run_once_per_lead.html"/>
         <link rel="prev" title="5.1.24.1. TCRMW: Basic Use Case" href="../TCRMW/TCRMW.html"/> 
@@ -458,8 +458,8 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 //
 // Stratify by the AMODEL or BMODEL columns.
 //
-<span class="si">${</span><span class="nv">AMODEL</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">BMODEL</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_AMODEL</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_BMODEL</span><span class="si">}</span>
 
 //
 // Stratify by the DESC column.
@@ -469,25 +469,25 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 //
 // Stratify by the STORM_ID column.
 //
-<span class="si">${</span><span class="nv">STORM_ID</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_STORM_ID</span><span class="si">}</span>
 
 //
 // Stratify by the BASIN column.
 // May add using the <span class="s2">&quot;-basin&quot;</span> job <span class="nb">command</span> option.
 //
-<span class="si">${</span><span class="nv">BASIN</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_BASIN</span><span class="si">}</span>
 
 //
 // Stratify by the CYCLONE column.
 // May add using the <span class="s2">&quot;-cyclone&quot;</span> job <span class="nb">command</span> option.
 //
-<span class="si">${</span><span class="nv">CYCLONE</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_CYCLONE</span><span class="si">}</span>
 
 //
 // Stratify by the STORM_NAME column.
 // May add using the <span class="s2">&quot;-storm_name&quot;</span> job <span class="nb">command</span> option.
 //
-<span class="si">${</span><span class="nv">STORM_NAME</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_STORM_NAME</span><span class="si">}</span>
 
 //
 // Stratify by the INIT times.
@@ -495,93 +495,95 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 // May modify using the <span class="s2">&quot;-init_beg&quot;</span>, <span class="s2">&quot;-init_end&quot;</span>, <span class="s2">&quot;-init_inc&quot;</span>,
 // and <span class="s2">&quot;-init_exc&quot;</span> job <span class="nb">command</span> options.
 //
-<span class="si">${</span><span class="nv">INIT_BEG</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">INIT_END</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">INIT_INC</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">INIT_EXC</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_INIT_BEG</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_INIT_END</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_INIT_INCLUDE</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_INIT_EXCLUDE</span><span class="si">}</span>
 
 //
 // Stratify by the VALID times.
 //
-<span class="si">${</span><span class="nv">VALID_BEG</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">VALID_END</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">VALID_INC</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">VALID_EXC</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_VALID_BEG</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_VALID_END</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_VALID_INCLUDE</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_VALID_EXCLUDE</span><span class="si">}</span>
 
 //
 // Stratify by the initialization and valid hours and lead time.
 //
-<span class="si">${</span><span class="nv">INIT_HOUR</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">VALID_HOUR</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">LEAD</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_INIT_HOUR</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_VALID_HOUR</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_LEAD</span><span class="si">}</span>
 
 //
 // Select tracks which contain all required lead times.
 //
-<span class="si">${</span><span class="nv">LEAD_REQ</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_LEAD_REQ</span><span class="si">}</span>
 
 //
 // Stratify by the INIT_MASK and VALID_MASK columns.
 //
-<span class="si">${</span><span class="nv">INIT_MASK</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">VALID_MASK</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_INIT_MASK</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_VALID_MASK</span><span class="si">}</span>
 
 //
 // Stratify by checking the watch/warning status <span class="k">for</span> each track point
 // common to both the ADECK and BDECK tracks.  If the watch/warning status
 // of any of the track points appears in the list, retain the entire track.
 //
-<span class="si">${</span><span class="nv">TRACK_WATCH_WARN</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_TRACK_WATCH_WARN</span><span class="si">}</span>
 
 //
 // Stratify by applying thresholds to numeric data columns.
 //
-<span class="si">${</span><span class="nv">COLUMN_THRESH_NAME</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">COLUMN_THRESH_VAL</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_COLUMN_THRESH_NAME</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_COLUMN_THRESH_VAL</span><span class="si">}</span>
 
 //
 // Stratify by performing string matching on non-numeric data columns.
 //
-<span class="si">${</span><span class="nv">COLUMN_STR_NAME</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">COLUMN_STR_VAL</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_COLUMN_STR_NAME</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_COLUMN_STR_VAL</span><span class="si">}</span>
 
 //
 // Similar to the column_thresh options above
 //
-<span class="si">${</span><span class="nv">INIT_THRESH_NAME</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">INIT_THRESH_VAL</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_INIT_THRESH_NAME</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_INIT_THRESH_VAL</span><span class="si">}</span>
 
 //
 // Similar to the column_str options above
 //
-<span class="si">${</span><span class="nv">INIT_STR_NAME</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">INIT_STR_VAL</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_INIT_STR_NAME</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_INIT_STR_VAL</span><span class="si">}</span>
 
 //
 // Stratify by the ADECK and BDECK distances to land.
 //
-<span class="si">${</span><span class="nv">WATER_ONLY</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_WATER_ONLY</span><span class="si">}</span>
 
 //
 // Specify whether only those track points occurring near landfall should be
 // retained, and define the landfall retention window in HH<span class="o">[</span>MMSS<span class="o">]</span> format
 // around the landfall time.
 //
-<span class="si">${</span><span class="nv">LANDFALL</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">LANDFALL_BEG</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">LANDFALL_END</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_LANDFALL</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_LANDFALL_BEG</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_LANDFALL_END</span><span class="si">}</span>
 
 //
 // Specify whether only those track points common to both the ADECK and BDECK
 // tracks should be retained.  May modify using the <span class="s2">&quot;-match_points&quot;</span> job <span class="nb">command</span>
 // option.
 //
-<span class="si">${</span><span class="nv">MATCH_POINTS</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_MATCH_POINTS</span><span class="si">}</span>
 
 //
 // Array of TCStat analysis <span class="nb">jobs</span> to be performed on the filtered data
 //
-<span class="si">${</span><span class="nv">JOBS</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_JOBS</span><span class="si">}</span>
+
+<span class="si">${</span><span class="nv">METPLUS_MET_CONFIG_OVERRIDES</span><span class="si">}</span>
 </pre></div>
 </div>
 </div>
@@ -590,12 +592,12 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 <p>This use case can be run two ways:</p>
 <ol class="arabic">
 <li><p>Passing in TCStat.conf then a user-specific system configuration file:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>master_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/TCStat/TCStat.conf -c /path/to/user_system.conf
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>run_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/TCStat/TCStat.conf -c /path/to/user_system.conf
 </pre></div>
 </div>
 </li>
 <li><p>Modifying the configurations in parm/metplus_config, then passing in TCStat.conf:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>master_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/TCStat/TCStat.conf
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>run_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/TCStat/TCStat.conf
 </pre></div>
 </div>
 </li>
@@ -671,7 +673,7 @@ and will contain the following files:</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2020, UCAR/NCAR, NOAA, CSU/CIRA, and CU/CIRES.
-      Last updated on Feb 11, 2021, 5:54:52 PM.
+      Last updated on Feb 25, 2021, 3:54:36 PM.
 
     </p>
   </div>

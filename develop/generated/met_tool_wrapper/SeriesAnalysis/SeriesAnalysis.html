@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>5.1.19.2. SeriesAnalysis: Basic Use Case &mdash; METplus 4.0.0-rc1-dev documentation</title>
+  <title>5.1.19.2. SeriesAnalysis: Basic Use Case &mdash; METplus 4.0.0-beta4-dev documentation</title>
   
 
   
@@ -45,7 +45,7 @@
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="METplus 4.0.0-rc1-dev documentation" href="../../../index.html"/>
+    <link rel="top" title="METplus 4.0.0-beta4-dev documentation" href="../../../index.html"/>
         <link rel="up" title="5.1. MET tools" href="../index.html"/>
         <link rel="next" title="5.1.20.1. StatAnalysis: Basic Use Case" href="../StatAnalysis/StatAnalysis.html"/>
         <link rel="prev" title="5.1.19.1. SeriesAnalysis: Using Python Embedding" href="SeriesAnalysis_python_embedding.html"/> 
@@ -415,8 +415,7 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 
 <span class="nv">censor_thresh</span> <span class="o">=</span> <span class="o">[]</span><span class="p">;</span>
 <span class="nv">censor_val</span>    <span class="o">=</span> <span class="o">[]</span><span class="p">;</span>
-//cat_thresh    <span class="o">=</span> <span class="o">[</span> NA <span class="o">]</span><span class="p">;</span>
-<span class="si">${</span><span class="nv">CAT_THRESH</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_CAT_THRESH</span><span class="si">}</span>
 <span class="nv">cnt_thresh</span>    <span class="o">=</span> <span class="o">[</span> NA <span class="o">]</span><span class="p">;</span>
 <span class="nv">cnt_logic</span>     <span class="o">=</span> UNION<span class="p">;</span>
 
@@ -424,14 +423,12 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 // Forecast and observation fields to be verified
 //
 <span class="nv">fcst</span> <span class="o">=</span> <span class="o">{</span>
-   <span class="si">${</span><span class="nv">FCST_FILE_TYPE</span><span class="si">}</span>
-
-   <span class="nv">field</span> <span class="o">=</span> <span class="o">[</span> <span class="si">${</span><span class="nv">FCST_FIELD</span><span class="si">}</span> <span class="o">]</span><span class="p">;</span>
+   <span class="si">${</span><span class="nv">METPLUS_FCST_FILE_TYPE</span><span class="si">}</span>
+   <span class="si">${</span><span class="nv">METPLUS_FCST_FIELD</span><span class="si">}</span>
 <span class="o">}</span>
 <span class="nv">obs</span> <span class="o">=</span> <span class="o">{</span>
-   <span class="si">${</span><span class="nv">OBS_FILE_TYPE</span><span class="si">}</span>
-
-   <span class="nv">field</span> <span class="o">=</span> <span class="o">[</span> <span class="si">${</span><span class="nv">OBS_FIELD</span><span class="si">}</span> <span class="o">]</span><span class="p">;</span>
+   <span class="si">${</span><span class="nv">METPLUS_OBS_FILE_TYPE</span><span class="si">}</span>
+   <span class="si">${</span><span class="nv">METPLUS_OBS_FIELD</span><span class="si">}</span>
 <span class="o">}</span>
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -441,7 +438,7 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 //
 <span class="nv">climo_mean</span> <span class="o">=</span> <span class="o">{</span>
 
-   <span class="nv">file_name</span> <span class="o">=</span> <span class="o">[</span> <span class="si">${</span><span class="nv">CLIMO_MEAN_FILE</span><span class="si">}</span> <span class="o">]</span><span class="p">;</span>
+   <span class="si">${</span><span class="nv">METPLUS_CLIMO_MEAN_FILE</span><span class="si">}</span>
    <span class="nv">field</span>     <span class="o">=</span> <span class="o">[]</span><span class="p">;</span>
 
    <span class="nv">regrid</span> <span class="o">=</span> <span class="o">{</span>
@@ -457,9 +454,7 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 <span class="o">}</span>
 
 <span class="nv">climo_stdev</span> <span class="o">=</span> climo_mean<span class="p">;</span>
-<span class="nv">climo_stdev</span> <span class="o">=</span> <span class="o">{</span>
-   <span class="nv">file_name</span> <span class="o">=</span> <span class="o">[</span> <span class="si">${</span><span class="nv">CLIMO_STDEV_FILE</span><span class="si">}</span> <span class="o">]</span><span class="p">;</span>
-<span class="o">}</span>
+<span class="si">${</span><span class="nv">METPLUS_CLIMO_STDEV_FILE</span><span class="si">}</span>
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -490,14 +485,12 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 // Number of grid points to be processed concurrently.  Set smaller to use
 // less memory but increase the number of passes through the data.
 //
-//block_size <span class="o">=</span> <span class="m">1024</span><span class="p">;</span>
-<span class="si">${</span><span class="nv">BLOCK_SIZE</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_BLOCK_SIZE</span><span class="si">}</span>
 
 //
 // Ratio of valid matched pairs to compute statistics <span class="k">for</span> a grid point
 //
-//vld_thresh <span class="o">=</span> <span class="m">1</span>.0<span class="p">;</span>
-<span class="si">${</span><span class="nv">VLD_THRESH</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_VLD_THRESH</span><span class="si">}</span>
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -507,8 +500,7 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 <span class="nv">output_stats</span> <span class="o">=</span> <span class="o">{</span>
    <span class="nv">fho</span>    <span class="o">=</span> <span class="o">[]</span><span class="p">;</span>
    <span class="nv">ctc</span>    <span class="o">=</span> <span class="o">[]</span><span class="p">;</span>
-//   <span class="nv">cts</span>    <span class="o">=</span> <span class="o">[]</span><span class="p">;</span>
-   <span class="si">${</span><span class="nv">CTS_LIST</span><span class="si">}</span>
+   <span class="si">${</span><span class="nv">METPLUS_CTS_LIST</span><span class="si">}</span>
    <span class="nv">mctc</span>   <span class="o">=</span> <span class="o">[]</span><span class="p">;</span>
    <span class="nv">mcts</span>   <span class="o">=</span> <span class="o">[]</span><span class="p">;</span>
    <span class="si">${</span><span class="nv">METPLUS_STAT_LIST</span><span class="si">}</span>
@@ -527,6 +519,8 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 //version        <span class="o">=</span> <span class="s2">&quot;V10.0&quot;</span><span class="p">;</span>
 
 ////////////////////////////////////////////////////////////////////////////////
+
+<span class="si">${</span><span class="nv">METPLUS_MET_CONFIG_OVERRIDES</span><span class="si">}</span>
 </pre></div>
 </div>
 <p>Note the following variables are referenced in the MET configuration file.</p>
@@ -545,12 +539,12 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 <p>This use case can be run two ways:</p>
 <ol class="arabic">
 <li><p>Passing in SeriesAnalysis.conf then a user-specific system configuration file:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>master_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/SeriesAnalysis/SeriesAnalysis.conf -c /path/to/user_system.conf
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>run_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/SeriesAnalysis/SeriesAnalysis.conf -c /path/to/user_system.conf
 </pre></div>
 </div>
 </li>
 <li><p>Modifying the configurations in parm/metplus_config, then passing in SeriesAnalysis.conf:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>master_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/SeriesAnalysis/SeriesAnalysis.conf
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>run_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/SeriesAnalysis/SeriesAnalysis.conf
 </pre></div>
 </div>
 </li>
@@ -629,7 +623,7 @@ and will contain the following file:</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2020, UCAR/NCAR, NOAA, CSU/CIRA, and CU/CIRES.
-      Last updated on Feb 11, 2021, 5:54:52 PM.
+      Last updated on Feb 25, 2021, 3:54:36 PM.
 
     </p>
   </div>

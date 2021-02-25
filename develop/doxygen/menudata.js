@@ -54,7 +54,6 @@ var menudata={children:[
 {text:"p",url:"functions_p.html#index_p"},
 {text:"r",url:"functions_r.html#index_r"},
 {text:"s",url:"functions_s.html#index_s"},
-{text:"v",url:"functions_v.html#index_v"},
 {text:"w",url:"functions_w.html#index_w"}]},
 {text:"Functions",url:"functions_func.html",children:[
 {text:"_",url:"functions_func.html#index__"},
@@ -72,7 +71,6 @@ var menudata={children:[
 {text:"p",url:"functions_func_p.html#index_p"},
 {text:"r",url:"functions_func_r.html#index_r"},
 {text:"s",url:"functions_func_s.html#index_s"},
-{text:"v",url:"functions_func_v.html#index_v"},
 {text:"w",url:"functions_func_w.html#index_w"}]},
 {text:"Variables",url:"functions_vars.html"}]}]},
 {text:"Python Files",url:"files.html",children:[

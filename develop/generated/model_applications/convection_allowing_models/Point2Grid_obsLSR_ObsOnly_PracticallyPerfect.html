@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>5.2.3.6. Point2Grid: Calculate Practically Perfect Probabilities &mdash; METplus 4.0.0-rc1-dev documentation</title>
+  <title>5.2.3.6. Point2Grid: Calculate Practically Perfect Probabilities &mdash; METplus 4.0.0-beta4-dev documentation</title>
   
 
   
@@ -45,7 +45,7 @@
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="METplus 4.0.0-rc1-dev documentation" href="../../../index.html"/>
+    <link rel="top" title="METplus 4.0.0-beta4-dev documentation" href="../../../index.html"/>
         <link rel="up" title="5.2. Model Applications" href="../index.html"/>
         <link rel="next" title="5.2.3.7. Surrogate Severe Calculation: PCPCombine, EnsembleStat, and RegridDataPlane" href="EnsembleStat_fcstHRRR_fcstOnly_SurrogateSevere.html"/>
         <link rel="prev" title="5.2.3.5. Ensemble-Stat: Ensemble Statistics using Obs Uncertainty" href="EnsembleStat_fcstHRRRE_obsHRRRE_Sfc_MultiField.html"/> 
@@ -132,11 +132,12 @@
 <li class="toctree-l4 current"><a class="reference internal" href="../index.html#convection-allowing-models">5.2.3. Convection Allowing Models</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../index.html#cryosphere">5.2.4. Cryosphere</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../index.html#data-assimilation">5.2.5. Data Assimilation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#medium-range">5.2.6. Medium Range</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#precipitation">5.2.7. Precipitation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#subseasonal-to-seasonal">5.2.8. Subseasonal to Seasonal</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#space-weather">5.2.9. Space Weather</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#tropical-cyclone-and-extra-tropical-cyclone">5.2.10. Tropical Cyclone and Extra Tropical Cyclone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#marine-and-coastal">5.2.6. Marine and Coastal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#medium-range">5.2.7. Medium Range</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#precipitation">5.2.8. Precipitation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#subseasonal-to-seasonal">5.2.9. Subseasonal to Seasonal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#space-weather">5.2.10. Space Weather</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#tropical-cyclone-and-extra-tropical-cyclone">5.2.11. Tropical Cyclone and Extra Tropical Cyclone</a></li>
 </ul>
 </li>
 </ul>
@@ -482,6 +483,8 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 // The value should generally not be modified.
 //
 //version <span class="o">=</span> <span class="s2">&quot;V10.0&quot;</span><span class="p">;</span>
+
+<span class="si">${</span><span class="nv">METPLUS_MET_CONFIG_OVERRIDES</span><span class="si">}</span>
 </pre></div>
 </div>
 <p>See the following files for more information about the environment variables set in this configuration file.</p>
@@ -593,12 +596,12 @@ parm/use_cases/met_tool_wrapper/RegridDataPlane/RegridDataPlane.py</p>
 <p>This use case can be run two ways:</p>
 <ol class="arabic">
 <li><p>Passing in EnsembleStat_fcstHRRRE_obsHRRRE_Sfc_MultiField.conf then a user-specific system configuration file:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">master_metplus</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">c</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">METplus</span><span class="o">/</span><span class="n">parm</span><span class="o">/</span><span class="n">use_cases</span><span class="o">/</span><span class="n">model_applications</span><span class="o">/</span><span class="n">convection_allowing_models</span><span class="o">/</span><span class="n">Point2Grid_obsLSR_ObsOnly_PracticallyPerfect</span><span class="o">.</span><span class="n">conf</span> <span class="o">-</span><span class="n">c</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">user_system</span><span class="o">.</span><span class="n">conf</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">run_metplus</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">c</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">METplus</span><span class="o">/</span><span class="n">parm</span><span class="o">/</span><span class="n">use_cases</span><span class="o">/</span><span class="n">model_applications</span><span class="o">/</span><span class="n">convection_allowing_models</span><span class="o">/</span><span class="n">Point2Grid_obsLSR_ObsOnly_PracticallyPerfect</span><span class="o">.</span><span class="n">conf</span> <span class="o">-</span><span class="n">c</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">user_system</span><span class="o">.</span><span class="n">conf</span>
 </pre></div>
 </div>
 </li>
 <li><p>Modifying the configurations in parm/metplus_config, then passing in EnsembleStat_fcstHRRRE_obsHRRRE_Sfc_MultiField.conf:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">master_metplus</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">c</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">METplus</span><span class="o">/</span><span class="n">parm</span><span class="o">/</span><span class="n">use_cases</span><span class="o">/</span><span class="n">model_applications</span><span class="o">/</span><span class="n">convection_allowing_models</span><span class="o">/</span><span class="n">Point2Grid_obsLSR_ObsOnly_PracticallyPerfect</span><span class="o">.</span><span class="n">conf</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">run_metplus</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">c</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">METplus</span><span class="o">/</span><span class="n">parm</span><span class="o">/</span><span class="n">use_cases</span><span class="o">/</span><span class="n">model_applications</span><span class="o">/</span><span class="n">convection_allowing_models</span><span class="o">/</span><span class="n">Point2Grid_obsLSR_ObsOnly_PracticallyPerfect</span><span class="o">.</span><span class="n">conf</span>
 </pre></div>
 </div>
 </li>
@@ -688,7 +691,7 @@ and will contain the following files:</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2020, UCAR/NCAR, NOAA, CSU/CIRA, and CU/CIRES.
-      Last updated on Feb 11, 2021, 5:54:52 PM.
+      Last updated on Feb 25, 2021, 3:54:36 PM.
 
     </p>
   </div>

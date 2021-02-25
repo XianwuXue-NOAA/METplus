@@ -66,6 +66,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classmetplus_1_1wrappers_1_1point__stat__wrapper_1_1PointStatWrapper-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">metplus.wrappers.point_stat_wrapper.PointStatWrapper Class Reference</div>  </div>
@@ -98,9 +99,9 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, co
 <tr class="memitem:a3cf51f65bcb6e678724511acf1311cac"><td class="memItemLeft" align="right" valign="top"><a id="a3cf51f65bcb6e678724511acf1311cac"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>add_obs_valid_args</b> (self, time_info)</td></tr>
 <tr class="separator:a3cf51f65bcb6e678724511acf1311cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96fdf0f8a4a86ff05eedab3a448f7cea"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1point__stat__wrapper_1_1PointStatWrapper.html#a96fdf0f8a4a86ff05eedab3a448f7cea">set_environment_variables</a> (self, fcst_field=None, obs_field=None, time_info=None)</td></tr>
-<tr class="memdesc:a96fdf0f8a4a86ff05eedab3a448f7cea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set all the environment variables in the MET config file to the corresponding values in the METplus config file.  <a href="#a96fdf0f8a4a86ff05eedab3a448f7cea">More...</a><br /></td></tr>
-<tr class="separator:a96fdf0f8a4a86ff05eedab3a448f7cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e637b716b409face0b51af34169765"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1point__stat__wrapper_1_1PointStatWrapper.html#a38e637b716b409face0b51af34169765">set_environment_variables</a> (self, time_info=None)</td></tr>
+<tr class="memdesc:a38e637b716b409face0b51af34169765"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set all the environment variables in the MET config file to the corresponding values in the METplus config file.  <a href="#a38e637b716b409face0b51af34169765">More...</a><br /></td></tr>
+<tr class="separator:a38e637b716b409face0b51af34169765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -110,6 +111,11 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a0663a011131828657eeaf274244df204"><td class="memItemLeft" align="right" valign="top"><a id="a0663a011131828657eeaf274244df204"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>app_path</b></td></tr>
 <tr class="separator:a0663a011131828657eeaf274244df204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a02a300dd940ab7f7ba31de994d7ace0a"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><b>WRAPPER_ENV_VAR_KEYS</b></td></tr>
+<tr class="separator:a02a300dd940ab7f7ba31de994d7ace0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1a7788a7037238c53756481df450e6f6"></a>
@@ -131,12 +137,12 @@ Public Attributes</h2></td></tr>
 <p>Create a dictionary that holds all the values set in the METplus config file for the point-stat wrapper. </p>
 <p>Returns: c_dict - A dictionary containing the key-value pairs set in the METplus configuration file. </p>
 
-<p class="definition">Definition at line <a class="el" href="point__stat__wrapper_8py_source.html#l00031">31</a> of file <a class="el" href="point__stat__wrapper_8py_source.html">point_stat_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__stat__wrapper_8py_source.html#l00047">47</a> of file <a class="el" href="point__stat__wrapper_8py_source.html">point_stat_wrapper.py</a>.</p>
 
 </div>
 </div>
-<a id="a96fdf0f8a4a86ff05eedab3a448f7cea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96fdf0f8a4a86ff05eedab3a448f7cea">&#9670;&nbsp;</a></span>set_environment_variables()</h2>
+<a id="a38e637b716b409face0b51af34169765"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38e637b716b409face0b51af34169765">&#9670;&nbsp;</a></span>set_environment_variables()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -146,18 +152,6 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>fcst_field</em> = <code>None</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>obs_field</em> = <code>None</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -177,9 +171,34 @@ Public Attributes</h2></td></tr>
 <p>Args:</p>
 <p>Returns: None - invokes parent class, CommandBuilder add_env_var to add each environment variable to run the </p>
 
-<p class="definition">Definition at line <a class="el" href="point__stat__wrapper_8py_source.html#l00130">130</a> of file <a class="el" href="point__stat__wrapper_8py_source.html">point_stat_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="point__stat__wrapper_8py_source.html#l00187">187</a> of file <a class="el" href="point__stat__wrapper_8py_source.html">point_stat_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00655">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.build_and_run_series_request()</a>, <a class="el" href="make__plots__wrapper_8py_source.html#l00092">metplus.wrappers.make_plots_wrapper.MakePlotsWrapper.create_c_dict()</a>, <a class="el" href="pcp__combine__wrapper_8py_source.html#l00401">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.get_accumulation()</a>, <a class="el" href="tc__pairs__wrapper_8py_source.html#l00178">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.run_all_times()</a>, <a class="el" href="py__embed__ingest__wrapper_8py_source.html#l00125">metplus.wrappers.py_embed_ingest_wrapper.PyEmbedIngestWrapper.run_at_time()</a>, <a class="el" href="tc__stat__wrapper_8py_source.html#l00174">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.run_at_time()</a>, <a class="el" href="gen__vx__mask__wrapper_8py_source.html#l00158">metplus.wrappers.gen_vx_mask_wrapper.GenVxMaskWrapper.run_at_time_all()</a>, <a class="el" href="tc__pairs__wrapper_8py_source.html#l00238">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.run_at_time_loop_string()</a>, <a class="el" href="user__script__wrapper_8py_source.html#l00056">metplus.wrappers.user_script_wrapper.UserScriptWrapper.run_at_time_once()</a>, <a class="el" href="plot__data__plane__wrapper_8py_source.html#l00140">metplus.wrappers.plot_data_plane_wrapper.PlotDataPlaneWrapper.run_at_time_once()</a>, <a class="el" href="point2grid__wrapper_8py_source.html#l00176">metplus.wrappers.point2grid_wrapper.Point2GridWrapper.run_at_time_once()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00282">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time_once()</a>, <a class="el" href="tc__gen__wrapper_8py_source.html#l00291">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.run_at_time_once()</a>, <a class="el" href="regrid__data__plane__wrapper_8py_source.html#l00412">metplus.wrappers.regrid_data_plane_wrapper.RegridDataPlaneWrapper.run_at_time_once()</a>, and <a class="el" href="stat__analysis__wrapper_8py_source.html#l01674">metplus.wrappers.stat_analysis_wrapper.StatAnalysisWrapper.run_stat_analysis_job()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00678">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.build_and_run_series_request()</a>, <a class="el" href="make__plots__wrapper_8py_source.html#l00092">metplus.wrappers.make_plots_wrapper.MakePlotsWrapper.create_c_dict()</a>, <a class="el" href="pcp__combine__wrapper_8py_source.html#l00401">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.get_accumulation()</a>, <a class="el" href="tc__pairs__wrapper_8py_source.html#l00506">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.process_data()</a>, <a class="el" href="tc__pairs__wrapper_8py_source.html#l00254">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.run_all_times()</a>, <a class="el" href="py__embed__ingest__wrapper_8py_source.html#l00125">metplus.wrappers.py_embed_ingest_wrapper.PyEmbedIngestWrapper.run_at_time()</a>, <a class="el" href="tc__stat__wrapper_8py_source.html#l00209">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.run_at_time()</a>, <a class="el" href="gen__vx__mask__wrapper_8py_source.html#l00158">metplus.wrappers.gen_vx_mask_wrapper.GenVxMaskWrapper.run_at_time_all()</a>, <a class="el" href="user__script__wrapper_8py_source.html#l00056">metplus.wrappers.user_script_wrapper.UserScriptWrapper.run_at_time_once()</a>, <a class="el" href="gempak__to__cf__wrapper_8py_source.html#l00098">metplus.wrappers.gempak_to_cf_wrapper.GempakToCFWrapper.run_at_time_once()</a>, <a class="el" href="plot__data__plane__wrapper_8py_source.html#l00140">metplus.wrappers.plot_data_plane_wrapper.PlotDataPlaneWrapper.run_at_time_once()</a>, <a class="el" href="point2grid__wrapper_8py_source.html#l00176">metplus.wrappers.point2grid_wrapper.Point2GridWrapper.run_at_time_once()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00229">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time_once()</a>, <a class="el" href="tc__gen__wrapper_8py_source.html#l00338">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.run_at_time_once()</a>, <a class="el" href="regrid__data__plane__wrapper_8py_source.html#l00412">metplus.wrappers.regrid_data_plane_wrapper.RegridDataPlaneWrapper.run_at_time_once()</a>, and <a class="el" href="stat__analysis__wrapper_8py_source.html#l01709">metplus.wrappers.stat_analysis_wrapper.StatAnalysisWrapper.run_stat_analysis_job()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a02a300dd940ab7f7ba31de994d7ace0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02a300dd940ab7f7ba31de994d7ace0a">&#9670;&nbsp;</a></span>WRAPPER_ENV_VAR_KEYS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">list metplus.wrappers.point_stat_wrapper.PointStatWrapper.WRAPPER_ENV_VAR_KEYS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=  [</div><div class="line">        <span class="stringliteral">&#39;METPLUS_MODEL&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_DESC&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_REGRID_DICT&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_FCST_FIELD&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_OBS_FIELD&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_MESSAGE_TYPE&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_CLIMO_MEAN_FILE&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_CLIMO_STDEV_FILE&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_OBS_WINDOW_DICT&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_MASK_GRID&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_MASK_POLY&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_MASK_SID&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_OUTPUT_PREFIX&#39;</span>,</div><div class="line">    ]</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="point__stat__wrapper_8py_source.html#l00023">23</a> of file <a class="el" href="point__stat__wrapper_8py_source.html">point_stat_wrapper.py</a>.</p>
 
 </div>
 </div>

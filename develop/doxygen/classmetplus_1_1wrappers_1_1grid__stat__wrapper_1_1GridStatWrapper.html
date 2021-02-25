@@ -66,6 +66,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classmetplus_1_1wrappers_1_1grid__stat__wrapper_1_1GridStatWrapper-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">metplus.wrappers.grid_stat_wrapper.GridStatWrapper Class Reference</div>  </div>
@@ -95,10 +96,10 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, co
 <tr class="memitem:af69836974a6f58b3f78fb9dd04fe84be"><td class="memItemLeft" align="right" valign="top"><a id="af69836974a6f58b3f78fb9dd04fe84be"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>create_c_dict</b> (self)</td></tr>
 <tr class="separator:af69836974a6f58b3f78fb9dd04fe84be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a158b5aaab85f9ee9bf4d541b00ec3281"><td class="memItemLeft" align="right" valign="top"><a id="a158b5aaab85f9ee9bf4d541b00ec3281"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1grid__stat__wrapper_1_1GridStatWrapper.html#a158b5aaab85f9ee9bf4d541b00ec3281">set_environment_variables</a> (self, fcst_field, obs_field, time_info)</td></tr>
-<tr class="memdesc:a158b5aaab85f9ee9bf4d541b00ec3281"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set environment variables that are referenced by the MET config file. <br /></td></tr>
-<tr class="separator:a158b5aaab85f9ee9bf4d541b00ec3281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97afdacbbb7b31ac125aac175babebe9"><td class="memItemLeft" align="right" valign="top"><a id="a97afdacbbb7b31ac125aac175babebe9"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1grid__stat__wrapper_1_1GridStatWrapper.html#a97afdacbbb7b31ac125aac175babebe9">set_environment_variables</a> (self, time_info)</td></tr>
+<tr class="memdesc:a97afdacbbb7b31ac125aac175babebe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set environment variables that are referenced by the MET config file. <br /></td></tr>
+<tr class="separator:a97afdacbbb7b31ac125aac175babebe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -108,7 +109,37 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a90d413d328d56bf71917b838bc9b1817"><td class="memItemLeft" align="right" valign="top"><a id="a90d413d328d56bf71917b838bc9b1817"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>app_path</b></td></tr>
 <tr class="separator:a90d413d328d56bf71917b838bc9b1817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a0c20b527cbc6906173ddee35d40c2c3b"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><b>WRAPPER_ENV_VAR_KEYS</b></td></tr>
+<tr class="separator:a0c20b527cbc6906173ddee35d40c2c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a0c20b527cbc6906173ddee35d40c2c3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c20b527cbc6906173ddee35d40c2c3b">&#9670;&nbsp;</a></span>WRAPPER_ENV_VAR_KEYS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">list metplus.wrappers.grid_stat_wrapper.GridStatWrapper.WRAPPER_ENV_VAR_KEYS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=  [</div><div class="line">        <span class="stringliteral">&#39;METPLUS_MODEL&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_DESC&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_OBTYPE&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_REGRID_DICT&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_FCST_FIELD&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_OBS_FIELD&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_CLIMO_MEAN_FILE&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_CLIMO_STDEV_FILE&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_MASK_DICT&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_NBRHD_SHAPE&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_NBRHD_WIDTH&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_NBRHD_COV_THRESH&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_OUTPUT_PREFIX&#39;</span>,</div><div class="line">    ]</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="grid__stat__wrapper_8py_source.html#l00028">28</a> of file <a class="el" href="grid__stat__wrapper_8py_source.html">grid_stat_wrapper.py</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/d1/personal/jpresto/METplus/git/METplus/metplus/wrappers/<a class="el" href="grid__stat__wrapper_8py_source.html">grid_stat_wrapper.py</a></li>
 </ul>

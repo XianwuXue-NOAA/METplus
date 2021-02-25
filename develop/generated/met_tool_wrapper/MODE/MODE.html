@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>5.1.10.1. MODE: Basic Use Case &mdash; METplus 4.0.0-rc1-dev documentation</title>
+  <title>5.1.10.1. MODE: Basic Use Case &mdash; METplus 4.0.0-beta4-dev documentation</title>
   
 
   
@@ -45,7 +45,7 @@
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="METplus 4.0.0-rc1-dev documentation" href="../../../index.html"/>
+    <link rel="top" title="METplus 4.0.0-beta4-dev documentation" href="../../../index.html"/>
         <link rel="up" title="5.1. MET tools" href="../index.html"/>
         <link rel="next" title="5.1.11.1. MTD using Python Embedding" href="../MTD/MTD_python_embedding.html"/>
         <link rel="prev" title="5.1.9.3. GridStat: Basic Use Case" href="../GridStat/GridStat.html"/> 
@@ -343,6 +343,8 @@ with the -c option, i.e. -c parm/use_cases/met_tool_wrapper/MODE/MODE.conf</p>
 <span class="c1"># Name to identify model (forecast) data in output</span>
 <span class="nv">MODEL</span> <span class="o">=</span> WRF
 
+<span class="nv">MODE_DESC</span> <span class="o">=</span> NA
+
 <span class="c1"># Name to identify observation data in output</span>
 <span class="nv">OBTYPE</span> <span class="o">=</span> WRF
 
@@ -408,6 +410,10 @@ with the -c option, i.e. -c parm/use_cases/met_tool_wrapper/MODE/MODE.conf</p>
 <span class="c1">#  Only used if configuring forecast data as the &#39;OBS&#39; input</span>
 <span class="nv">OBS_IS_PROB</span> <span class="o">=</span> <span class="nb">false</span>
 
+<span class="c1"># Used to specify a verification mask poly file for MODE</span>
+<span class="c1"># Not used for this example.</span>
+<span class="nv">MODE_MASK_POLY</span> <span class="o">=</span>
+
 <span class="c1"># End of [config] section and start of [dir] section</span>
 <span class="o">[</span>dir<span class="o">]</span>
 
@@ -434,10 +440,6 @@ with the -c option, i.e. -c parm/use_cases/met_tool_wrapper/MODE/MODE.conf</p>
 
 <span class="c1"># Optional subdirectories relative to MODE_OUTPUT_DIR to write output from MODE</span>
 <span class="nv">MODE_OUTPUT_TEMPLATE</span> <span class="o">=</span> <span class="o">{</span>valid?fmt<span class="o">=</span>%Y%m%d%H<span class="o">}</span>
-
-<span class="c1"># Used to specify a verification mask file for MODE</span>
-<span class="c1"># Not used for this example.</span>
-<span class="nv">MODE_VERIFICATION_MASK_TEMPLATE</span> <span class="o">=</span>
 </pre></div>
 </div>
 </div>
@@ -698,6 +700,8 @@ These variables are referenced in the MET configuration file.</p>
 //version        <span class="o">=</span> <span class="s2">&quot;V10.0&quot;</span><span class="p">;</span>
 
 ////////////////////////////////////////////////////////////////////////////////
+
+<span class="si">${</span><span class="nv">METPLUS_MET_CONFIG_OVERRIDES</span><span class="si">}</span>
 </pre></div>
 </div>
 <p>Note the following variables are referenced in the MET configuration file.</p>
@@ -725,12 +729,12 @@ These variables are referenced in the MET configuration file.</p>
 <p>This use case can be run two ways:</p>
 <ol class="arabic">
 <li><p>Passing in MODE.conf then a user-specific system configuration file:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>master_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/MODE/MODE.conf -c /path/to/user_system.conf
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>run_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/MODE/MODE.conf -c /path/to/user_system.conf
 </pre></div>
 </div>
 </li>
 <li><p>Modifying the configurations in parm/metplus_config, then passing in MODE.conf:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>master_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/MODE/MODE.conf
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>run_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/MODE/MODE.conf
 </pre></div>
 </div>
 </li>
@@ -809,7 +813,7 @@ and will contain the following files:</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2020, UCAR/NCAR, NOAA, CSU/CIRA, and CU/CIRES.
-      Last updated on Feb 11, 2021, 5:54:52 PM.
+      Last updated on Feb 25, 2021, 3:54:36 PM.
 
     </p>
   </div>

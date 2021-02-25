@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>8. METplus Configuration Glossary &mdash; METplus 4.0.0-rc1-dev documentation</title>
+  <title>8. METplus Configuration Glossary &mdash; METplus 4.0.0-beta4-dev documentation</title>
   
 
   
@@ -45,7 +45,7 @@
         <link rel="index" title="Index"
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="METplus 4.0.0-rc1-dev documentation" href="../index.html"/>
+    <link rel="top" title="METplus 4.0.0-beta4-dev documentation" href="../index.html"/>
         <link rel="up" title="User’s Guide" href="index.html"/>
         <link rel="next" title="Contributor’s Guide" href="../Contributors_Guide/index.html"/>
         <link rel="prev" title="7. METplus Quick Search for Use Cases" href="quicksearch.html"/> 
@@ -290,6 +290,17 @@
 </div>
 </dd>
 <dt id="term-ascii2nc-mask-sid">ASCII2NC_MASK_SID</dt><dd><p>A station ID masking file or a comma-separated list of station ID’s for filtering the point observations spatially (optional).</p>
+<div class="line-block">
+<div class="line"><em>Used by:</em> ASCII2NC</div>
+</div>
+</dd>
+<dt id="term-ascii2nc-met-config-overrides">ASCII2NC_MET_CONFIG_OVERRIDES</dt><dd><p>Override any variables in the MET configuration file that are not
+supported by the wrapper. This should be set to the full variable name
+and value that you want to override, including the equal sign and the
+ending semi-colon. The value is directly appended to the end of the
+wrapped MET config file.
+Example:
+ENSEMBLE_STAT_MET_CONFIG_OVERRIDES = desc = “override_desc”; model = “override_model”;</p>
 <div class="line-block">
 <div class="line"><em>Used by:</em> ASCII2NC</div>
 </div>
@@ -975,6 +986,17 @@ SERIES_ANALYSIS_OUTPUT_DIR = {OUTPUT_BASE}/{custom?fmt=%s}
 </div>
 </dd>
 <dt id="term-ensemble-stat-mask-grid">ENSEMBLE_STAT_MASK_GRID</dt><dd><p>Specify the value for ‘mask.grid’ in the MET configuration file for EnsembleStat.</p>
+<div class="line-block">
+<div class="line"><em>Used by:</em>  EnsembleStat</div>
+</div>
+</dd>
+<dt id="term-ensemble-stat-met-config-overrides">ENSEMBLE_STAT_MET_CONFIG_OVERRIDES</dt><dd><p>Override any variables in the MET configuration file that are not
+supported by the wrapper. This should be set to the full variable name
+and value that you want to override, including the equal sign and the
+ending semi-colon. The value is directly appended to the end of the
+wrapped MET config file.
+Example:
+ENSEMBLE_STAT_MET_CONFIG_OVERRIDES = desc = “override_desc”; model = “override_model”;</p>
 <div class="line-block">
 <div class="line"><em>Used by:</em>  EnsembleStat</div>
 </div>
@@ -2307,6 +2329,17 @@ specify the full path to the input files using <a class="reference internal" hre
 <div class="line"><em>Used by:</em>  GridDiag</div>
 </div>
 </dd>
+<dt id="term-grid-diag-met-config-overrides">GRID_DIAG_MET_CONFIG_OVERRIDES</dt><dd><p>Override any variables in the MET configuration file that are not
+supported by the wrapper. This should be set to the full variable name
+and value that you want to override, including the equal sign and the
+ending semi-colon. The value is directly appended to the end of the
+wrapped MET config file.
+Example:
+ENSEMBLE_STAT_MET_CONFIG_OVERRIDES = desc = “override_desc”; model = “override_model”;</p>
+<div class="line-block">
+<div class="line"><em>Used by:</em> GridDiag</div>
+</div>
+</dd>
 <dt id="term-grid-diag-output-dir">GRID_DIAG_OUTPUT_DIR</dt><dd><p>Output directory for write files with the MET tool grid_diag.</p>
 <div class="line-block">
 <div class="line"><em>Used by:</em>  GridDiag</div>
@@ -2397,6 +2430,22 @@ specify the full path to the input files using <a class="reference internal" hre
 <dt id="term-grid-stat-desc">GRID_STAT_DESC</dt><dd><p>Specify the value for ‘desc’ in the MET configuration file for grid_stat.</p>
 <div class="line-block">
 <div class="line"><em>Used by:</em>  GridStat</div>
+</div>
+</dd>
+<dt id="term-grid-stat-mask-grid">GRID_STAT_MASK_GRID</dt><dd><p>Specify the value for ‘mask.grid’ in the MET configuration file for GridStat.</p>
+<div class="line-block">
+<div class="line"><em>Used by:</em>  GridStat</div>
+</div>
+</dd>
+<dt id="term-grid-stat-met-config-overrides">GRID_STAT_MET_CONFIG_OVERRIDES</dt><dd><p>Override any variables in the MET configuration file that are not
+supported by the wrapper. This should be set to the full variable name
+and value that you want to override, including the equal sign and the
+ending semi-colon. The value is directly appended to the end of the
+wrapped MET config file.
+Example:
+ENSEMBLE_STAT_MET_CONFIG_OVERRIDES = desc = “override_desc”; model = “override_model”;</p>
+<div class="line-block">
+<div class="line"><em>Used by:</em> GridStat</div>
 </div>
 </dd>
 <dt id="term-grid-stat-neighborhood-cov-thresh">GRID_STAT_NEIGHBORHOOD_COV_THRESH</dt><dd><p>Sets the neighborhood cov_thresh list used by GridStat. See <a class="reference external" href="https://dtcenter.org/community-code/model-evaluation-tools-met/documentation">MET User’s Guide</a> for more information.</p>
@@ -2964,6 +3013,17 @@ If not set, the verbosity level is controlled by <a class="reference internal" h
 <div class="line"><em>Used by:</em>  MODE</div>
 </div>
 </dd>
+<dt id="term-mode-met-config-overrides">MODE_MET_CONFIG_OVERRIDES</dt><dd><p>Override any variables in the MET configuration file that are not
+supported by the wrapper. This should be set to the full variable name
+and value that you want to override, including the equal sign and the
+ending semi-colon. The value is directly appended to the end of the
+wrapped MET config file.
+Example:
+ENSEMBLE_STAT_MET_CONFIG_OVERRIDES = desc = “override_desc”; model = “override_model”;</p>
+<div class="line-block">
+<div class="line"><em>Used by:</em> MODE</div>
+</div>
+</dd>
 <dt id="term-mode-obs-conv-radius">MODE_OBS_CONV_RADIUS</dt><dd><div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><strong>DEPRECATED:</strong> Please see <a class="reference external" href="https://dtcenter.org/community-code/model-evaluation-tools-met/documentation">MET User’s Guide</a> instead.</p>
@@ -3170,6 +3230,17 @@ If not set, the verbosity level is controlled by <a class="reference internal" h
 </div>
 </dd>
 <dt id="term-mtd-fcst-conv-thresh">MTD_FCST_CONV_THRESH</dt><dd><p>Comma separated list of convolution threshold values used by mode-TD for forecast files.</p>
+<div class="line-block">
+<div class="line"><em>Used by:</em> MTD</div>
+</div>
+</dd>
+<dt id="term-mtd-met-config-overrides">MTD_MET_CONFIG_OVERRIDES</dt><dd><p>Override any variables in the MET configuration file that are not
+supported by the wrapper. This should be set to the full variable name
+and value that you want to override, including the equal sign and the
+ending semi-colon. The value is directly appended to the end of the
+wrapped MET config file.
+Example:
+ENSEMBLE_STAT_MET_CONFIG_OVERRIDES = desc = “override_desc”; model = “override_model”;</p>
 <div class="line-block">
 <div class="line"><em>Used by:</em> MTD</div>
 </div>
@@ -4120,6 +4191,17 @@ If not set, the verbosity level is controlled by <a class="reference internal" h
 <div class="line"><em>Used by:</em>  PB2NC</div>
 </div>
 </dd>
+<dt id="term-pb2nc-met-config-overrides">PB2NC_MET_CONFIG_OVERRIDES</dt><dd><p>Override any variables in the MET configuration file that are not
+supported by the wrapper. This should be set to the full variable name
+and value that you want to override, including the equal sign and the
+ending semi-colon. The value is directly appended to the end of the
+wrapped MET config file.
+Example:
+ENSEMBLE_STAT_MET_CONFIG_OVERRIDES = desc = “override_desc”; model = “override_model”;</p>
+<div class="line-block">
+<div class="line"><em>Used by:</em> PB2NC</div>
+</div>
+</dd>
 <dt id="term-pb2nc-obs-bufr-var-list">PB2NC_OBS_BUFR_VAR_LIST</dt><dd><p>Specify which BUFR codes to use from the observation dataset when using the MET pb2nc tool. Format is comma separated list, e.g.:PMO, TOB, TDO</p>
 <div class="line-block">
 <div class="line"><em>Used by:</em>  PB2NC</div>
@@ -4462,6 +4544,17 @@ See also <a class="reference internal" href="#term-plot-data-plane-output-dir"><
 <dt id="term-point-stat-message-type">POINT_STAT_MESSAGE_TYPE</dt><dd><p>Specify which PREPBUFR message types to process with the MET point_stat tool.</p>
 <div class="line-block">
 <div class="line"><em>Used by:</em>  PointStat</div>
+</div>
+</dd>
+<dt id="term-point-stat-met-config-overrides">POINT_STAT_MET_CONFIG_OVERRIDES</dt><dd><p>Override any variables in the MET configuration file that are not
+supported by the wrapper. This should be set to the full variable name
+and value that you want to override, including the equal sign and the
+ending semi-colon. The value is directly appended to the end of the
+wrapped MET config file.
+Example:
+ENSEMBLE_STAT_MET_CONFIG_OVERRIDES = desc = “override_desc”; model = “override_model”;</p>
+<div class="line-block">
+<div class="line"><em>Used by:</em> PointStat</div>
 </div>
 </dd>
 <dt id="term-point-stat-neighborhood-shape">POINT_STAT_NEIGHBORHOOD_SHAPE</dt><dd><p>Sets the neighborhood shape used by PointStat. See <a class="reference external" href="https://dtcenter.org/community-code/model-evaluation-tools-met/documentation">MET User’s Guide</a> for more information.</p>
@@ -4842,6 +4935,17 @@ Previously, plots were always generated.</p>
 <div class="line"><em>Used by:</em> SeriesAnalysis</div>
 </div>
 </dd>
+<dt id="term-series-analysis-met-config-overrides">SERIES_ANALYSIS_MET_CONFIG_OVERRIDES</dt><dd><p>Override any variables in the MET configuration file that are not
+supported by the wrapper. This should be set to the full variable name
+and value that you want to override, including the equal sign and the
+ending semi-colon. The value is directly appended to the end of the
+wrapped MET config file.
+Example:
+ENSEMBLE_STAT_MET_CONFIG_OVERRIDES = desc = “override_desc”; model = “override_model”;</p>
+<div class="line-block">
+<div class="line"><em>Used by:</em> SeriesAnalysis</div>
+</div>
+</dd>
 <dt id="term-series-analysis-output-dir">SERIES_ANALYSIS_OUTPUT_DIR</dt><dd><p>Specify the directory where files will be written from the MET series analysis tool.</p>
 <div class="line-block">
 <div class="line"><em>Used by:</em>  SeriesAnalysis</div>
@@ -5061,6 +5165,17 @@ Skip even hours: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22</p>
 <p><strong>DEPRECATED:</strong> Please use <a class="reference internal" href="#term-model-n-stat-analysis-lookin-dir"><span class="xref std std-term">MODEL&lt;n&gt;_STAT_ANALYSIS_LOOKIN_DIR</span></a> instead.</p>
 </div>
 </dd>
+<dt id="term-stat-analysis-met-config-overrides">STAT_ANALYSIS_MET_CONFIG_OVERRIDES</dt><dd><p>Override any variables in the MET configuration file that are not
+supported by the wrapper. This should be set to the full variable name
+and value that you want to override, including the equal sign and the
+ending semi-colon. The value is directly appended to the end of the
+wrapped MET config file.
+Example:
+ENSEMBLE_STAT_MET_CONFIG_OVERRIDES = desc = “override_desc”; model = “override_model”;</p>
+<div class="line-block">
+<div class="line"><em>Used by:</em> StatAnalysis</div>
+</div>
+</dd>
 <dt id="term-stat-analysis-out-dir">STAT_ANALYSIS_OUT_DIR</dt><dd><div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><strong>DEPRECATED:</strong> Please use <a class="reference internal" href="#term-stat-analysis-output-dir"><span class="xref std std-term">STAT_ANALYSIS_OUTPUT_DIR</span></a> instead.</p>
@@ -5217,6 +5332,17 @@ Any quotation marks that are found inside another set of quotation marks must be
 <dt id="term-tc-gen-lead-window-end">TC_GEN_LEAD_WINDOW_END</dt><dd><p>Specify the value of lead_window {end} in the MET configuration file.</p>
 <div class="line-block">
 <div class="line"><em>Used by:</em>  TCGen</div>
+</div>
+</dd>
+<dt id="term-tc-gen-met-config-overrides">TC_GEN_MET_CONFIG_OVERRIDES</dt><dd><p>Override any variables in the MET configuration file that are not
+supported by the wrapper. This should be set to the full variable name
+and value that you want to override, including the equal sign and the
+ending semi-colon. The value is directly appended to the end of the
+wrapped MET config file.
+Example:
+ENSEMBLE_STAT_MET_CONFIG_OVERRIDES = desc = “override_desc”; model = “override_model”;</p>
+<div class="line-block">
+<div class="line"><em>Used by:</em> TCGen</div>
 </div>
 </dd>
 <dt id="term-tc-gen-min-duration">TC_GEN_MIN_DURATION</dt><dd><p>Specify the value of min_duration in the MET configuration file.</p>
@@ -5391,6 +5517,17 @@ Any quotation marks that are found inside another set of quotation marks must be
 <div class="line"><em>Used by:</em>  TCPairs</div>
 </div>
 </dd>
+<dt id="term-tc-pairs-met-config-overrides">TC_PAIRS_MET_CONFIG_OVERRIDES</dt><dd><p>Override any variables in the MET configuration file that are not
+supported by the wrapper. This should be set to the full variable name
+and value that you want to override, including the equal sign and the
+ending semi-colon. The value is directly appended to the end of the
+wrapped MET config file.
+Example:
+ENSEMBLE_STAT_MET_CONFIG_OVERRIDES = desc = “override_desc”; model = “override_model”;</p>
+<div class="line-block">
+<div class="line"><em>Used by:</em> TCPairs</div>
+</div>
+</dd>
 <dt id="term-tc-pairs-missing-val">TC_PAIRS_MISSING_VAL</dt><dd><p>Specify the missing value code.</p>
 <div class="line-block">
 <div class="line"><em>Used by:</em>  TCPairs</div>
@@ -5514,6 +5651,17 @@ Any quotation marks that are found inside another set of quotation marks must be
 <dt id="term-tc-rmw-max-range-km">TC_RMW_MAX_RANGE_KM</dt><dd><p>Specify the value for ‘max_range_km’ in the MET configuration file for TCRMW.</p>
 <div class="line-block">
 <div class="line"><em>Used by:</em>  TCRMW</div>
+</div>
+</dd>
+<dt id="term-tc-rmw-met-config-overrides">TC_RMW_MET_CONFIG_OVERRIDES</dt><dd><p>Override any variables in the MET configuration file that are not
+supported by the wrapper. This should be set to the full variable name
+and value that you want to override, including the equal sign and the
+ending semi-colon. The value is directly appended to the end of the
+wrapped MET config file.
+Example:
+ENSEMBLE_STAT_MET_CONFIG_OVERRIDES = desc = “override_desc”; model = “override_model”;</p>
+<div class="line-block">
+<div class="line"><em>Used by:</em> TCRMW</div>
 </div>
 </dd>
 <dt id="term-tc-rmw-n-azimuth">TC_RMW_N_AZIMUTH</dt><dd><p>Specify the value for ‘n_azimuth’ in the MET configuration file for TCRMW.</p>
@@ -5761,6 +5909,17 @@ Any quotation marks that are found inside another set of quotation marks must be
 <dt id="term-tc-stat-match-points">TC_STAT_MATCH_POINTS</dt><dd><p>Specify whether only those points common to both the ADECK and BDECK tracks should be written out or not when using the MET tc_stat tool. Acceptable values: True/False</p>
 <div class="line-block">
 <div class="line"><em>Used by:</em>  TCStat</div>
+</div>
+</dd>
+<dt id="term-tc-stat-met-config-overrides">TC_STAT_MET_CONFIG_OVERRIDES</dt><dd><p>Override any variables in the MET configuration file that are not
+supported by the wrapper. This should be set to the full variable name
+and value that you want to override, including the equal sign and the
+ending semi-colon. The value is directly appended to the end of the
+wrapped MET config file.
+Example:
+ENSEMBLE_STAT_MET_CONFIG_OVERRIDES = desc = “override_desc”; model = “override_model”;</p>
+<div class="line-block">
+<div class="line"><em>Used by:</em> TCStat</div>
 </div>
 </dd>
 <dt id="term-tc-stat-output-dir">TC_STAT_OUTPUT_DIR</dt><dd><p>Specify the output directory where the MET tc_stat tool will write files.</p>
@@ -6221,7 +6380,7 @@ information and how to format.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2020, UCAR/NCAR, NOAA, CSU/CIRA, and CU/CIRES.
-      Last updated on Feb 11, 2021, 5:54:52 PM.
+      Last updated on Feb 25, 2021, 3:54:36 PM.
 
     </p>
   </div>

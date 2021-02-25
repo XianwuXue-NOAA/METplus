@@ -67,6 +67,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classmetplus_1_1wrappers_1_1series__analysis__wrapper_1_1SeriesAnalysisWrapper-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper Class Reference</div>  </div>
@@ -141,9 +142,9 @@ def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memitem:ac54ae213ca22cdfb36f7ea0dd9f2f670"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1series__analysis__wrapper_1_1SeriesAnalysisWrapper.html#ac54ae213ca22cdfb36f7ea0dd9f2f670">build_and_run_series_request</a> (self, time_info, fcst_path, obs_path)</td></tr>
 <tr class="memdesc:ac54ae213ca22cdfb36f7ea0dd9f2f670"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build up the -obs, -fcst, -out necessary for running the series_analysis MET tool, then invoke series_analysis.  <a href="#ac54ae213ca22cdfb36f7ea0dd9f2f670">More...</a><br /></td></tr>
 <tr class="separator:ac54ae213ca22cdfb36f7ea0dd9f2f670"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3525e297fcafe86f781a0eeaa053f535"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1series__analysis__wrapper_1_1SeriesAnalysisWrapper.html#a3525e297fcafe86f781a0eeaa053f535">set_environment_variables</a> (self, time_info, fcst_field, obs_field)</td></tr>
-<tr class="memdesc:a3525e297fcafe86f781a0eeaa053f535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the env variables based on settings in the METplus config files.  <a href="#a3525e297fcafe86f781a0eeaa053f535">More...</a><br /></td></tr>
-<tr class="separator:a3525e297fcafe86f781a0eeaa053f535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5663c76a7e421e70807dc646e19f10df"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1series__analysis__wrapper_1_1SeriesAnalysisWrapper.html#a5663c76a7e421e70807dc646e19f10df">set_environment_variables</a> (self, time_info)</td></tr>
+<tr class="memdesc:a5663c76a7e421e70807dc646e19f10df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the env variables based on settings in the METplus config files.  <a href="#a5663c76a7e421e70807dc646e19f10df">More...</a><br /></td></tr>
+<tr class="separator:a5663c76a7e421e70807dc646e19f10df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a702306aacba90615ac3c71df4dc88fe2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1series__analysis__wrapper_1_1SeriesAnalysisWrapper.html#a702306aacba90615ac3c71df4dc88fe2">set_command_line_arguments</a> (self, time_info)</td></tr>
 <tr class="memdesc:a702306aacba90615ac3c71df4dc88fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set arguments that will be passed into the MET command.  <a href="#a702306aacba90615ac3c71df4dc88fe2">More...</a><br /></td></tr>
 <tr class="separator:a702306aacba90615ac3c71df4dc88fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,6 +185,11 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a37f5b3f344ed2b52013052287557e531"><td class="memItemLeft" align="right" valign="top"><a id="a37f5b3f344ed2b52013052287557e531"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>plot_data_plane</b></td></tr>
 <tr class="separator:a37f5b3f344ed2b52013052287557e531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a4d6f78e5596936ca49c006d8e549c330"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><b>WRAPPER_ENV_VAR_KEYS</b></td></tr>
+<tr class="separator:a4d6f78e5596936ca49c006d8e549c330"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac54ae213ca22cdfb36f7ea0dd9f2f670"></a>
@@ -234,9 +240,9 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if all runs succeeded, False if there was a problem with any of the runs </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00655">655</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00678">678</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00328">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.run_at_time_once()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00351">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.run_at_time_once()</a>.</p>
 
 </div>
 </div>
@@ -260,9 +266,9 @@ Public Attributes</h2></td></tr>
 <p>See CommandBuilder.check_for_python_embedding for more info.</p>
 <dl class="section return"><dt>Returns</dt><dd>False if something is not configured correctly or True </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00565">565</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00588">588</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00493">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.create_ascii_storm_files_list()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00516">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.create_ascii_storm_files_list()</a>.</p>
 
 </div>
 </div>
@@ -308,9 +314,9 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the file should be processed in the current run or False if not </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00473">473</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00496">496</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="grid__diag__wrapper_8py_source.html#l00259">metplus.wrappers.grid_diag_wrapper.GridDiagWrapper.subset_input_files()</a>, and <a class="el" href="series__analysis__wrapper_8py_source.html#l00452">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.subset_input_files()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grid__diag__wrapper_8py_source.html#l00278">metplus.wrappers.grid_diag_wrapper.GridDiagWrapper.subset_input_files()</a>, and <a class="el" href="series__analysis__wrapper_8py_source.html#l00475">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.subset_input_files()</a>.</p>
 
 </div>
 </div>
@@ -363,9 +369,9 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00493">493</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00516">516</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00328">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.run_at_time_once()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00351">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.run_at_time_once()</a>.</p>
 
 </div>
 </div>
@@ -410,9 +416,9 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Input file list if all files were found, None if not. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00441">441</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00464">464</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00405">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.get_files_from_time()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00282">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time_once()</a>, and <a class="el" href="tc__gen__wrapper_8py_source.html#l00291">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.run_at_time_once()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00428">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.get_files_from_time()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00229">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time_once()</a>, and <a class="el" href="tc__gen__wrapper_8py_source.html#l00338">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.run_at_time_once()</a>.</p>
 
 </div>
 </div>
@@ -463,9 +469,9 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00794">794</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00810">810</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00328">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.run_at_time_once()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00351">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.run_at_time_once()</a>.</p>
 
 </div>
 </div>
@@ -520,9 +526,9 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string containing filename to use </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00584">584</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00607">607</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00493">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.create_ascii_storm_files_list()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00516">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.create_ascii_storm_files_list()</a>.</p>
 
 </div>
 </div>
@@ -545,9 +551,9 @@ Public Attributes</h2></td></tr>
 <p>Build command to run. </p>
 <dl class="section return"><dt>Returns</dt><dd>string of the command that will be called </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00771">771</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00787">787</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="tcmpr__plotter__wrapper_8py_source.html#l00386">metplus.wrappers.tcmpr_plotter_wrapper.TCMPRPlotterWrapper.build()</a>, <a class="el" href="tc__pairs__wrapper_8py_source.html#l00465">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.process_data()</a>, <a class="el" href="tc__pairs__wrapper_8py_source.html#l00178">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.run_all_times()</a>, and <a class="el" href="tcrmw__wrapper_8py_source.html#l00282">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time_once()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="tcmpr__plotter__wrapper_8py_source.html#l00386">metplus.wrappers.tcmpr_plotter_wrapper.TCMPRPlotterWrapper.build()</a>, and <a class="el" href="tcrmw__wrapper_8py_source.html#l00229">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time_once()</a>.</p>
 
 </div>
 </div>
@@ -587,9 +593,9 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>num, beg, end: A tuple representing the number of forecast tile files, and the first and last file. If info cannot be parsed, return (None, None, None) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00898">898</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00914">914</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00655">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.build_and_run_series_request()</a>, and <a class="el" href="series__analysis__wrapper_8py_source.html#l00794">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.generate_plots()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00678">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.build_and_run_series_request()</a>, and <a class="el" href="series__analysis__wrapper_8py_source.html#l00810">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.generate_plots()</a>.</p>
 
 </div>
 </div>
@@ -629,7 +635,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>dictionary containing time_info dict and any relevant files with a key representing a description of that file </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00405">405</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00428">428</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
 
 </div>
 </div>
@@ -668,9 +674,9 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>tuple containing strings of the formatted forecast and observation information or None, None if something went wrong </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00972">972</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00988">988</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00655">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.build_and_run_series_request()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00678">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.build_and_run_series_request()</a>.</p>
 
 </div>
 </div>
@@ -718,9 +724,9 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>tuple containing the minimum and maximum values or None, None if something went wrong </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00955">955</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00971">971</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00794">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.generate_plots()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00810">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.generate_plots()</a>.</p>
 
 </div>
 </div>
@@ -774,9 +780,9 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>path to output directory with filename templates substituted with the information for the current run </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00627">627</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00650">650</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00493">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.create_ascii_storm_files_list()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00516">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.create_ascii_storm_files_list()</a>.</p>
 
 </div>
 </div>
@@ -815,9 +821,9 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A list of all the storms ids that correspond to the current init time or None if filter file does not exist </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00374">374</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00397">397</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00405">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.get_files_from_time()</a>, and <a class="el" href="series__analysis__wrapper_8py_source.html#l00328">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.run_at_time_once()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00428">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.get_files_from_time()</a>, and <a class="el" href="series__analysis__wrapper_8py_source.html#l00351">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.run_at_time_once()</a>.</p>
 
 </div>
 </div>
@@ -840,7 +846,7 @@ Public Attributes</h2></td></tr>
 <p>Set values to allow successful initialization of PlotDataPlane wrapper. </p>
 <dl class="section return"><dt>Returns</dt><dd>instance of PlotDataPlaneWrapper </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00243">243</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00266">266</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
 
 </div>
 </div>
@@ -886,9 +892,9 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True on success, False otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00328">328</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00351">351</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00794">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.generate_plots()</a>, <a class="el" href="runtime__freq__wrapper_8py_source.html#l00100">metplus.wrappers.runtime_freq_wrapper.RuntimeFreqWrapper.run_all_times_custom()</a>, <a class="el" href="runtime__freq__wrapper_8py_source.html#l00196">metplus.wrappers.runtime_freq_wrapper.RuntimeFreqWrapper.run_at_time()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00261">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time()</a>, <a class="el" href="tc__gen__wrapper_8py_source.html#l00272">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.run_at_time()</a>, and <a class="el" href="series__analysis__wrapper_8py_source.html#l00279">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.run_once_per_lead()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00810">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.generate_plots()</a>, <a class="el" href="runtime__freq__wrapper_8py_source.html#l00100">metplus.wrappers.runtime_freq_wrapper.RuntimeFreqWrapper.run_all_times_custom()</a>, <a class="el" href="runtime__freq__wrapper_8py_source.html#l00196">metplus.wrappers.runtime_freq_wrapper.RuntimeFreqWrapper.run_at_time()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00208">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time()</a>, <a class="el" href="tc__gen__wrapper_8py_source.html#l00319">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.run_at_time()</a>, and <a class="el" href="series__analysis__wrapper_8py_source.html#l00302">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.run_once_per_lead()</a>.</p>
 
 </div>
 </div>
@@ -927,7 +933,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if all runs were successful, False otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00279">279</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00302">302</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
 
 </div>
 </div>
@@ -965,14 +971,14 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00756">756</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00772">772</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00655">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.build_and_run_series_request()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00282">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time_once()</a>, and <a class="el" href="tc__gen__wrapper_8py_source.html#l00291">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.run_at_time_once()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00678">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.build_and_run_series_request()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00229">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time_once()</a>, and <a class="el" href="tc__gen__wrapper_8py_source.html#l00338">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.run_at_time_once()</a>.</p>
 
 </div>
 </div>
-<a id="a3525e297fcafe86f781a0eeaa053f535"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3525e297fcafe86f781a0eeaa053f535">&#9670;&nbsp;</a></span>set_environment_variables()</h2>
+<a id="a5663c76a7e421e70807dc646e19f10df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5663c76a7e421e70807dc646e19f10df">&#9670;&nbsp;</a></span>set_environment_variables()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -987,19 +993,7 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>time_info</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>fcst_field</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>obs_field</em>&#160;</td>
+          <td class="paramname"><em>time_info</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1019,9 +1013,9 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00703">703</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00729">729</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00655">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.build_and_run_series_request()</a>, <a class="el" href="make__plots__wrapper_8py_source.html#l00092">metplus.wrappers.make_plots_wrapper.MakePlotsWrapper.create_c_dict()</a>, <a class="el" href="pcp__combine__wrapper_8py_source.html#l00401">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.get_accumulation()</a>, <a class="el" href="tc__pairs__wrapper_8py_source.html#l00178">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.run_all_times()</a>, <a class="el" href="py__embed__ingest__wrapper_8py_source.html#l00125">metplus.wrappers.py_embed_ingest_wrapper.PyEmbedIngestWrapper.run_at_time()</a>, <a class="el" href="tc__stat__wrapper_8py_source.html#l00174">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.run_at_time()</a>, <a class="el" href="gen__vx__mask__wrapper_8py_source.html#l00158">metplus.wrappers.gen_vx_mask_wrapper.GenVxMaskWrapper.run_at_time_all()</a>, <a class="el" href="tc__pairs__wrapper_8py_source.html#l00238">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.run_at_time_loop_string()</a>, <a class="el" href="user__script__wrapper_8py_source.html#l00056">metplus.wrappers.user_script_wrapper.UserScriptWrapper.run_at_time_once()</a>, <a class="el" href="plot__data__plane__wrapper_8py_source.html#l00140">metplus.wrappers.plot_data_plane_wrapper.PlotDataPlaneWrapper.run_at_time_once()</a>, <a class="el" href="point2grid__wrapper_8py_source.html#l00176">metplus.wrappers.point2grid_wrapper.Point2GridWrapper.run_at_time_once()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00282">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time_once()</a>, <a class="el" href="tc__gen__wrapper_8py_source.html#l00291">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.run_at_time_once()</a>, <a class="el" href="regrid__data__plane__wrapper_8py_source.html#l00412">metplus.wrappers.regrid_data_plane_wrapper.RegridDataPlaneWrapper.run_at_time_once()</a>, and <a class="el" href="stat__analysis__wrapper_8py_source.html#l01674">metplus.wrappers.stat_analysis_wrapper.StatAnalysisWrapper.run_stat_analysis_job()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00678">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.build_and_run_series_request()</a>, <a class="el" href="make__plots__wrapper_8py_source.html#l00092">metplus.wrappers.make_plots_wrapper.MakePlotsWrapper.create_c_dict()</a>, <a class="el" href="pcp__combine__wrapper_8py_source.html#l00401">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.get_accumulation()</a>, <a class="el" href="tc__pairs__wrapper_8py_source.html#l00506">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.process_data()</a>, <a class="el" href="tc__pairs__wrapper_8py_source.html#l00254">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.run_all_times()</a>, <a class="el" href="py__embed__ingest__wrapper_8py_source.html#l00125">metplus.wrappers.py_embed_ingest_wrapper.PyEmbedIngestWrapper.run_at_time()</a>, <a class="el" href="tc__stat__wrapper_8py_source.html#l00209">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.run_at_time()</a>, <a class="el" href="gen__vx__mask__wrapper_8py_source.html#l00158">metplus.wrappers.gen_vx_mask_wrapper.GenVxMaskWrapper.run_at_time_all()</a>, <a class="el" href="user__script__wrapper_8py_source.html#l00056">metplus.wrappers.user_script_wrapper.UserScriptWrapper.run_at_time_once()</a>, <a class="el" href="gempak__to__cf__wrapper_8py_source.html#l00098">metplus.wrappers.gempak_to_cf_wrapper.GempakToCFWrapper.run_at_time_once()</a>, <a class="el" href="plot__data__plane__wrapper_8py_source.html#l00140">metplus.wrappers.plot_data_plane_wrapper.PlotDataPlaneWrapper.run_at_time_once()</a>, <a class="el" href="point2grid__wrapper_8py_source.html#l00176">metplus.wrappers.point2grid_wrapper.Point2GridWrapper.run_at_time_once()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00229">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time_once()</a>, <a class="el" href="tc__gen__wrapper_8py_source.html#l00338">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.run_at_time_once()</a>, <a class="el" href="regrid__data__plane__wrapper_8py_source.html#l00412">metplus.wrappers.regrid_data_plane_wrapper.RegridDataPlaneWrapper.run_at_time_once()</a>, and <a class="el" href="stat__analysis__wrapper_8py_source.html#l01709">metplus.wrappers.stat_analysis_wrapper.StatAnalysisWrapper.run_stat_analysis_job()</a>.</p>
 
 </div>
 </div>
@@ -1060,9 +1054,34 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the path to a ascii file containing the list of files or None if could not find any files </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00452">452</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00475">475</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00493">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.create_ascii_storm_files_list()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00516">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.create_ascii_storm_files_list()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4d6f78e5596936ca49c006d8e549c330"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d6f78e5596936ca49c006d8e549c330">&#9670;&nbsp;</a></span>WRAPPER_ENV_VAR_KEYS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">list metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.WRAPPER_ENV_VAR_KEYS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=  [</div><div class="line">        <span class="stringliteral">&#39;METPLUS_MODEL&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_OBTYPE&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_DESC&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_REGRID_DICT&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_CAT_THRESH&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_FCST_FILE_TYPE&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_FCST_FIELD&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_OBS_FILE_TYPE&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_OBS_FIELD&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_CLIMO_MEAN_FILE&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_CLIMO_STDEV_FILE&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_BLOCK_SIZE&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_VLD_THRESH&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_CTS_LIST&#39;</span>,</div><div class="line">        <span class="stringliteral">&#39;METPLUS_STAT_LIST&#39;</span>,</div><div class="line">    ]</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="series__analysis__wrapper_8py_source.html#l00037">37</a> of file <a class="el" href="series__analysis__wrapper_8py_source.html">series_analysis_wrapper.py</a>.</p>
 
 </div>
 </div>

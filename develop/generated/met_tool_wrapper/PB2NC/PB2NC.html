@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>5.1.12.1. PB2NC: Basic Use Case &mdash; METplus 4.0.0-rc1-dev documentation</title>
+  <title>5.1.12.1. PB2NC: Basic Use Case &mdash; METplus 4.0.0-beta4-dev documentation</title>
   
 
   
@@ -45,7 +45,7 @@
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="METplus 4.0.0-rc1-dev documentation" href="../../../index.html"/>
+    <link rel="top" title="METplus 4.0.0-beta4-dev documentation" href="../../../index.html"/>
         <link rel="up" title="5.1. MET tools" href="../index.html"/>
         <link rel="next" title="5.1.13.1. PCPCombine: SUBTRACT Use Case" href="../PCPCombine/PCPCombine_subtract.html"/>
         <link rel="prev" title="5.1.11.2. Basic MTD Use Case" href="../MTD/MTD.html"/> 
@@ -357,26 +357,19 @@ with the -c option, i.e. -c parm/use_cases/met_tool_wrapper/PB2NC/PB2NC.conf</p>
 <span class="nv">PB2NC_OBS_BUFR_VAR_LIST</span> <span class="o">=</span> QOB, TOB, ZOB, UOB, VOB, D_DPT, D_WIND, D_RH, D_MIXR
 
 <span class="c1"># For defining the time periods for summarization</span>
-<span class="c1"># False for no time summary, True otherwise</span>
-<span class="c1"># The rest of the PB2NC_TIME_SUMMARY variables are ignored if set to False</span>
+
 <span class="nv">PB2NC_TIME_SUMMARY_FLAG</span> <span class="o">=</span> False
-
-<span class="c1"># start time of time summary in HHMMSS format</span>
-<span class="c1"># not used for this example</span>
 <span class="nv">PB2NC_TIME_SUMMARY_BEG</span> <span class="o">=</span> <span class="m">000000</span>
-
-<span class="c1"># end time of time summary in HHMMSS format</span>
-<span class="c1"># not used for this example</span>
 <span class="nv">PB2NC_TIME_SUMMARY_END</span> <span class="o">=</span> <span class="m">235959</span>
-
-<span class="c1"># list of time summary variable names to set in the PB2NC config file</span>
-<span class="c1"># not used for this example</span>
 <span class="nv">PB2NC_TIME_SUMMARY_VAR_NAMES</span> <span class="o">=</span>
+<span class="nv">PB2NC_TIME_SUMMARY_TYPES</span> <span class="o">=</span> min, max, range, mean, stdev, median, p80
 
-<span class="c1"># list of time summary types to set in the PB2NC config file</span>
-<span class="c1"># not used for this example</span>
-<span class="nv">PB2NC_TIME_SUMMARY_TYPES</span> <span class="o">=</span> min, max, range, mean, stdev, median, p80  <span class="p">;;</span> a list of the statistics to summarize
-
+<span class="nv">PB2NC_TIME_SUMMARY_RAW_DATA</span> <span class="o">=</span> False
+<span class="nv">PB2NC_TIME_SUMMARY_STEP</span> <span class="o">=</span> <span class="m">3600</span>
+<span class="nv">PB2NC_TIME_SUMMARY_WIDTH</span> <span class="o">=</span> <span class="m">3600</span>
+<span class="nv">PB2NC_TIME_SUMMARY_GRIB_CODES</span> <span class="o">=</span>
+<span class="nv">PB2NC_TIME_SUMMARY_VALID_FREQ</span> <span class="o">=</span> <span class="m">0</span>
+<span class="nv">PB2NC_TIME_SUMMARY_VALID_THRESH</span> <span class="o">=</span> <span class="m">0</span>.0
 
 <span class="c1"># End of [config] section and start of [dir] section</span>
 <span class="o">[</span>dir<span class="o">]</span>
@@ -556,6 +549,8 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 //version <span class="o">=</span> <span class="s2">&quot;V9.0&quot;</span><span class="p">;</span>
 
 ////////////////////////////////////////////////////////////////////////////////
+
+<span class="si">${</span><span class="nv">METPLUS_MET_CONFIG_OVERRIDES</span><span class="si">}</span>
 </pre></div>
 </div>
 <p>Note the following variables are referenced in the MET configuration file. Please see the MET User’s Guide section regarding PB2NC options for more information.</p>
@@ -579,12 +574,12 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 <p>This use case can be run two ways:</p>
 <ol class="arabic">
 <li><p>Passing in PB2NC.conf then a user-specific system configuration file:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>master_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/PB2NC/PB2NC.conf -c /path/to/user_system.conf
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>run_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/PB2NC/PB2NC.conf -c /path/to/user_system.conf
 </pre></div>
 </div>
 </li>
 <li><p>Modifying the configurations in parm/metplus_config, then passing in PB2NC.conf:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>master_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/PB2NC/PB2NC.conf
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>run_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/PB2NC/PB2NC.conf
 </pre></div>
 </div>
 </li>
@@ -660,7 +655,7 @@ and will contain the following file:</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2020, UCAR/NCAR, NOAA, CSU/CIRA, and CU/CIRES.
-      Last updated on Feb 11, 2021, 5:54:52 PM.
+      Last updated on Feb 25, 2021, 3:54:36 PM.
 
     </p>
   </div>

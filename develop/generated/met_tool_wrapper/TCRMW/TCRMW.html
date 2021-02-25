@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>5.1.24.1. TCRMW: Basic Use Case &mdash; METplus 4.0.0-rc1-dev documentation</title>
+  <title>5.1.24.1. TCRMW: Basic Use Case &mdash; METplus 4.0.0-beta4-dev documentation</title>
   
 
   
@@ -45,7 +45,7 @@
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="METplus 4.0.0-rc1-dev documentation" href="../../../index.html"/>
+    <link rel="top" title="METplus 4.0.0-beta4-dev documentation" href="../../../index.html"/>
         <link rel="up" title="5.1. MET tools" href="../index.html"/>
         <link rel="next" title="5.1.25.1. TCStat: Basic Use Case" href="../TCStat/TCStat.html"/>
         <link rel="prev" title="5.1.23.2. TCPairs: Basic Use Case for Extra Tropical Cyclones" href="../TCPairs/TCPairs_extra_tropical.html"/> 
@@ -394,20 +394,20 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 // <span class="si">${</span><span class="nv">VALID_HOUR_LIST</span><span class="si">}</span> sets <span class="s2">&quot;valid_hour = [&lt;user setting&gt;];&quot;</span>
 // <span class="si">${</span><span class="nv">LEAD_LIST</span><span class="si">}</span> sets <span class="s2">&quot;lead = [&lt;user setting&gt;];&quot;</span>
 
-<span class="si">${</span><span class="nv">MODEL</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_MODEL</span><span class="si">}</span>
 
-<span class="si">${</span><span class="nv">STORM_ID</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">BASIN</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">CYCLONE</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">INIT_INCLUDE</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_STORM_ID</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_BASIN</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_CYCLONE</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_INIT_INCLUDE</span><span class="si">}</span>
 
-<span class="si">${</span><span class="nv">VALID_BEG</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">VALID_END</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">VALID_INCLUDE_LIST</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">VALID_EXCLUDE_LIST</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_VALID_BEG</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_VALID_END</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_VALID_INCLUDE_LIST</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_VALID_EXCLUDE_LIST</span><span class="si">}</span>
 
-<span class="si">${</span><span class="nv">VALID_HOUR_LIST</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">LEAD_LIST</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_VALID_HOUR_LIST</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_LEAD_LIST</span><span class="si">}</span>
 
 //
 // May be <span class="nb">set</span> separately in each <span class="s2">&quot;field&quot;</span> entry
@@ -419,9 +419,9 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 // Data fields
 //
 <span class="nv">data</span> <span class="o">=</span> <span class="o">{</span>
-   <span class="si">${</span><span class="nv">DATA_FILE_TYPE</span><span class="si">}</span>
+   <span class="si">${</span><span class="nv">METPLUS_DATA_FILE_TYPE</span><span class="si">}</span>
 
-   <span class="nv">field</span> <span class="o">=</span> <span class="o">[</span> <span class="si">${</span><span class="nv">DATA_FIELD</span><span class="si">}</span> <span class="o">]</span><span class="p">;</span>
+   <span class="si">${</span><span class="nv">METPLUS_DATA_FIELD</span><span class="si">}</span>
 <span class="o">}</span>
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -444,17 +444,19 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 // <span class="si">${</span><span class="nv">DELTA_RANGE_KM</span><span class="si">}</span> sets <span class="s2">&quot;delta_range_km = &lt;user setting&gt;;&quot;</span>
 // <span class="si">${</span><span class="nv">RMW_SCALE</span><span class="si">}</span> sets <span class="s2">&quot;rmw_scale = &lt;user setting&gt;;&quot;</span>
 
-<span class="si">${</span><span class="nv">N_RANGE</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">N_AZIMUTH</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">MAX_RANGE_KM</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">DELTA_RANGE_KM</span><span class="si">}</span>
-<span class="si">${</span><span class="nv">RMW_SCALE</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_N_RANGE</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_N_AZIMUTH</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_MAX_RANGE_KM</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_DELTA_RANGE_KM</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_RMW_SCALE</span><span class="si">}</span>
 
 ////////////////////////////////////////////////////////////////////////////////
 
 //version <span class="o">=</span> <span class="s2">&quot;V10.0&quot;</span><span class="p">;</span>
 
 ////////////////////////////////////////////////////////////////////////////////
+
+<span class="si">${</span><span class="nv">METPLUS_MET_CONFIG_OVERRIDES</span><span class="si">}</span>
 </pre></div>
 </div>
 <p>See the <a class="reference internal" href="../../../Users_Guide/wrappers.html#tc-rmw-met-conf"><span class="std std-ref">TCRMW MET Configuration</span></a> section of the User’s Guide for more information on the environment variables set in this file.</p>
@@ -464,12 +466,12 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 <p>This use case can be run two ways:</p>
 <ol class="arabic">
 <li><p>Passing in TCRMW.conf then a user-specific system configuration file:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>master_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/TCRMW/TCRMW.conf -c /path/to/user_system.conf
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>run_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/TCRMW/TCRMW.conf -c /path/to/user_system.conf
 </pre></div>
 </div>
 </li>
 <li><p>Modifying the configurations in parm/metplus_config, then passing in TCRMW.conf:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>master_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/TCRMW/TCRMW.conf
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>run_metplus.py -c /path/to/METplus/parm/use_cases/met_tool_wrapper/TCRMW/TCRMW.conf
 </pre></div>
 </div>
 </li>
@@ -548,7 +550,7 @@ and will contain the following files:</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2020, UCAR/NCAR, NOAA, CSU/CIRA, and CU/CIRES.
-      Last updated on Feb 11, 2021, 5:54:52 PM.
+      Last updated on Feb 25, 2021, 3:54:36 PM.
 
     </p>
   </div>

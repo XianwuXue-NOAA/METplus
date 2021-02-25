@@ -66,6 +66,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classmetplus_1_1wrappers_1_1tc__stat__wrapper_1_1TCStatWrapper-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">metplus.wrappers.tc_stat_wrapper.TCStatWrapper Class Reference</div>  </div>
@@ -95,9 +96,9 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, co
 <tr class="memitem:ab3c5c8d8791779f4e4ffe02ef21ef096"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1tc__stat__wrapper_1_1TCStatWrapper.html#ab3c5c8d8791779f4e4ffe02ef21ef096">create_c_dict</a> (self)</td></tr>
 <tr class="memdesc:ab3c5c8d8791779f4e4ffe02ef21ef096"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in and store all the values from the config file.  <a href="#ab3c5c8d8791779f4e4ffe02ef21ef096">More...</a><br /></td></tr>
 <tr class="separator:ab3c5c8d8791779f4e4ffe02ef21ef096"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd58dccb05b6bff3b346ddff710cf826"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1tc__stat__wrapper_1_1TCStatWrapper.html#afd58dccb05b6bff3b346ddff710cf826">set_met_config_for_environment_variables</a> (self, c_dict)</td></tr>
-<tr class="memdesc:afd58dccb05b6bff3b346ddff710cf826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set c_dict dictionary entries that will be set as environment variables to be read by the MET config file.  <a href="#afd58dccb05b6bff3b346ddff710cf826">More...</a><br /></td></tr>
-<tr class="separator:afd58dccb05b6bff3b346ddff710cf826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfe5e9f8cb6e54e8047e9a8d19399d19"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1tc__stat__wrapper_1_1TCStatWrapper.html#acfe5e9f8cb6e54e8047e9a8d19399d19">set_met_config_for_environment_variables</a> (self)</td></tr>
+<tr class="memdesc:acfe5e9f8cb6e54e8047e9a8d19399d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set c_dict dictionary entries that will be set as environment variables to be read by the MET config file.  <a href="#acfe5e9f8cb6e54e8047e9a8d19399d19">More...</a><br /></td></tr>
+<tr class="separator:acfe5e9f8cb6e54e8047e9a8d19399d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a880bed6359cabf61e0b973d3d083d06e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1tc__stat__wrapper_1_1TCStatWrapper.html#a880bed6359cabf61e0b973d3d083d06e">run_at_time</a> (self, input_dict=None)</td></tr>
 <tr class="memdesc:a880bed6359cabf61e0b973d3d083d06e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds the call to the MET tool TC-STAT for all requested initialization times (init or valid).  <a href="#a880bed6359cabf61e0b973d3d083d06e">More...</a><br /></td></tr>
 <tr class="separator:a880bed6359cabf61e0b973d3d083d06e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,9 +111,6 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, co
 <tr class="memitem:abcc5bb771d54337b7b11a39b2480cb8a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1tc__stat__wrapper_1_1TCStatWrapper.html#abcc5bb771d54337b7b11a39b2480cb8a">handle_jobs</a> (self, time_info)</td></tr>
 <tr class="memdesc:abcc5bb771d54337b7b11a39b2480cb8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loop through job list found in c_dict key JOBS, create parent directory for -dump_row path if it is set, and format jobs string to pass to MET config file.  <a href="#abcc5bb771d54337b7b11a39b2480cb8a">More...</a><br /></td></tr>
 <tr class="separator:abcc5bb771d54337b7b11a39b2480cb8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4c6473f4df4ea5d094105b6a34afbef"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1tc__stat__wrapper_1_1TCStatWrapper.html#aa4c6473f4df4ea5d094105b6a34afbef">validate_config_values</a> (self, c_dict)</td></tr>
-<tr class="memdesc:aa4c6473f4df4ea5d094105b6a34afbef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify that the length of the name and val lists in the MET tc-stat config file are of equal length, if not, log an error message and exit.  <a href="#aa4c6473f4df4ea5d094105b6a34afbef">More...</a><br /></td></tr>
-<tr class="separator:aa4c6473f4df4ea5d094105b6a34afbef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -122,6 +120,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a9e5de102a38736e9598969bda5079227"><td class="memItemLeft" align="right" valign="top"><a id="a9e5de102a38736e9598969bda5079227"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>app_path</b></td></tr>
 <tr class="separator:a9e5de102a38736e9598969bda5079227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:aea95abf074b50b6885b5c8255dad7e84"><td class="memItemLeft" align="right" valign="top"><a id="aea95abf074b50b6885b5c8255dad7e84"></a>
+list&#160;</td><td class="memItemRight" valign="bottom"><b>WRAPPER_ENV_VAR_KEYS</b></td></tr>
+<tr class="separator:aea95abf074b50b6885b5c8255dad7e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab3c5c8d8791779f4e4ffe02ef21ef096"></a>
@@ -144,7 +148,7 @@ Public Attributes</h2></td></tr>
 <p>This will make it easier to reassign values while unit testing and make it easier when retrieving these values, especially when they are needed multiple times by different methods.</p>
 <dl class="section return"><dt>Returns</dt><dd>a dictionary of the key-value representation of options set in the config file. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="tc__stat__wrapper_8py_source.html#l00049">49</a> of file <a class="el" href="tc__stat__wrapper_8py_source.html">tc_stat_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tc__stat__wrapper_8py_source.html#l00088">88</a> of file <a class="el" href="tc__stat__wrapper_8py_source.html">tc_stat_wrapper.py</a>.</p>
 
 </div>
 </div>
@@ -167,9 +171,9 @@ Public Attributes</h2></td></tr>
 <p>Builds the command to run the MET application  string. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns a MET command with arguments that you can run </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="tc__stat__wrapper_8py_source.html#l00189">189</a> of file <a class="el" href="tc__stat__wrapper_8py_source.html">tc_stat_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tc__stat__wrapper_8py_source.html#l00229">229</a> of file <a class="el" href="tc__stat__wrapper_8py_source.html">tc_stat_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="tcmpr__plotter__wrapper_8py_source.html#l00386">metplus.wrappers.tcmpr_plotter_wrapper.TCMPRPlotterWrapper.build()</a>, and <a class="el" href="tcrmw__wrapper_8py_source.html#l00282">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time_once()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="tcmpr__plotter__wrapper_8py_source.html#l00386">metplus.wrappers.tcmpr_plotter_wrapper.TCMPRPlotterWrapper.build()</a>, and <a class="el" href="tcrmw__wrapper_8py_source.html#l00229">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time_once()</a>.</p>
 
 </div>
 </div>
@@ -208,9 +212,9 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>formatted jobs string as jobs = ["job1", "job2"]; or None if command should be skipped </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="tc__stat__wrapper_8py_source.html#l00269">269</a> of file <a class="el" href="tc__stat__wrapper_8py_source.html">tc_stat_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tc__stat__wrapper_8py_source.html#l00309">309</a> of file <a class="el" href="tc__stat__wrapper_8py_source.html">tc_stat_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="tc__stat__wrapper_8py_source.html#l00203">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.set_environment_variables()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="tc__stat__wrapper_8py_source.html#l00209">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.run_at_time()</a>.</p>
 
 </div>
 </div>
@@ -241,9 +245,9 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Builds the call to the MET tool TC-STAT for all requested initialization times (init or valid). </p>
-<p>Called from <a class="el" href="namespacemaster__metplus.html">master_metplus</a> </p>
+<p>Called from <a class="el" href="namespacerun__metplus.html">run_metplus</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="tc__stat__wrapper_8py_source.html#l00174">174</a> of file <a class="el" href="tc__stat__wrapper_8py_source.html">tc_stat_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tc__stat__wrapper_8py_source.html#l00209">209</a> of file <a class="el" href="tc__stat__wrapper_8py_source.html">tc_stat_wrapper.py</a>.</p>
 
 </div>
 </div>
@@ -280,16 +284,15 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if command should be run, False if skipping </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="tc__stat__wrapper_8py_source.html#l00203">203</a> of file <a class="el" href="tc__stat__wrapper_8py_source.html">tc_stat_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tc__stat__wrapper_8py_source.html#l00243">243</a> of file <a class="el" href="tc__stat__wrapper_8py_source.html">tc_stat_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="make__plots__wrapper_8py_source.html#l00092">metplus.wrappers.make_plots_wrapper.MakePlotsWrapper.create_c_dict()</a>, <a class="el" href="pcp__combine__wrapper_8py_source.html#l00401">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.get_accumulation()</a>, <a class="el" href="py__embed__ingest__wrapper_8py_source.html#l00125">metplus.wrappers.py_embed_ingest_wrapper.PyEmbedIngestWrapper.run_at_time()</a>, <a class="el" href="tc__stat__wrapper_8py_source.html#l00174">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.run_at_time()</a>, <a class="el" href="gen__vx__mask__wrapper_8py_source.html#l00158">metplus.wrappers.gen_vx_mask_wrapper.GenVxMaskWrapper.run_at_time_all()</a>, <a class="el" href="user__script__wrapper_8py_source.html#l00056">metplus.wrappers.user_script_wrapper.UserScriptWrapper.run_at_time_once()</a>, <a class="el" href="plot__data__plane__wrapper_8py_source.html#l00140">metplus.wrappers.plot_data_plane_wrapper.PlotDataPlaneWrapper.run_at_time_once()</a>, <a class="el" href="point2grid__wrapper_8py_source.html#l00176">metplus.wrappers.point2grid_wrapper.Point2GridWrapper.run_at_time_once()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00282">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time_once()</a>, <a class="el" href="regrid__data__plane__wrapper_8py_source.html#l00412">metplus.wrappers.regrid_data_plane_wrapper.RegridDataPlaneWrapper.run_at_time_once()</a>, and <a class="el" href="stat__analysis__wrapper_8py_source.html#l01674">metplus.wrappers.stat_analysis_wrapper.StatAnalysisWrapper.run_stat_analysis_job()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="make__plots__wrapper_8py_source.html#l00092">metplus.wrappers.make_plots_wrapper.MakePlotsWrapper.create_c_dict()</a>, <a class="el" href="pcp__combine__wrapper_8py_source.html#l00401">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.get_accumulation()</a>, <a class="el" href="py__embed__ingest__wrapper_8py_source.html#l00125">metplus.wrappers.py_embed_ingest_wrapper.PyEmbedIngestWrapper.run_at_time()</a>, <a class="el" href="tc__stat__wrapper_8py_source.html#l00209">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.run_at_time()</a>, <a class="el" href="gen__vx__mask__wrapper_8py_source.html#l00158">metplus.wrappers.gen_vx_mask_wrapper.GenVxMaskWrapper.run_at_time_all()</a>, <a class="el" href="user__script__wrapper_8py_source.html#l00056">metplus.wrappers.user_script_wrapper.UserScriptWrapper.run_at_time_once()</a>, <a class="el" href="gempak__to__cf__wrapper_8py_source.html#l00098">metplus.wrappers.gempak_to_cf_wrapper.GempakToCFWrapper.run_at_time_once()</a>, <a class="el" href="plot__data__plane__wrapper_8py_source.html#l00140">metplus.wrappers.plot_data_plane_wrapper.PlotDataPlaneWrapper.run_at_time_once()</a>, <a class="el" href="point2grid__wrapper_8py_source.html#l00176">metplus.wrappers.point2grid_wrapper.Point2GridWrapper.run_at_time_once()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00229">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time_once()</a>, <a class="el" href="tc__gen__wrapper_8py_source.html#l00338">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.run_at_time_once()</a>, <a class="el" href="regrid__data__plane__wrapper_8py_source.html#l00412">metplus.wrappers.regrid_data_plane_wrapper.RegridDataPlaneWrapper.run_at_time_once()</a>, and <a class="el" href="stat__analysis__wrapper_8py_source.html#l01709">metplus.wrappers.stat_analysis_wrapper.StatAnalysisWrapper.run_stat_analysis_job()</a>.</p>
 
 </div>
 </div>
-<a id="afd58dccb05b6bff3b346ddff710cf826"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd58dccb05b6bff3b346ddff710cf826">&#9670;&nbsp;</a></span>set_met_config_for_environment_variables()</h2>
+<a id="acfe5e9f8cb6e54e8047e9a8d19399d19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfe5e9f8cb6e54e8047e9a8d19399d19">&#9670;&nbsp;</a></span>set_met_config_for_environment_variables()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -298,18 +301,8 @@ Public Attributes</h2></td></tr>
           <td class="memname">def metplus.wrappers.tc_stat_wrapper.TCStatWrapper.set_met_config_for_environment_variables </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>self</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>c_dict</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -322,46 +315,9 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="tc__stat__wrapper_8py_source.html#l00099">99</a> of file <a class="el" href="tc__stat__wrapper_8py_source.html">tc_stat_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tc__stat__wrapper_8py_source.html#l00140">140</a> of file <a class="el" href="tc__stat__wrapper_8py_source.html">tc_stat_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="tc__stat__wrapper_8py_source.html#l00049">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.create_c_dict()</a>.</p>
-
-</div>
-</div>
-<a id="aa4c6473f4df4ea5d094105b6a34afbef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4c6473f4df4ea5d094105b6a34afbef">&#9670;&nbsp;</a></span>validate_config_values()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def metplus.wrappers.tc_stat_wrapper.TCStatWrapper.validate_config_values </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>c_dict</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Verify that the length of the name and val lists in the MET tc-stat config file are of equal length, if not, log an error message and exit. </p>
-<p>As soon as a length mismatch is encountered, return False.</p>
-<p>Args:</p>
-<p>Returns: True: if all corresponding &lt;&gt;_NAME and &lt;&gt;_VAL lists have the same length False: if any name/val list length mismatch is encountered </p>
-
-<p class="definition">Definition at line <a class="el" href="tc__stat__wrapper_8py_source.html#l00300">300</a> of file <a class="el" href="tc__stat__wrapper_8py_source.html">tc_stat_wrapper.py</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="tc__stat__wrapper_8py_source.html#l00099">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.set_met_config_for_environment_variables()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="tc__stat__wrapper_8py_source.html#l00088">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.create_c_dict()</a>.</p>
 
 </div>
 </div>

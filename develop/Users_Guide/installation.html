@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>2. Software Installation/Getting Started &mdash; METplus 4.0.0-rc1-dev documentation</title>
+  <title>2. Software Installation/Getting Started &mdash; METplus 4.0.0-beta4-dev documentation</title>
   
 
   
@@ -45,7 +45,7 @@
         <link rel="index" title="Index"
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="METplus 4.0.0-rc1-dev documentation" href="../index.html"/>
+    <link rel="top" title="METplus 4.0.0-beta4-dev documentation" href="../index.html"/>
         <link rel="up" title="User’s Guide" href="index.html"/>
         <link rel="next" title="3. System Configuration" href="systemconfiguration.html"/>
         <link rel="prev" title="1. Overview" href="overview.html"/> 
@@ -472,7 +472,7 @@ METplus Wrappers run and do not need to be invoked on the command line.</p>
 <ul>
 <li><p>runtime-related settings:</p>
 <ul>
-<li><p>location of METplus master_metplus.conf file (the ‘master’ conf
+<li><p>location of METplus run_metplus.conf file (the conf
 file that is a collection of all the final METplus
 configuration files)</p></li>
 </ul>
@@ -590,7 +590,7 @@ After:
 </div>
 <div class="section" id="sed-commands">
 <h3><span class="section-number">2.11.5. </span>SED Commands<a class="headerlink" href="#sed-commands" title="Permalink to this headline">¶</a></h3>
-<p>Running master_metplus.py with one or more configuration files that contain deprecated variables that can be fixed with a find/replace command will generate a file in the {OUTPUT_BASE} called sed_commands.txt. This file contains a list of commands that can be run to update the configuration file. Lines that start with “#Add” are intended to notify the user to add a variable to their METplus configuration file.</p>
+<p>Running run_metplus.py with one or more configuration files that contain deprecated variables that can be fixed with a find/replace command will generate a file in the {OUTPUT_BASE} called sed_commands.txt. This file contains a list of commands that can be run to update the configuration file. Lines that start with “#Add” are intended to notify the user to add a variable to their METplus configuration file.</p>
 <p>The <a class="reference internal" href="#validate-config"><span class="std std-ref">Validate Config Helper Script</span></a> will step you through each of these commands and execute them upon your approval.</p>
 <p>Example sed_commands.txt content:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sed</span> <span class="o">-</span><span class="n">i</span> <span class="s1">&#39;s|^   to_grid    = $</span><span class="si">{GRID_VX}</span><span class="s1">;|   to_grid    = $</span><span class="si">{REGRID_TO_GRID}</span><span class="s1">;|g&#39;</span> <span class="n">DeprecatedConfig</span>
@@ -606,8 +606,8 @@ After:
 </div>
 <div class="section" id="validate-config-helper-script">
 <span id="validate-config"></span><h3><span class="section-number">2.11.6. </span>Validate Config Helper Script<a class="headerlink" href="#validate-config-helper-script" title="Permalink to this headline">¶</a></h3>
-<p>The script named validate_config.py is found in the same directory as master_metplus.py. To use this script, call it with the same arguments that you would pass to master_metplus.py:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">master_metplus</span><span class="o">.</span><span class="n">py</span>  <span class="o">-</span><span class="n">c</span> <span class="o">./</span><span class="n">my_conf</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">c</span> <span class="o">./</span><span class="n">another_config</span><span class="o">.</span><span class="n">py</span>
+<p>The script named validate_config.py is found in the same directory as run_metplus.py. To use this script, call it with the same arguments that you would pass to run_metplus.py:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">run_metplus</span><span class="o">.</span><span class="n">py</span>  <span class="o">-</span><span class="n">c</span> <span class="o">./</span><span class="n">my_conf</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">c</span> <span class="o">./</span><span class="n">another_config</span><span class="o">.</span><span class="n">py</span>
 <span class="n">validate_config</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">c</span> <span class="o">./</span><span class="n">my_conf</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">c</span> <span class="o">./</span><span class="n">another_config</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
@@ -692,7 +692,7 @@ Make this change before continuing! [OK]
 <div class="section" id="running-metplus-wrappers">
 <h2><span class="section-number">2.12. </span>Running METplus Wrappers<a class="headerlink" href="#running-metplus-wrappers" title="Permalink to this headline">¶</a></h2>
 <p>Running METplus Wrappers involves invoking the Python script
-master_metplus.py from any directory followed by a list of configuration
+run_metplus.py from any directory followed by a list of configuration
 files (file path relative to the
 <em>&lt;path_to_METplus_install_dir&gt;</em>/parm directory).</p>
 <div class="admonition note">
@@ -717,16 +717,16 @@ Copy and paste the following into an empty text file and name it ‘my_user_conf
 <span class="n">OUTPUT_BASE</span> <span class="o">=</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">output</span>
 </pre></div>
 </div>
-<p>Run METplus via: <code class="docutils literal notranslate"><span class="pre">master_metplus.py</span> <span class="pre">-c</span> <span class="pre">./&lt;my_user_config.conf&gt;</span></code> or <code class="docutils literal notranslate"><span class="pre">master_metplus.py</span> <span class="pre">-c</span> <span class="pre">/&lt;username&gt;/&lt;my_user_config.conf&gt;</span></code> if you saved your default config in a directory other than where you are running master_metplus.py.</p>
+<p>Run METplus via: <code class="docutils literal notranslate"><span class="pre">run_metplus.py</span> <span class="pre">-c</span> <span class="pre">./&lt;my_user_config.conf&gt;</span></code> or <code class="docutils literal notranslate"><span class="pre">run_metplus.py</span> <span class="pre">-c</span> <span class="pre">/&lt;username&gt;/&lt;my_user_config.conf&gt;</span></code> if you saved your default config in a directory other than where you are running run_metplus.py.</p>
 <p>When the above command is run, a usage message appears indicating that other config files are required to perform useful tasks, as well as a list of currently supported wrappers:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">USAGE</span><span class="p">:</span> <span class="n">This</span> <span class="n">text</span> <span class="ow">is</span> <span class="n">displayed</span> <span class="n">when</span> <span class="p">[</span><span class="n">config</span><span class="p">]</span> <span class="n">PROCESS_LIST</span> <span class="o">=</span> <span class="n">Usage</span><span class="o">.</span>
 <span class="n">Pass</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">configuration</span> <span class="n">file</span> <span class="p">(</span><span class="k">with</span> <span class="o">-</span><span class="n">c</span> <span class="ow">or</span> <span class="o">--</span><span class="n">config</span><span class="p">)</span> <span class="n">that</span> <span class="n">overrides</span> <span class="p">[</span><span class="n">config</span><span class="p">]</span> <span class="n">PROCESS_LIST</span> <span class="n">to</span> <span class="n">run</span> <span class="n">other</span> <span class="n">processes</span><span class="o">.</span> <span class="n">For</span> <span class="n">example</span><span class="p">:</span>
 
-<span class="n">master_metplus</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">c</span> <span class="n">parm</span><span class="o">/</span><span class="n">use_cases</span><span class="o">/</span><span class="n">met_tool_wrapper</span><span class="o">/</span><span class="n">GridStat</span><span class="o">/</span><span class="n">GridStat</span><span class="o">.</span><span class="n">conf</span>
+<span class="n">run_metplus</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">c</span> <span class="n">parm</span><span class="o">/</span><span class="n">use_cases</span><span class="o">/</span><span class="n">met_tool_wrapper</span><span class="o">/</span><span class="n">GridStat</span><span class="o">/</span><span class="n">GridStat</span><span class="o">.</span><span class="n">conf</span>
 
 <span class="ow">or</span>
 
-<span class="n">master_metplus</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">config</span> <span class="n">parm</span><span class="o">/</span><span class="n">use_cases</span><span class="o">/</span><span class="n">model_applications</span><span class="o">/</span><span class="n">precipitation</span><span class="o">/</span><span class="n">GridStat_fcstHRRR</span><span class="o">-</span><span class="n">TLE_obsStgIV_GRIB</span><span class="o">.</span><span class="n">conf</span>
+<span class="n">run_metplus</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">config</span> <span class="n">parm</span><span class="o">/</span><span class="n">use_cases</span><span class="o">/</span><span class="n">model_applications</span><span class="o">/</span><span class="n">precipitation</span><span class="o">/</span><span class="n">GridStat_fcstHRRR</span><span class="o">-</span><span class="n">TLE_obsStgIV_GRIB</span><span class="o">.</span><span class="n">conf</span>
 
 <span class="n">Possible</span> <span class="n">processes</span><span class="p">:</span>
 <span class="o">-</span> <span class="n">ASCII2NC</span>
@@ -761,20 +761,20 @@ Copy and paste the following into an empty text file and name it ‘my_user_conf
 </div>
 <p><strong>Example 2: Using a use-case configuration:</strong></p>
 <p>The command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">master_metplus</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">c</span> <span class="n">use_cases</span><span class="o">/</span><span class="n">met_tool_wrapper</span><span class="o">/</span><span class="n">GridStat</span><span class="o">/</span><span class="n">GridStat</span><span class="o">.</span><span class="n">conf</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">run_metplus</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">c</span> <span class="n">use_cases</span><span class="o">/</span><span class="n">met_tool_wrapper</span><span class="o">/</span><span class="n">GridStat</span><span class="o">/</span><span class="n">GridStat</span><span class="o">.</span><span class="n">conf</span>
 </pre></div>
 </div>
 <p>will run METplus using the defaults set in the config files found in parm/metplus_config. Any variables defined in these three config files can be overridden in the parm/use_cases/GridStat/GridStat.conf file. METplus will run using the values specified in the GridStat.conf file.</p>
 <p><strong>Example 3: Using example configuration to perform a specific evaluation (e.g. Model 1 vs. Obs 1, Model 1 vs. Obs 2, Model 2 vs. Obs 1, etc…):</strong></p>
 <p>The command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">master_metplus</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">c</span> <span class="n">use_cases</span><span class="o">/</span><span class="n">met_tool_wrapper</span><span class="o">/</span><span class="n">GridStat</span><span class="o">/</span><span class="n">GridStat</span><span class="o">.</span><span class="n">conf</span> \
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">run_metplus</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">c</span> <span class="n">use_cases</span><span class="o">/</span><span class="n">met_tool_wrapper</span><span class="o">/</span><span class="n">GridStat</span><span class="o">/</span><span class="n">GridStat</span><span class="o">.</span><span class="n">conf</span> \
 <span class="o">-</span><span class="n">c</span> <span class="n">use_cases</span><span class="o">/</span><span class="n">met_tool_wrapper</span><span class="o">/</span><span class="n">GridStat</span><span class="o">/</span><span class="n">GridStat_forecast</span><span class="o">.</span><span class="n">conf</span> \
 <span class="o">-</span><span class="n">c</span> <span class="n">use_cases</span><span class="o">/</span><span class="n">met_tool_wrapper</span><span class="o">/</span><span class="n">GridStat</span><span class="o">/</span><span class="n">GridStat_observation</span><span class="o">.</span><span class="n">conf</span>
 </pre></div>
 </div>
 <p>will run METplus using the defaults set in the config files in parm/metplus_config, where variables can be overridden by parm/use_cases/met_tool_wrapper/GridStat/GridStat.conf, then by parm/use_cases/met_tool_wrapper/GridStat/GridStat_forecast.conf, then by parm/use_cases/met_tool_wrapper/GridStat/GridStat_observation.conf. The order in which conf files are called is important. Variables that are defined in intermediate conf files will be overridden by the same variables set in the conf file following it, or the last conf file. For example, if FCST_VAR1_NAME = TMP in GridStat.conf and FCST_VAR1_NAME = TEMP in GridStat_forecast.conf, the value used will be TEMP because GridStat_forecast.conf was read after GridStat.conf.</p>
 <p>Separating configurations into multiple files can be useful if you want to compare different forecasts or observations in the same way. For example, to compare a different forecast to the observation in this example, copy GridStat_forecast.conf into a directory outside of the METplus repository (i.e. /home/user/METplus_user_config), rename it (i.e. GridStat_myforecast.conf), then change the values to match the new data set (input directory, input filename template, field name, etc.). Then you can run the new use case:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">master_metplus</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">c</span> <span class="n">use_cases</span><span class="o">/</span><span class="n">met_tool_wrapper</span><span class="o">/</span><span class="n">GridStat</span><span class="o">/</span><span class="n">GridStat</span><span class="o">.</span><span class="n">conf</span> \
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">run_metplus</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">c</span> <span class="n">use_cases</span><span class="o">/</span><span class="n">met_tool_wrapper</span><span class="o">/</span><span class="n">GridStat</span><span class="o">/</span><span class="n">GridStat</span><span class="o">.</span><span class="n">conf</span> \
 <span class="o">-</span><span class="n">c</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">user</span><span class="o">/</span><span class="n">METplus_user_config</span><span class="o">/</span><span class="n">GridStat_myforecast</span><span class="o">.</span><span class="n">conf</span> \
 <span class="o">-</span><span class="n">c</span> <span class="n">use_cases</span><span class="o">/</span><span class="n">met_tool_wrapper</span><span class="o">/</span><span class="n">GridStat</span><span class="o">/</span><span class="n">GridStat_observation</span><span class="o">.</span><span class="n">conf</span>
 </pre></div>
@@ -805,7 +805,7 @@ Copy and paste the following into an empty text file and name it ‘my_user_conf
   <div role="contentinfo">
     <p>
         &copy; Copyright 2020, UCAR/NCAR, NOAA, CSU/CIRA, and CU/CIRES.
-      Last updated on Feb 11, 2021, 5:54:52 PM.
+      Last updated on Feb 25, 2021, 3:54:36 PM.
 
     </p>
   </div>

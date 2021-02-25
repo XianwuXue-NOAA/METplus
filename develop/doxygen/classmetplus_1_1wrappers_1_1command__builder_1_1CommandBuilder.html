@@ -89,6 +89,9 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, co
 <tr class="memitem:abdc2dbeb1a08198a09c9a6b2d62ce247"><td class="memItemLeft" align="right" valign="top"><a id="abdc2dbeb1a08198a09c9a6b2d62ce247"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>override_config</b> (self, config_overrides)</td></tr>
 <tr class="separator:abdc2dbeb1a08198a09c9a6b2d62ce247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a027a59b9a6bce73270220f2717aa1c62"><td class="memItemLeft" align="right" valign="top"><a id="a027a59b9a6bce73270220f2717aa1c62"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>check_for_unused_env_vars</b> (self)</td></tr>
+<tr class="separator:a027a59b9a6bce73270220f2717aa1c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca3a4f5734ebdfe84373269a7ce41211"><td class="memItemLeft" align="right" valign="top"><a id="aca3a4f5734ebdfe84373269a7ce41211"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>create_c_dict</b> (self)</td></tr>
 <tr class="separator:aca3a4f5734ebdfe84373269a7ce41211"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -102,19 +105,25 @@ def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memitem:a2e11589a1cce45f1ccab1fd5c879d18f"><td class="memItemLeft" align="right" valign="top"><a id="a2e11589a1cce45f1ccab1fd5c879d18f"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>log_error</b> (self, error_string)</td></tr>
 <tr class="separator:a2e11589a1cce45f1ccab1fd5c879d18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04f05ab3194bf92b52ca66854c1cac0e"><td class="memItemLeft" align="right" valign="top"><a id="a04f05ab3194bf92b52ca66854c1cac0e"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#a04f05ab3194bf92b52ca66854c1cac0e">set_user_environment</a> (self, time_info=None)</td></tr>
-<tr class="memdesc:a04f05ab3194bf92b52ca66854c1cac0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set environment variables defined in [user_env_vars] section of config. <br /></td></tr>
-<tr class="separator:a04f05ab3194bf92b52ca66854c1cac0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31f56354b6162e4f755b03891433d99e"><td class="memItemLeft" align="right" valign="top"><a id="a31f56354b6162e4f755b03891433d99e"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#a31f56354b6162e4f755b03891433d99e">set_user_environment</a> (self, time_info)</td></tr>
+<tr class="memdesc:a31f56354b6162e4f755b03891433d99e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set environment variables defined in [user_env_vars] section of config. <br /></td></tr>
+<tr class="separator:a31f56354b6162e4f755b03891433d99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a762d53308fcf2c601bebfeb775935216"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#a762d53308fcf2c601bebfeb775935216">print_all_envs</a> (self, print_copyable=True)</td></tr>
 <tr class="memdesc:a762d53308fcf2c601bebfeb775935216"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create list of log messages that output all environment variables that were set by this wrapper.  <a href="#a762d53308fcf2c601bebfeb775935216">More...</a><br /></td></tr>
 <tr class="separator:a762d53308fcf2c601bebfeb775935216"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa96a642dd5599e8d0d9e26cf85bcb639"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#aa96a642dd5599e8d0d9e26cf85bcb639">handle_window_once</a> (self, c_dict, dtype, edge, app_name)</td></tr>
-<tr class="memdesc:aa96a642dd5599e8d0d9e26cf85bcb639"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check and set window dictionary variables like OBS_WINDOW_BEG or FCST_FILE_WINDW_END Args:  <a href="#aa96a642dd5599e8d0d9e26cf85bcb639">More...</a><br /></td></tr>
-<tr class="separator:aa96a642dd5599e8d0d9e26cf85bcb639"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc15362881592ce680cf2dd51384c348"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#acc15362881592ce680cf2dd51384c348">handle_window_variables</a> (self, c_dict, app_name, dtypes=['FCST', OBS)</td></tr>
-<tr class="memdesc:acc15362881592ce680cf2dd51384c348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle all window config variables like [FCST/OBS]_&lt;app_name&gt;_WINDOW_[BEGIN/END] and [FCST/OBS]_&lt;app_name&gt;_FILE_WINDOW_[BEGIN/END] Args:  <a href="#acc15362881592ce680cf2dd51384c348">More...</a><br /></td></tr>
-<tr class="separator:acc15362881592ce680cf2dd51384c348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21806289170dd44655cc1100e3104709"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#a21806289170dd44655cc1100e3104709">handle_window_once</a> (self, input_list, default_val=0)</td></tr>
+<tr class="memdesc:a21806289170dd44655cc1100e3104709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check and set window dictionary variables like OBS_WINDOW_BEG or FCST_FILE_WINDW_END.  <a href="#a21806289170dd44655cc1100e3104709">More...</a><br /></td></tr>
+<tr class="separator:a21806289170dd44655cc1100e3104709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae56f2cbc42ee095b21af3433144af869"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#ae56f2cbc42ee095b21af3433144af869">handle_obs_window_variables</a> (self, c_dict)</td></tr>
+<tr class="memdesc:ae56f2cbc42ee095b21af3433144af869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle obs window config variables like OBS_&lt;app_name&gt;_WINDOW_[BEGIN/END].  <a href="#ae56f2cbc42ee095b21af3433144af869">More...</a><br /></td></tr>
+<tr class="separator:ae56f2cbc42ee095b21af3433144af869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dacf52f80fb785cab6104095e48d1da"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#a6dacf52f80fb785cab6104095e48d1da">handle_file_window_variables</a> (self, c_dict, dtypes=['FCST', OBS)</td></tr>
+<tr class="memdesc:a6dacf52f80fb785cab6104095e48d1da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle all window config variables like [FCST/OBS]_&lt;app_name&gt;_WINDOW_[BEGIN/END] and [FCST/OBS]_&lt;app_name&gt;_FILE_WINDOW_[BEGIN/END] Args:  <a href="#a6dacf52f80fb785cab6104095e48d1da">More...</a><br /></td></tr>
+<tr class="separator:a6dacf52f80fb785cab6104095e48d1da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a457efab78a137f6b1b206e23a4a3605b"><td class="memItemLeft" align="right" valign="top"><a id="a457efab78a137f6b1b206e23a4a3605b"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>set_met_config_obs_window</b> (self, c_dict)</td></tr>
+<tr class="separator:a457efab78a137f6b1b206e23a4a3605b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a132a812c6a69925923fb7174346be3ed"><td class="memItemLeft" align="right" valign="top"><a id="a132a812c6a69925923fb7174346be3ed"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#a132a812c6a69925923fb7174346be3ed">set_output_path</a> (self, outpath)</td></tr>
 <tr class="memdesc:a132a812c6a69925923fb7174346be3ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split path into directory and filename then save both. <br /></td></tr>
@@ -145,7 +154,7 @@ def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memdesc:aa8c8661f2c5a63a95a447f71c555cccc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the observation file to compare Args:  <a href="#aa8c8661f2c5a63a95a447f71c555cccc">More...</a><br /></td></tr>
 <tr class="separator:aa8c8661f2c5a63a95a447f71c555cccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a211836aac189a0de8a65758cbbf8cb14"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#a211836aac189a0de8a65758cbbf8cb14">find_obs_offset</a> (self, time_info, var_info=None, mandatory=True, return_list=False)</td></tr>
-<tr class="memdesc:a211836aac189a0de8a65758cbbf8cb14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the observation file to compare, looping through offset list until a file is found Args:  <a href="#a211836aac189a0de8a65758cbbf8cb14">More...</a><br /></td></tr>
+<tr class="memdesc:a211836aac189a0de8a65758cbbf8cb14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the observation file to compare, looping through offset list until a file is found.  <a href="#a211836aac189a0de8a65758cbbf8cb14">More...</a><br /></td></tr>
 <tr class="separator:a211836aac189a0de8a65758cbbf8cb14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5c7646c93e324be6970bf8a9508085c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#af5c7646c93e324be6970bf8a9508085c">find_data</a> (self, time_info, var_info=None, data_type='', mandatory=True, return_list=False, allow_dir=False)</td></tr>
 <tr class="memdesc:af5c7646c93e324be6970bf8a9508085c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the data file to compare Args:  <a href="#af5c7646c93e324be6970bf8a9508085c">More...</a><br /></td></tr>
@@ -187,6 +196,9 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>check_gempaktocf</b> (
 <tr class="memitem:a29a63cc29d27fcb22561c1474cdd443f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#a29a63cc29d27fcb22561c1474cdd443f">get_field_info</a> (self, d_type, v_name, v_level='', v_thresh=[], v_extra='')</td></tr>
 <tr class="memdesc:a29a63cc29d27fcb22561c1474cdd443f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format field information into format expected by MET config file Args:  <a href="#a29a63cc29d27fcb22561c1474cdd443f">More...</a><br /></td></tr>
 <tr class="separator:a29a63cc29d27fcb22561c1474cdd443f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd64a03fdc3879d87ff6bccc5f5159b4"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#afd64a03fdc3879d87ff6bccc5f5159b4">read_mask_poly</a> (self)</td></tr>
+<tr class="memdesc:afd64a03fdc3879d87ff6bccc5f5159b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read old or new config variables used to set mask.poly in MET config files.  <a href="#afd64a03fdc3879d87ff6bccc5f5159b4">More...</a><br /></td></tr>
+<tr class="separator:afd64a03fdc3879d87ff6bccc5f5159b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fd7645d4723aa43792f6d2348e3ee24"><td class="memItemLeft" align="right" valign="top"><a id="a8fd7645d4723aa43792f6d2348e3ee24"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#a8fd7645d4723aa43792f6d2348e3ee24">get_verification_mask</a> (self, time_info)</td></tr>
 <tr class="memdesc:a8fd7645d4723aa43792f6d2348e3ee24"><td class="mdescLeft">&#160;</td><td class="mdescRight">If verification mask template is set in the config file, use it to find the verification mask filename. <br /></td></tr>
@@ -212,42 +224,39 @@ def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memitem:ab3365ab0f84526b2dc30310568556753"><td class="memItemLeft" align="right" valign="top"><a id="ab3365ab0f84526b2dc30310568556753"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>set_time_dict_for_single_runtime</b> (self, c_dict)</td></tr>
 <tr class="separator:ab3365ab0f84526b2dc30310568556753"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb10b7e3accabd2be904dab0e116a2e6"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#adb10b7e3accabd2be904dab0e116a2e6">set_met_config_list</a> (self, c_dict, mp_config_name, met_config_name, c_dict_key=None, remove_quotes=False, allow_empty=False)</td></tr>
-<tr class="memdesc:adb10b7e3accabd2be904dab0e116a2e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get list from METplus configuration file and format it to be passed into a MET configuration file.  <a href="#adb10b7e3accabd2be904dab0e116a2e6">More...</a><br /></td></tr>
-<tr class="separator:adb10b7e3accabd2be904dab0e116a2e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b90f154ccea1aba31583d91cc8b21a3"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#a3b90f154ccea1aba31583d91cc8b21a3">set_met_config_string</a> (self, c_dict, mp_config_name, met_config_name, c_dict_key=None, remove_quotes=False)</td></tr>
-<tr class="memdesc:a3b90f154ccea1aba31583d91cc8b21a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get string from METplus configuration file and format it to be passed into a MET configuration file.  <a href="#a3b90f154ccea1aba31583d91cc8b21a3">More...</a><br /></td></tr>
-<tr class="separator:a3b90f154ccea1aba31583d91cc8b21a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7e834cd3d85c9a1e932675fe3bbc632"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#ad7e834cd3d85c9a1e932675fe3bbc632">set_met_config_number</a> (self, c_dict, num_type, mp_config_name, met_config_name, c_dict_key=None)</td></tr>
-<tr class="memdesc:ad7e834cd3d85c9a1e932675fe3bbc632"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get integer from METplus configuration file and format it to be passed into a MET configuration file.  <a href="#ad7e834cd3d85c9a1e932675fe3bbc632">More...</a><br /></td></tr>
-<tr class="separator:ad7e834cd3d85c9a1e932675fe3bbc632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaf9a551e9e10a24b08f6844b98ba1a7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#adaf9a551e9e10a24b08f6844b98ba1a7">set_met_config_list</a> (self, c_dict, mp_config, met_config_name, c_dict_key=None, remove_quotes=False, allow_empty=False)</td></tr>
+<tr class="memdesc:adaf9a551e9e10a24b08f6844b98ba1a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get list from METplus configuration file and format it to be passed into a MET configuration file.  <a href="#adaf9a551e9e10a24b08f6844b98ba1a7">More...</a><br /></td></tr>
+<tr class="separator:adaf9a551e9e10a24b08f6844b98ba1a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c6e55e05c081aeed1a24cea849f92a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#a76c6e55e05c081aeed1a24cea849f92a">set_met_config_string</a> (self, c_dict, mp_config, met_config_name, c_dict_key=None, remove_quotes=False)</td></tr>
+<tr class="memdesc:a76c6e55e05c081aeed1a24cea849f92a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get string from METplus configuration file and format it to be passed into a MET configuration file.  <a href="#a76c6e55e05c081aeed1a24cea849f92a">More...</a><br /></td></tr>
+<tr class="separator:a76c6e55e05c081aeed1a24cea849f92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1a0b9cc40aa39d8e394f9a32ef8596d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#aa1a0b9cc40aa39d8e394f9a32ef8596d">set_met_config_number</a> (self, c_dict, num_type, mp_config, met_config_name, c_dict_key=None)</td></tr>
+<tr class="memdesc:aa1a0b9cc40aa39d8e394f9a32ef8596d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get integer from METplus configuration file and format it to be passed into a MET configuration file.  <a href="#aa1a0b9cc40aa39d8e394f9a32ef8596d">More...</a><br /></td></tr>
+<tr class="separator:aa1a0b9cc40aa39d8e394f9a32ef8596d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb871c3adceb927805acad6a154ed811"><td class="memItemLeft" align="right" valign="top"><a id="afb871c3adceb927805acad6a154ed811"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>set_met_config_int</b> (self, c_dict, mp_config_name, met_config_name, c_dict_key=None)</td></tr>
 <tr class="separator:afb871c3adceb927805acad6a154ed811"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fb0b9f20d6d067c32515a945b50a5c1"><td class="memItemLeft" align="right" valign="top"><a id="a9fb0b9f20d6d067c32515a945b50a5c1"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>set_met_config_float</b> (self, c_dict, mp_config_name, met_config_name, c_dict_key=None)</td></tr>
 <tr class="separator:a9fb0b9f20d6d067c32515a945b50a5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f5a69bbcfe143199df33427fb339cad"><td class="memItemLeft" align="right" valign="top"><a id="a5f5a69bbcfe143199df33427fb339cad"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>set_met_config_thresh</b> (self, c_dict, mp_config_name, met_config_name, c_dict_key=None)</td></tr>
-<tr class="separator:a5f5a69bbcfe143199df33427fb339cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9fec0ccbefa0d5f6ed5f3f632d3f39c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#ac9fec0ccbefa0d5f6ed5f3f632d3f39c">set_met_config_bool</a> (self, c_dict, mp_config_name, met_config_name, c_dict_key=None, uppercase=True)</td></tr>
-<tr class="memdesc:ac9fec0ccbefa0d5f6ed5f3f632d3f39c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get boolean from METplus configuration file and format it to be passed into a MET configuration file.  <a href="#ac9fec0ccbefa0d5f6ed5f3f632d3f39c">More...</a><br /></td></tr>
-<tr class="separator:ac9fec0ccbefa0d5f6ed5f3f632d3f39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af592e282d23565d408884971b0fdfac8"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#af592e282d23565d408884971b0fdfac8">format_met_config_dictionary</a> (self, name, keys)</td></tr>
-<tr class="memdesc:af592e282d23565d408884971b0fdfac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return formatted dictionary named &lt;name&gt; with any &lt;items&gt; if they are set to a value.  <a href="#af592e282d23565d408884971b0fdfac8">More...</a><br /></td></tr>
-<tr class="separator:af592e282d23565d408884971b0fdfac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9013f56914b337d39b3bfe3ca866a47"><td class="memItemLeft" align="right" valign="top"><a id="aa9013f56914b337d39b3bfe3ca866a47"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>handle_c_dict_regrid</b> (self, c_dict, set_to_grid=True)</td></tr>
-<tr class="separator:aa9013f56914b337d39b3bfe3ca866a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65a5e6cc36f800a9b88eec848607679b"><td class="memItemLeft" align="right" valign="top"><a id="a65a5e6cc36f800a9b88eec848607679b"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>get_regrid_dict</b> (self)</td></tr>
-<tr class="separator:a65a5e6cc36f800a9b88eec848607679b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6db901ba45c3ebc0934aca3e66de23ac"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#a6db901ba45c3ebc0934aca3e66de23ac">handle_description</a> (self, c_dict)</td></tr>
-<tr class="memdesc:a6db901ba45c3ebc0934aca3e66de23ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get description from config.  <a href="#a6db901ba45c3ebc0934aca3e66de23ac">More...</a><br /></td></tr>
-<tr class="separator:a6db901ba45c3ebc0934aca3e66de23ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28865ad199db5c5c21f5059ae6dbc778"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#a28865ad199db5c5c21f5059ae6dbc778">get_output_prefix</a> (self, time_info=None)</td></tr>
-<tr class="memdesc:a28865ad199db5c5c21f5059ae6dbc778"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read {APP_NAME}_OUTPUT_PREFIX from config.  <a href="#a28865ad199db5c5c21f5059ae6dbc778">More...</a><br /></td></tr>
-<tr class="separator:a28865ad199db5c5c21f5059ae6dbc778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a090d9668027db7d35582e1277dd13f1b"><td class="memItemLeft" align="right" valign="top"><a id="a090d9668027db7d35582e1277dd13f1b"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>set_met_config_thresh</b> (self, c_dict, mp_config, met_config_name, c_dict_key=None)</td></tr>
+<tr class="separator:a090d9668027db7d35582e1277dd13f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3de6caeff8d020957a1fec4292e1542f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#a3de6caeff8d020957a1fec4292e1542f">set_met_config_bool</a> (self, c_dict, mp_config, met_config_name, c_dict_key=None, uppercase=True)</td></tr>
+<tr class="memdesc:a3de6caeff8d020957a1fec4292e1542f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get boolean from METplus configuration file and format it to be passed into a MET configuration file.  <a href="#a3de6caeff8d020957a1fec4292e1542f">More...</a><br /></td></tr>
+<tr class="separator:a3de6caeff8d020957a1fec4292e1542f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbaa34e0a458807520c201fbe36e96ad"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#abbaa34e0a458807520c201fbe36e96ad">get_mp_config_name</a> (self, mp_config)</td></tr>
+<tr class="memdesc:abbaa34e0a458807520c201fbe36e96ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get first name of METplus config variable that is set.  <a href="#abbaa34e0a458807520c201fbe36e96ad">More...</a><br /></td></tr>
+<tr class="separator:abbaa34e0a458807520c201fbe36e96ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c3a48d05227e0e75718441fe6654408"><td class="memItemLeft" align="right" valign="top"><a id="a9c3a48d05227e0e75718441fe6654408"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>handle_regrid</b> (self, c_dict, set_to_grid=True)</td></tr>
+<tr class="separator:a9c3a48d05227e0e75718441fe6654408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad9773436c1ec3500bdb1ac567b7b272"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#aad9773436c1ec3500bdb1ac567b7b272">handle_description</a> (self)</td></tr>
+<tr class="memdesc:aad9773436c1ec3500bdb1ac567b7b272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get description from config.  <a href="#aad9773436c1ec3500bdb1ac567b7b272">More...</a><br /></td></tr>
+<tr class="separator:aad9773436c1ec3500bdb1ac567b7b272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8695dc073bf78a4189c86a02be3f1044"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#a8695dc073bf78a4189c86a02be3f1044">get_output_prefix</a> (self, time_info=None, set_env_vars=True)</td></tr>
+<tr class="memdesc:a8695dc073bf78a4189c86a02be3f1044"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read {APP_NAME}_OUTPUT_PREFIX from config.  <a href="#a8695dc073bf78a4189c86a02be3f1044">More...</a><br /></td></tr>
+<tr class="separator:a8695dc073bf78a4189c86a02be3f1044"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace6898fb3b966b7cbc2b3d3d4abbfea3"><td class="memItemLeft" align="right" valign="top"><a id="ace6898fb3b966b7cbc2b3d3d4abbfea3"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#ace6898fb3b966b7cbc2b3d3d4abbfea3">set_climo_env_vars</a> (self)</td></tr>
 <tr class="memdesc:ace6898fb3b966b7cbc2b3d3d4abbfea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set all climatology environment variables from CLIMO_&lt;item&gt;_FILE c_dict values if they are not set to None. <br /></td></tr>
@@ -266,15 +275,34 @@ def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memitem:a91c93bff0a5f21e4b99fe4995850c3ec"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#a91c93bff0a5f21e4b99fe4995850c3ec">get_wrapper_or_generic_config</a> (self, generic_config_name)</td></tr>
 <tr class="memdesc:a91c93bff0a5f21e4b99fe4995850c3ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for config variable with &lt;APP_NAME&gt;_ prepended first.  <a href="#a91c93bff0a5f21e4b99fe4995850c3ec">More...</a><br /></td></tr>
 <tr class="separator:a91c93bff0a5f21e4b99fe4995850c3ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e7589549c485c056d8a90c464cfc066"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#a6e7589549c485c056d8a90c464cfc066">format_field</a> (self, data_type, field_formatted)</td></tr>
+<tr class="memdesc:a6e7589549c485c056d8a90c464cfc066"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set {data_type}_FIELD c_dict value to the formatted field string Also set {data_type_FIELD_OLD value to support old format until it is deprecated.  <a href="#a6e7589549c485c056d8a90c464cfc066">More...</a><br /></td></tr>
+<tr class="separator:a6e7589549c485c056d8a90c464cfc066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a387e2622a9202187aedb7752ddf629cb"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#a387e2622a9202187aedb7752ddf629cb">handle_flags</a> (self, flag_type)</td></tr>
+<tr class="memdesc:a387e2622a9202187aedb7752ddf629cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle reading and setting of flag dictionary values to set in a MET config file.  <a href="#a387e2622a9202187aedb7752ddf629cb">More...</a><br /></td></tr>
+<tr class="separator:a387e2622a9202187aedb7752ddf629cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a171a305f2f586f7cc6de6f5e04130829"><td class="memItemLeft" align="right" valign="top"><a id="a171a305f2f586f7cc6de6f5e04130829"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#a171a305f2f586f7cc6de6f5e04130829">handle_censor_val_and_thresh</a> (self)</td></tr>
+<tr class="memdesc:a171a305f2f586f7cc6de6f5e04130829"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read {APP_NAME}_CENSOR_[VAL/THRESH] and set METPLUS_CENSOR_[VAL/THRESH] in self.env_var_dict so it can be referenced in a MET config file. <br /></td></tr>
+<tr class="separator:a171a305f2f586f7cc6de6f5e04130829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9963146f6b85e26d8ccab3a72bd54fe2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#a9963146f6b85e26d8ccab3a72bd54fe2">get_env_var_value</a> (self, env_var_name, read_dict=None)</td></tr>
+<tr class="memdesc:a9963146f6b85e26d8ccab3a72bd54fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read env var value, get text after the equals sign and remove the trailing semi-colon.  <a href="#a9963146f6b85e26d8ccab3a72bd54fe2">More...</a><br /></td></tr>
+<tr class="separator:a9963146f6b85e26d8ccab3a72bd54fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e23e4be246eab917fc43bac004f5530"><td class="memItemLeft" align="right" valign="top"><a id="a1e23e4be246eab917fc43bac004f5530"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>handle_time_summary_dict</b> (self, c_dict, remove_bracket_list=None)</td></tr>
+<tr class="separator:a1e23e4be246eab917fc43bac004f5530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40bd4ca63f344c778f2cacced917fd9a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#a40bd4ca63f344c778f2cacced917fd9a">handle_mask</a> (self, single_value=False)</td></tr>
+<tr class="memdesc:a40bd4ca63f344c778f2cacced917fd9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read mask dictionary values and set them into env_var_list.  <a href="#a40bd4ca63f344c778f2cacced917fd9a">More...</a><br /></td></tr>
+<tr class="separator:a40bd4ca63f344c778f2cacced917fd9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a474913e26778e813826e7a0dc91c9b1e"><td class="memItemLeft" align="right" valign="top"><a id="a474913e26778e813826e7a0dc91c9b1e"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>format_regrid_to_grid</b> (to_grid)</td></tr>
 <tr class="separator:a474913e26778e813826e7a0dc91c9b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34e8923810ac93112eae7eb120387ce0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#a34e8923810ac93112eae7eb120387ce0">format_met_config_dict</a> (c_dict, dict_name, item_list)</td></tr>
-<tr class="memdesc:a34e8923810ac93112eae7eb120387ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build string containing dictionary from a MET configuration file with any items that were set in the user's METplus configuration.  <a href="#a34e8923810ac93112eae7eb120387ce0">More...</a><br /></td></tr>
-<tr class="separator:a34e8923810ac93112eae7eb120387ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd0102e497b42d5de0a727409f78ca7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#afdd0102e497b42d5de0a727409f78ca7">format_met_config_dict</a> (c_dict, name, keys=None)</td></tr>
+<tr class="memdesc:afdd0102e497b42d5de0a727409f78ca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return formatted dictionary named &lt;name&gt; with any &lt;items&gt; if they are set to a value.  <a href="#afdd0102e497b42d5de0a727409f78ca7">More...</a><br /></td></tr>
+<tr class="separator:afdd0102e497b42d5de0a727409f78ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -317,6 +345,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a33b22b0a61c566979a3aea1b2ed619f3"><td class="memItemLeft" align="right" valign="top"><a id="a33b22b0a61c566979a3aea1b2ed619f3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>all_commands</b></td></tr>
 <tr class="separator:a33b22b0a61c566979a3aea1b2ed619f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9fa469a594fbf0c3597f72c3fda3ddd"><td class="memItemLeft" align="right" valign="top"><a id="ae9fa469a594fbf0c3597f72c3fda3ddd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>env_var_dict</b></td></tr>
+<tr class="separator:ae9fa469a594fbf0c3597f72c3fda3ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc01387ffe4cbe0304b8270e8020aa5e"><td class="memItemLeft" align="right" valign="top"><a id="abc01387ffe4cbe0304b8270e8020aa5e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>env_var_keys</b></td></tr>
+<tr class="separator:abc01387ffe4cbe0304b8270e8020aa5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58504871a95c59dbcb0a088043e0487a"><td class="memItemLeft" align="right" valign="top"><a id="a58504871a95c59dbcb0a088043e0487a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>instance</b></td></tr>
 <tr class="separator:a58504871a95c59dbcb0a088043e0487a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -338,6 +372,9 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a8831b13bf1269ab5d1988bfd56180c17"><td class="memItemLeft" align="right" valign="top"><a id="a8831b13bf1269ab5d1988bfd56180c17"></a>
 list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['MEAN', 'STDEV']</td></tr>
 <tr class="separator:a8831b13bf1269ab5d1988bfd56180c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a665a42e77b0c32fcda18ea5efc0cf6"><td class="memItemLeft" align="right" valign="top"><a id="a6a665a42e77b0c32fcda18ea5efc0cf6"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>MET_OVERRIDES_KEY</b> = 'METPLUS_MET_CONFIG_OVERRIDES'</td></tr>
+<tr class="separator:a6a665a42e77b0c32fcda18ea5efc0cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a72116bfe4985ccfbc2aecb9873eebdc7"></a>
@@ -381,9 +418,9 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00864">864</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00979">979</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00655">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.build_and_run_series_request()</a>, <a class="el" href="series__analysis__wrapper_8py_source.html#l00794">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.generate_plots()</a>, <a class="el" href="regrid__data__plane__wrapper_8py_source.html#l00371">metplus.wrappers.regrid_data_plane_wrapper.RegridDataPlaneWrapper.run_once_for_all_fields()</a>, and <a class="el" href="regrid__data__plane__wrapper_8py_source.html#l00330">metplus.wrappers.regrid_data_plane_wrapper.RegridDataPlaneWrapper.run_once_per_field()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00678">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.build_and_run_series_request()</a>, <a class="el" href="series__analysis__wrapper_8py_source.html#l00810">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.generate_plots()</a>, <a class="el" href="regrid__data__plane__wrapper_8py_source.html#l00371">metplus.wrappers.regrid_data_plane_wrapper.RegridDataPlaneWrapper.run_once_for_all_fields()</a>, and <a class="el" href="regrid__data__plane__wrapper_8py_source.html#l00330">metplus.wrappers.regrid_data_plane_wrapper.RegridDataPlaneWrapper.run_once_per_field()</a>.</p>
 
 </div>
 </div>
@@ -429,9 +466,9 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>field name if not a python script, 'python_embedding' if it is, and None if configuration is invalid </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00896">896</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01011">1011</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00565">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.check_python_embedding()</a>, <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00443">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.get_all_field_info()</a>, and <a class="el" href="mtd__wrapper_8py_source.html#l00141">metplus.wrappers.mtd_wrapper.MTDWrapper.run_at_time_loop_string()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00588">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.check_python_embedding()</a>, <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00531">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.get_all_field_info()</a>, and <a class="el" href="mtd__wrapper_8py_source.html#l00182">metplus.wrappers.mtd_wrapper.MTDWrapper.run_at_time_loop_string()</a>.</p>
 
 </div>
 </div>
@@ -484,9 +521,9 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the app should be run or False if it should not </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00731">731</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00846">846</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00655">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.build_and_run_series_request()</a>, <a class="el" href="stat__analysis__wrapper_8py_source.html#l01708">metplus.wrappers.stat_analysis_wrapper.StatAnalysisWrapper.create_output_directories()</a>, <a class="el" href="tc__stat__wrapper_8py_source.html#l00269">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.handle_jobs()</a>, <a class="el" href="regrid__data__plane__wrapper_8py_source.html#l00316">metplus.wrappers.regrid_data_plane_wrapper.RegridDataPlaneWrapper.handle_output_file()</a>, <a class="el" href="compare__gridded__wrapper_8py_source.html#l00302">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.process_fields()</a>, <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00684">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.process_fields()</a>, <a class="el" href="mode__wrapper_8py_source.html#l00190">metplus.wrappers.mode_wrapper.MODEWrapper.process_fields_one_thresh()</a>, <a class="el" href="mtd__wrapper_8py_source.html#l00274">metplus.wrappers.mtd_wrapper.MTDWrapper.process_fields_one_thresh()</a>, <a class="el" href="gen__vx__mask__wrapper_8py_source.html#l00158">metplus.wrappers.gen_vx_mask_wrapper.GenVxMaskWrapper.run_at_time_all()</a>, <a class="el" href="gempak__to__cf__wrapper_8py_source.html#l00098">metplus.wrappers.gempak_to_cf_wrapper.GempakToCFWrapper.run_at_time_once()</a>, <a class="el" href="grid__diag__wrapper_8py_source.html#l00123">metplus.wrappers.grid_diag_wrapper.GridDiagWrapper.run_at_time_once()</a>, <a class="el" href="plot__data__plane__wrapper_8py_source.html#l00140">metplus.wrappers.plot_data_plane_wrapper.PlotDataPlaneWrapper.run_at_time_once()</a>, <a class="el" href="point2grid__wrapper_8py_source.html#l00176">metplus.wrappers.point2grid_wrapper.Point2GridWrapper.run_at_time_once()</a>, <a class="el" href="ascii2nc__wrapper_8py_source.html#l00198">metplus.wrappers.ascii2nc_wrapper.ASCII2NCWrapper.run_at_time_once()</a>, <a class="el" href="pb2nc__wrapper_8py_source.html#l00258">metplus.wrappers.pb2nc_wrapper.PB2NCWrapper.run_at_time_once()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00282">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time_once()</a>, <a class="el" href="tc__gen__wrapper_8py_source.html#l00291">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.run_at_time_once()</a>, and <a class="el" href="command__builder_8py_source.html#l00700">metplus.wrappers.command_builder.CommandBuilder.write_list_file()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00678">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.build_and_run_series_request()</a>, <a class="el" href="stat__analysis__wrapper_8py_source.html#l01795">metplus.wrappers.stat_analysis_wrapper.StatAnalysisWrapper.create_output_directories()</a>, <a class="el" href="tc__stat__wrapper_8py_source.html#l00309">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.handle_jobs()</a>, <a class="el" href="regrid__data__plane__wrapper_8py_source.html#l00316">metplus.wrappers.regrid_data_plane_wrapper.RegridDataPlaneWrapper.handle_output_file()</a>, <a class="el" href="compare__gridded__wrapper_8py_source.html#l00313">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.process_fields()</a>, <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00697">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.process_fields()</a>, <a class="el" href="mode__wrapper_8py_source.html#l00207">metplus.wrappers.mode_wrapper.MODEWrapper.process_fields_one_thresh()</a>, <a class="el" href="mtd__wrapper_8py_source.html#l00325">metplus.wrappers.mtd_wrapper.MTDWrapper.process_fields_one_thresh()</a>, <a class="el" href="gen__vx__mask__wrapper_8py_source.html#l00158">metplus.wrappers.gen_vx_mask_wrapper.GenVxMaskWrapper.run_at_time_all()</a>, <a class="el" href="gempak__to__cf__wrapper_8py_source.html#l00098">metplus.wrappers.gempak_to_cf_wrapper.GempakToCFWrapper.run_at_time_once()</a>, <a class="el" href="grid__diag__wrapper_8py_source.html#l00138">metplus.wrappers.grid_diag_wrapper.GridDiagWrapper.run_at_time_once()</a>, <a class="el" href="plot__data__plane__wrapper_8py_source.html#l00140">metplus.wrappers.plot_data_plane_wrapper.PlotDataPlaneWrapper.run_at_time_once()</a>, <a class="el" href="point2grid__wrapper_8py_source.html#l00176">metplus.wrappers.point2grid_wrapper.Point2GridWrapper.run_at_time_once()</a>, <a class="el" href="ascii2nc__wrapper_8py_source.html#l00195">metplus.wrappers.ascii2nc_wrapper.ASCII2NCWrapper.run_at_time_once()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00229">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time_once()</a>, <a class="el" href="pb2nc__wrapper_8py_source.html#l00237">metplus.wrappers.pb2nc_wrapper.PB2NCWrapper.run_at_time_once()</a>, <a class="el" href="tc__gen__wrapper_8py_source.html#l00338">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.run_at_time_once()</a>, and <a class="el" href="command__builder_8py_source.html#l00815">metplus.wrappers.command_builder.CommandBuilder.write_list_file()</a>.</p>
 
 </div>
 </div>
@@ -552,15 +589,15 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
     <tr><td class="paramname">time_info</td><td>dictionary containing timing information </td></tr>
     <tr><td class="paramname">var_info</td><td>object containing variable information </td></tr>
     <tr><td class="paramname">data_type</td><td>type of data to find (i.e. FCST_ or OBS_) </td></tr>
-    <tr><td class="paramname">mandatory</td><td>if True, report error if not found, warning if not default is True  string </td></tr>
+    <tr><td class="paramname">mandatory</td><td>if True, report error if not found, warning if not. default is True  string </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns the path to an observation file </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00450">450</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00548">548</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gen__vx__mask__wrapper_8py_source.html#l00203">metplus.wrappers.gen_vx_mask_wrapper.GenVxMaskWrapper.find_input_files()</a>, <a class="el" href="grid__diag__wrapper_8py_source.html#l00206">metplus.wrappers.grid_diag_wrapper.GridDiagWrapper.find_input_files()</a>, <a class="el" href="tc__gen__wrapper_8py_source.html#l00313">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.find_input_files()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00345">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.find_input_files()</a>, <a class="el" href="series__analysis__wrapper_8py_source.html#l00441">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.find_input_files()</a>, <a class="el" href="regrid__data__plane__wrapper_8py_source.html#l00444">metplus.wrappers.regrid_data_plane_wrapper.RegridDataPlaneWrapper.find_input_files()</a>, <a class="el" href="command__builder_8py_source.html#l00375">metplus.wrappers.command_builder.CommandBuilder.find_model()</a>, <a class="el" href="command__builder_8py_source.html#l00391">metplus.wrappers.command_builder.CommandBuilder.find_obs()</a>, <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00390">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.run_at_time_all_fields()</a>, and <a class="el" href="plot__data__plane__wrapper_8py_source.html#l00140">metplus.wrappers.plot_data_plane_wrapper.PlotDataPlaneWrapper.run_at_time_once()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gen__vx__mask__wrapper_8py_source.html#l00203">metplus.wrappers.gen_vx_mask_wrapper.GenVxMaskWrapper.find_input_files()</a>, <a class="el" href="grid__diag__wrapper_8py_source.html#l00225">metplus.wrappers.grid_diag_wrapper.GridDiagWrapper.find_input_files()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00293">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.find_input_files()</a>, <a class="el" href="tc__gen__wrapper_8py_source.html#l00360">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.find_input_files()</a>, <a class="el" href="regrid__data__plane__wrapper_8py_source.html#l00444">metplus.wrappers.regrid_data_plane_wrapper.RegridDataPlaneWrapper.find_input_files()</a>, <a class="el" href="series__analysis__wrapper_8py_source.html#l00464">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.find_input_files()</a>, <a class="el" href="command__builder_8py_source.html#l00468">metplus.wrappers.command_builder.CommandBuilder.find_model()</a>, <a class="el" href="command__builder_8py_source.html#l00485">metplus.wrappers.command_builder.CommandBuilder.find_obs()</a>, <a class="el" href="command__builder_8py_source.html#l00502">metplus.wrappers.command_builder.CommandBuilder.find_obs_offset()</a>, <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00474">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.run_at_time_all_fields()</a>, and <a class="el" href="plot__data__plane__wrapper_8py_source.html#l00140">metplus.wrappers.plot_data_plane_wrapper.PlotDataPlaneWrapper.run_at_time_once()</a>.</p>
 
 </div>
 </div>
@@ -613,15 +650,15 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
   <table class="params">
     <tr><td class="paramname">time_info</td><td>dictionary containing timing information </td></tr>
     <tr><td class="paramname">var_info</td><td>object containing variable information </td></tr>
-    <tr><td class="paramname">mandatory</td><td>if True, report error if not found, warning if not default is True  string </td></tr>
+    <tr><td class="paramname">mandatory</td><td>if True, report error if not found, warning if not, default is True  string </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns the path to an model file </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00375">375</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00468">468</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="compare__gridded__wrapper_8py_source.html#l00247">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.run_at_time_all_fields()</a>, <a class="el" href="mtd__wrapper_8py_source.html#l00141">metplus.wrappers.mtd_wrapper.MTDWrapper.run_at_time_loop_string()</a>, <a class="el" href="mode__wrapper_8py_source.html#l00169">metplus.wrappers.mode_wrapper.MODEWrapper.run_at_time_one_field()</a>, and <a class="el" href="compare__gridded__wrapper_8py_source.html#l00199">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.run_at_time_one_field()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="command__builder_8py_source.html#l00422">metplus.wrappers.command_builder.CommandBuilder.handle_fcst_and_obs_field()</a>, <a class="el" href="compare__gridded__wrapper_8py_source.html#l00255">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.run_at_time_all_fields()</a>, <a class="el" href="mtd__wrapper_8py_source.html#l00182">metplus.wrappers.mtd_wrapper.MTDWrapper.run_at_time_loop_string()</a>, <a class="el" href="mode__wrapper_8py_source.html#l00187">metplus.wrappers.mode_wrapper.MODEWrapper.run_at_time_one_field()</a>, and <a class="el" href="compare__gridded__wrapper_8py_source.html#l00204">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.run_at_time_one_field()</a>.</p>
 
 </div>
 </div>
@@ -674,15 +711,15 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
   <table class="params">
     <tr><td class="paramname">time_info</td><td>dictionary containing timing information </td></tr>
     <tr><td class="paramname">var_info</td><td>object containing variable information </td></tr>
-    <tr><td class="paramname">mandatory</td><td>if True, report error if not found, warning if not default is True  string </td></tr>
+    <tr><td class="paramname">mandatory</td><td>if True, report error if not found, warning if not, default is True  string </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns the path to an observation file </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00391">391</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00485">485</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="point2grid__wrapper_8py_source.html#l00203">metplus.wrappers.point2grid_wrapper.Point2GridWrapper.find_input_files()</a>, <a class="el" href="command__builder_8py_source.html#l00407">metplus.wrappers.command_builder.CommandBuilder.find_obs_offset()</a>, <a class="el" href="mtd__wrapper_8py_source.html#l00141">metplus.wrappers.mtd_wrapper.MTDWrapper.run_at_time_loop_string()</a>, <a class="el" href="ascii2nc__wrapper_8py_source.html#l00198">metplus.wrappers.ascii2nc_wrapper.ASCII2NCWrapper.run_at_time_once()</a>, and <a class="el" href="mode__wrapper_8py_source.html#l00169">metplus.wrappers.mode_wrapper.MODEWrapper.run_at_time_one_field()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="point2grid__wrapper_8py_source.html#l00203">metplus.wrappers.point2grid_wrapper.Point2GridWrapper.find_input_files()</a>, <a class="el" href="command__builder_8py_source.html#l00468">metplus.wrappers.command_builder.CommandBuilder.find_model()</a>, <a class="el" href="command__builder_8py_source.html#l00502">metplus.wrappers.command_builder.CommandBuilder.find_obs_offset()</a>, <a class="el" href="mtd__wrapper_8py_source.html#l00182">metplus.wrappers.mtd_wrapper.MTDWrapper.run_at_time_loop_string()</a>, <a class="el" href="ascii2nc__wrapper_8py_source.html#l00195">metplus.wrappers.ascii2nc_wrapper.ASCII2NCWrapper.run_at_time_once()</a>, and <a class="el" href="mode__wrapper_8py_source.html#l00187">metplus.wrappers.mode_wrapper.MODEWrapper.run_at_time_one_field()</a>.</p>
 
 </div>
 </div>
@@ -730,25 +767,72 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
       </table>
 </div><div class="memdoc">
 
-<p>Finds the observation file to compare, looping through offset list until a file is found Args: </p>
+<p>Finds the observation file to compare, looping through offset list until a file is found. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">time_info</td><td>dictionary containing timing information </td></tr>
     <tr><td class="paramname">var_info</td><td>object containing variable information </td></tr>
-    <tr><td class="paramname">mandatory</td><td>if True, report error if not found, warning if not default is True  string </td></tr>
+    <tr><td class="paramname">mandatory</td><td>if True, report error if not found, warning if not, default is True  string </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns tuple of the path to an observation file and the time_info object used to find the data so the value of offset can be preserved </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00407">407</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00502">502</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pb2nc__wrapper_8py_source.html#l00206">metplus.wrappers.pb2nc_wrapper.PB2NCWrapper.find_input_files()</a>, <a class="el" href="compare__gridded__wrapper_8py_source.html#l00247">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.run_at_time_all_fields()</a>, and <a class="el" href="compare__gridded__wrapper_8py_source.html#l00199">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.run_at_time_one_field()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pb2nc__wrapper_8py_source.html#l00179">metplus.wrappers.pb2nc_wrapper.PB2NCWrapper.find_input_files()</a>, <a class="el" href="command__builder_8py_source.html#l00485">metplus.wrappers.command_builder.CommandBuilder.find_obs()</a>, <a class="el" href="compare__gridded__wrapper_8py_source.html#l00255">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.run_at_time_all_fields()</a>, and <a class="el" href="compare__gridded__wrapper_8py_source.html#l00204">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.run_at_time_one_field()</a>.</p>
 
 </div>
 </div>
-<a id="a34e8923810ac93112eae7eb120387ce0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34e8923810ac93112eae7eb120387ce0">&#9670;&nbsp;</a></span>format_met_config_dict()</h2>
+<a id="a6e7589549c485c056d8a90c464cfc066"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e7589549c485c056d8a90c464cfc066">&#9670;&nbsp;</a></span>format_field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def metplus.wrappers.command_builder.CommandBuilder.format_field </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>data_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>field_formatted</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set {data_type}_FIELD c_dict value to the formatted field string Also set {data_type_FIELD_OLD value to support old format until it is deprecated. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field_formatted</td><td>field string </td></tr>
+    <tr><td class="paramname">data_type</td><td>type of data to set, i.e. FCST, OBS </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01749">1749</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00678">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.build_and_run_series_request()</a>, <a class="el" href="mode__wrapper_8py_source.html#l00207">metplus.wrappers.mode_wrapper.MODEWrapper.process_fields_one_thresh()</a>, <a class="el" href="mtd__wrapper_8py_source.html#l00325">metplus.wrappers.mtd_wrapper.MTDWrapper.process_fields_one_thresh()</a>, <a class="el" href="compare__gridded__wrapper_8py_source.html#l00255">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.run_at_time_all_fields()</a>, <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00474">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.run_at_time_all_fields()</a>, and <a class="el" href="compare__gridded__wrapper_8py_source.html#l00204">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.run_at_time_one_field()</a>.</p>
+
+</div>
+</div>
+<a id="afdd0102e497b42d5de0a727409f78ca7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdd0102e497b42d5de0a727409f78ca7">&#9670;&nbsp;</a></span>format_met_config_dict()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -766,13 +850,13 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>dict_name</em>, </td>
+          <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>item_list</em>&#160;</td>
+          <td class="paramname"><em>keys</em> = <code>None</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -787,69 +871,21 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
 </table>
 </div><div class="memdoc">
 
-<p>Build string containing dictionary from a MET configuration file with any items that were set in the user's METplus configuration. </p>
-<p>Any variables that were not set will not be included in the dictionary string. Args: </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">c_dict</td><td>dictionary to check for items </td></tr>
-    <tr><td class="paramname">dict_name</td><td>name of dictionary to create in all caps. This corresponds to the name of the METplus configuration variable and c_dict value. The lower-case name also matches the name of the MET dictionary item, i.e. FCST_GENESIS corresponds to METpluc configuration variables TC_GEN_FCST_GENESIS_VMAX_THRESH and TC_GEN_FCST_GENESIS_MSLP_THRESH and c_dict keys FCST_GENESIS_VMAX_THRESH and FCST_GENESIS_MSLP_THRESH and MET configuration dictionary fcst_genesis = {}. </td></tr>
-    <tr><td class="paramname">item_list</td><td>list of MET dictionary items that can be set, i.e. [VMAX_THRESH, MSLP_THRESH], which corresponds to vmax_thresh and mslp_thresh in the MET configuration dictionary specified with dict_name. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>string of formatted MET dictionary or empty string if no relevant variables were set </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01195">1195</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00371">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.format_met_config_type()</a>, and <a class="el" href="tc__gen__wrapper_8py_source.html#l00172">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.set_environment_variables()</a>.</p>
-
-</div>
-</div>
-<a id="af592e282d23565d408884971b0fdfac8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af592e282d23565d408884971b0fdfac8">&#9670;&nbsp;</a></span>format_met_config_dictionary()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def metplus.wrappers.command_builder.CommandBuilder.format_met_config_dictionary </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>keys</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
 <p>Return formatted dictionary named &lt;name&gt; with any &lt;items&gt; if they are set to a value. </p>
 <p>If none of the items are set, return empty string</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">c_dict</td><td>config dictionary to read values from </td></tr>
     <tr><td class="paramname">name</td><td>name of dictionary to create </td></tr>
-    <tr><td class="paramname">keys</td><td>list of c_dict keys to use if they are set </td></tr>
+    <tr><td class="paramname">keys</td><td>list of c_dict keys to use if they are set. If unset (None) then read all keys from c_dict </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>MET config formatted dictionary if any items are set, or empty string if not </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01382">1382</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01520">1520</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00485">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.find_model_members()</a>, and <a class="el" href="command__builder_8py_source.html#l01382">metplus.wrappers.command_builder.CommandBuilder.format_met_config_dictionary()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00101">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.create_c_dict()</a>, <a class="el" href="command__builder_8py_source.html#l01520">metplus.wrappers.command_builder.CommandBuilder.format_met_config_dict()</a>, <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00454">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.format_met_config_type()</a>, <a class="el" href="command__builder_8py_source.html#l01807">metplus.wrappers.command_builder.CommandBuilder.get_env_var_value()</a>, <a class="el" href="command__builder_8py_source.html#l01762">metplus.wrappers.command_builder.CommandBuilder.handle_flags()</a>, <a class="el" href="command__builder_8py_source.html#l01907">metplus.wrappers.command_builder.CommandBuilder.handle_mask()</a>, <a class="el" href="command__builder_8py_source.html#l00304">metplus.wrappers.command_builder.CommandBuilder.handle_obs_window_variables()</a>, <a class="el" href="grid__diag__wrapper_8py_source.html#l00088">metplus.wrappers.grid_diag_wrapper.GridDiagWrapper.set_environment_variables()</a>, and <a class="el" href="grid__stat__wrapper_8py_source.html#l00148">metplus.wrappers.grid_stat_wrapper.GridStatWrapper.set_environment_variables()</a>.</p>
 
 </div>
 </div>
@@ -872,9 +908,57 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
 <p>Builds the command to run the MET application  string. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns a MET command with arguments that you can run </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01057">1057</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01194">1194</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="tcmpr__plotter__wrapper_8py_source.html#l00386">metplus.wrappers.tcmpr_plotter_wrapper.TCMPRPlotterWrapper.build()</a>, <a class="el" href="command__builder_8py_source.html#l01108">metplus.wrappers.command_builder.CommandBuilder.build()</a>, <a class="el" href="tc__pairs__wrapper_8py_source.html#l00465">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.process_data()</a>, <a class="el" href="compare__gridded__wrapper_8py_source.html#l00302">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.process_fields()</a>, <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00684">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.process_fields()</a>, <a class="el" href="mtd__wrapper_8py_source.html#l00274">metplus.wrappers.mtd_wrapper.MTDWrapper.process_fields_one_thresh()</a>, <a class="el" href="tc__pairs__wrapper_8py_source.html#l00178">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.run_all_times()</a>, <a class="el" href="point2grid__wrapper_8py_source.html#l00176">metplus.wrappers.point2grid_wrapper.Point2GridWrapper.run_at_time_once()</a>, <a class="el" href="pb2nc__wrapper_8py_source.html#l00258">metplus.wrappers.pb2nc_wrapper.PB2NCWrapper.run_at_time_once()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00282">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time_once()</a>, <a class="el" href="pcp__combine__wrapper_8py_source.html#l00838">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.setup_add_method()</a>, <a class="el" href="pcp__combine__wrapper_8py_source.html#l00897">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.setup_derive_method()</a>, <a class="el" href="pcp__combine__wrapper_8py_source.html#l00642">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.setup_subtract_method()</a>, and <a class="el" href="pcp__combine__wrapper_8py_source.html#l00756">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.setup_sum_method()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="tcmpr__plotter__wrapper_8py_source.html#l00386">metplus.wrappers.tcmpr_plotter_wrapper.TCMPRPlotterWrapper.build()</a>, <a class="el" href="command__builder_8py_source.html#l01245">metplus.wrappers.command_builder.CommandBuilder.build()</a>, <a class="el" href="compare__gridded__wrapper_8py_source.html#l00313">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.process_fields()</a>, <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00697">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.process_fields()</a>, <a class="el" href="point2grid__wrapper_8py_source.html#l00176">metplus.wrappers.point2grid_wrapper.Point2GridWrapper.run_at_time_once()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00229">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time_once()</a>, <a class="el" href="pb2nc__wrapper_8py_source.html#l00237">metplus.wrappers.pb2nc_wrapper.PB2NCWrapper.run_at_time_once()</a>, <a class="el" href="pcp__combine__wrapper_8py_source.html#l00838">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.setup_add_method()</a>, <a class="el" href="pcp__combine__wrapper_8py_source.html#l00897">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.setup_derive_method()</a>, <a class="el" href="pcp__combine__wrapper_8py_source.html#l00642">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.setup_subtract_method()</a>, and <a class="el" href="pcp__combine__wrapper_8py_source.html#l00756">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.setup_sum_method()</a>.</p>
+
+</div>
+</div>
+<a id="a9963146f6b85e26d8ccab3a72bd54fe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9963146f6b85e26d8ccab3a72bd54fe2">&#9670;&nbsp;</a></span>get_env_var_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def metplus.wrappers.command_builder.CommandBuilder.get_env_var_value </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>env_var_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>read_dict</em> = <code>None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read env var value, get text after the equals sign and remove the trailing semi-colon. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">env_var_name</td><td>key to obtain </td></tr>
+    <tr><td class="paramname">read_dict</td><td>(Optional) directory to read from. If unset (None) then read from self.env_var_dict </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>extracted value </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01807">1807</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mode__wrapper_8py_source.html#l00052">metplus.wrappers.mode_wrapper.MODEWrapper.add_merge_config_file()</a>, <a class="el" href="pb2nc__wrapper_8py_source.html#l00043">metplus.wrappers.pb2nc_wrapper.PB2NCWrapper.create_c_dict()</a>, <a class="el" href="command__builder_8py_source.html#l01807">metplus.wrappers.command_builder.CommandBuilder.get_env_var_value()</a>, <a class="el" href="mode__wrapper_8py_source.html#l00156">metplus.wrappers.mode_wrapper.MODEWrapper.set_environment_variables()</a>, <a class="el" href="point__stat__wrapper_8py_source.html#l00187">metplus.wrappers.point_stat_wrapper.PointStatWrapper.set_environment_variables()</a>, <a class="el" href="tc__stat__wrapper_8py_source.html#l00243">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.set_environment_variables()</a>, and <a class="el" href="tc__pairs__wrapper_8py_source.html#l00390">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.set_environment_variables()</a>.</p>
 
 </div>
 </div>
@@ -941,14 +1025,55 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns formatted field information </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00927">927</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01044">1044</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00443">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.get_all_field_info()</a>, <a class="el" href="series__analysis__wrapper_8py_source.html#l00972">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.get_formatted_fields()</a>, <a class="el" href="mode__wrapper_8py_source.html#l00190">metplus.wrappers.mode_wrapper.MODEWrapper.process_fields_one_thresh()</a>, <a class="el" href="mtd__wrapper_8py_source.html#l00274">metplus.wrappers.mtd_wrapper.MTDWrapper.process_fields_one_thresh()</a>, <a class="el" href="compare__gridded__wrapper_8py_source.html#l00247">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.run_at_time_all_fields()</a>, <a class="el" href="compare__gridded__wrapper_8py_source.html#l00199">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.run_at_time_one_field()</a>, <a class="el" href="regrid__data__plane__wrapper_8py_source.html#l00371">metplus.wrappers.regrid_data_plane_wrapper.RegridDataPlaneWrapper.run_once_for_all_fields()</a>, <a class="el" href="regrid__data__plane__wrapper_8py_source.html#l00330">metplus.wrappers.regrid_data_plane_wrapper.RegridDataPlaneWrapper.run_once_per_field()</a>, <a class="el" href="grid__diag__wrapper_8py_source.html#l00174">metplus.wrappers.grid_diag_wrapper.GridDiagWrapper.set_data_field()</a>, and <a class="el" href="tcrmw__wrapper_8py_source.html#l00313">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.set_data_field()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00531">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.get_all_field_info()</a>, <a class="el" href="series__analysis__wrapper_8py_source.html#l00988">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.get_formatted_fields()</a>, <a class="el" href="mode__wrapper_8py_source.html#l00207">metplus.wrappers.mode_wrapper.MODEWrapper.process_fields_one_thresh()</a>, <a class="el" href="mtd__wrapper_8py_source.html#l00325">metplus.wrappers.mtd_wrapper.MTDWrapper.process_fields_one_thresh()</a>, <a class="el" href="compare__gridded__wrapper_8py_source.html#l00255">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.run_at_time_all_fields()</a>, <a class="el" href="compare__gridded__wrapper_8py_source.html#l00204">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.run_at_time_one_field()</a>, <a class="el" href="regrid__data__plane__wrapper_8py_source.html#l00371">metplus.wrappers.regrid_data_plane_wrapper.RegridDataPlaneWrapper.run_once_for_all_fields()</a>, <a class="el" href="regrid__data__plane__wrapper_8py_source.html#l00330">metplus.wrappers.regrid_data_plane_wrapper.RegridDataPlaneWrapper.run_once_per_field()</a>, <a class="el" href="grid__diag__wrapper_8py_source.html#l00189">metplus.wrappers.grid_diag_wrapper.GridDiagWrapper.set_data_field()</a>, and <a class="el" href="tcrmw__wrapper_8py_source.html#l00260">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.set_data_field()</a>.</p>
 
 </div>
 </div>
-<a id="a28865ad199db5c5c21f5059ae6dbc778"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28865ad199db5c5c21f5059ae6dbc778">&#9670;&nbsp;</a></span>get_output_prefix()</h2>
+<a id="abbaa34e0a458807520c201fbe36e96ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbaa34e0a458807520c201fbe36e96ad">&#9670;&nbsp;</a></span>get_mp_config_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def metplus.wrappers.command_builder.CommandBuilder.get_mp_config_name </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>mp_config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get first name of METplus config variable that is set. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mp_config</td><td>list of METplus config keys to check. Can also be a single item </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Name of first METplus config name in list that is set in the METplusConfig object. None if none keys in the list are set. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01500">1500</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="command__builder_8py_source.html#l01460">metplus.wrappers.command_builder.CommandBuilder.set_met_config_bool()</a>, <a class="el" href="command__builder_8py_source.html#l01333">metplus.wrappers.command_builder.CommandBuilder.set_met_config_list()</a>, <a class="el" href="command__builder_8py_source.html#l01401">metplus.wrappers.command_builder.CommandBuilder.set_met_config_number()</a>, and <a class="el" href="command__builder_8py_source.html#l01371">metplus.wrappers.command_builder.CommandBuilder.set_met_config_string()</a>.</p>
+
+</div>
+</div>
+<a id="a8695dc073bf78a4189c86a02be3f1044"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8695dc073bf78a4189c86a02be3f1044">&#9670;&nbsp;</a></span>get_output_prefix()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -963,7 +1088,13 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>time_info</em> = <code>None</code>&#160;</td>
+          <td class="paramname"><em>time_info</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>set_env_vars</em> = <code>True</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -975,10 +1106,12 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
 
 <p>Read {APP_NAME}_OUTPUT_PREFIX from config. </p>
 <p>If time_info is set substitute values into filename template tags. </p><pre class="fragment">@param time_info (Optional) dictionary containing time info
+@param set_env_vars (Optional) if True, set env vars with
+values computed from this function
 @returns output prefix with values substituted if requested</pre> 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01476">1476</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01622">1622</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mode__wrapper_8py_source.html#l00031">metplus.wrappers.mode_wrapper.MODEWrapper.add_merge_config_file()</a>, <a class="el" href="command__builder_8py_source.html#l00731">metplus.wrappers.command_builder.CommandBuilder.find_and_check_output_file()</a>, <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00485">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.find_model_members()</a>, <a class="el" href="mtd__wrapper_8py_source.html#l00274">metplus.wrappers.mtd_wrapper.MTDWrapper.process_fields_one_thresh()</a>, <a class="el" href="grid__stat__wrapper_8py_source.html#l00101">metplus.wrappers.grid_stat_wrapper.GridStatWrapper.set_environment_variables()</a>, and <a class="el" href="point__stat__wrapper_8py_source.html#l00130">metplus.wrappers.point_stat_wrapper.PointStatWrapper.set_environment_variables()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="command__builder_8py_source.html#l00846">metplus.wrappers.command_builder.CommandBuilder.find_and_check_output_file()</a>, and <a class="el" href="compare__gridded__wrapper_8py_source.html#l00104">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.set_environment_variables()</a>.</p>
 
 </div>
 </div>
@@ -1018,9 +1151,9 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>value if set or empty string if not </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01555">1555</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01729">1729</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="tc__pairs__wrapper_8py_source.html#l00054">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.create_c_dict()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="tc__pairs__wrapper_8py_source.html#l00070">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.create_c_dict()</a>.</p>
 
 </div>
 </div>
@@ -1059,14 +1192,14 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
 <p>Handle a single climatology value by substituting time information, prepending input directory if provided, and preprocessing file if necessary. </p>
 <p>All information is read from c_dict. CLIMO_&lt;item&gt;_FILE in c_dict is set. </p>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01529">1529</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01695">1695</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="command__builder_8py_source.html#l01524">metplus.wrappers.command_builder.CommandBuilder.handle_climo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="command__builder_8py_source.html#l01690">metplus.wrappers.command_builder.CommandBuilder.handle_climo()</a>.</p>
 
 </div>
 </div>
-<a id="a6db901ba45c3ebc0934aca3e66de23ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6db901ba45c3ebc0934aca3e66de23ac">&#9670;&nbsp;</a></span>handle_description()</h2>
+<a id="aad9773436c1ec3500bdb1ac567b7b272"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad9773436c1ec3500bdb1ac567b7b272">&#9670;&nbsp;</a></span>handle_description()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1075,34 +1208,18 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
           <td class="memname">def metplus.wrappers.command_builder.CommandBuilder.handle_description </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>self</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>c_dict</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Get description from config. </p>
-<p>If &lt;app_name&gt;_DESC is set, use that value. If not, check for DESC and use that if it is set. If set, set the DESC c_dict key to "desc = &lt;value&gt;;"</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">c_dict</td><td>dictionary to set value </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>If &lt;app_name&gt;_DESC is set, use that value. If not, check for DESC and use that if it is set. If set, set the METPLUS_DESC env_var_dict key to "desc = &lt;value&gt;;" </p>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01451">1451</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01598">1598</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="compare__gridded__wrapper_8py_source.html#l00046">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.create_c_dict()</a>, <a class="el" href="tc__pairs__wrapper_8py_source.html#l00054">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.create_c_dict()</a>, and <a class="el" href="series__analysis__wrapper_8py_source.html#l00055">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.create_c_dict()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="compare__gridded__wrapper_8py_source.html#l00046">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.create_c_dict()</a>, <a class="el" href="tc__pairs__wrapper_8py_source.html#l00070">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.create_c_dict()</a>, <a class="el" href="series__analysis__wrapper_8py_source.html#l00073">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.create_c_dict()</a>, and <a class="el" href="tc__stat__wrapper_8py_source.html#l00088">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.create_c_dict()</a>.</p>
 
 </div>
 </div>
@@ -1159,20 +1276,18 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
 <p>Handles config variables that have fcst/obs versions or a generic variable to handle both, i.e. </p>
 <p>FCST_NAME, OBS_NAME, and NAME. If FCST_NAME and OBS_NAME both exist, they are used. If both are don't exist, NAME is used. </p>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00330">330</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="mode__wrapper_8py_source.html#l00031">metplus.wrappers.mode_wrapper.MODEWrapper.add_merge_config_file()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00422">422</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
 </div>
 </div>
-<a id="aa96a642dd5599e8d0d9e26cf85bcb639"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa96a642dd5599e8d0d9e26cf85bcb639">&#9670;&nbsp;</a></span>handle_window_once()</h2>
+<a id="a6dacf52f80fb785cab6104095e48d1da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dacf52f80fb785cab6104095e48d1da">&#9670;&nbsp;</a></span>handle_file_window_variables()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def metplus.wrappers.command_builder.CommandBuilder.handle_window_once </td>
+          <td class="memname">def metplus.wrappers.command_builder.CommandBuilder.handle_file_window_variables </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em>, </td>
@@ -1182,72 +1297,6 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
           <td></td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>c_dict</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>dtype</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>edge</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>app_name</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check and set window dictionary variables like OBS_WINDOW_BEG or FCST_FILE_WINDW_END Args: </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">c_dict</td><td>dictionary to set items in </td></tr>
-    <tr><td class="paramname">dtype</td><td>type of data 'FCST' or 'OBS' </td></tr>
-    <tr><td class="paramname">edge</td><td>either 'BEGIN' or 'END' </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00218">218</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="command__builder_8py_source.html#l00265">metplus.wrappers.command_builder.CommandBuilder.handle_window_variables()</a>.</p>
-
-</div>
-</div>
-<a id="acc15362881592ce680cf2dd51384c348"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc15362881592ce680cf2dd51384c348">&#9670;&nbsp;</a></span>handle_window_variables()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">def metplus.wrappers.command_builder.CommandBuilder.handle_window_variables </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>c_dict</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>app_name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1277,9 +1326,164 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00265">265</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00337">337</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mode__wrapper_8py_source.html#l00031">metplus.wrappers.mode_wrapper.MODEWrapper.add_merge_config_file()</a>, <a class="el" href="point__stat__wrapper_8py_source.html#l00031">metplus.wrappers.point_stat_wrapper.PointStatWrapper.create_c_dict()</a>, <a class="el" href="series__analysis__wrapper_8py_source.html#l00055">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.create_c_dict()</a>, and <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00060">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.create_c_dict()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pb2nc__wrapper_8py_source.html#l00043">metplus.wrappers.pb2nc_wrapper.PB2NCWrapper.create_c_dict()</a>, <a class="el" href="compare__gridded__wrapper_8py_source.html#l00046">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.create_c_dict()</a>, and <a class="el" href="series__analysis__wrapper_8py_source.html#l00073">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.create_c_dict()</a>.</p>
+
+</div>
+</div>
+<a id="a387e2622a9202187aedb7752ddf629cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a387e2622a9202187aedb7752ddf629cb">&#9670;&nbsp;</a></span>handle_flags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def metplus.wrappers.command_builder.CommandBuilder.handle_flags </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>flag_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handle reading and setting of flag dictionary values to set in a MET config file. </p>
+<p>Sets METPLUS_{flag_type}_FLAG_DICT in the env_var_dict. </p><pre class="fragment">@param flag_type type of flag to read, i.e. OUTPUT or ENSEMBLE</pre> 
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01762">1762</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00101">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.create_c_dict()</a>.</p>
+
+</div>
+</div>
+<a id="a40bd4ca63f344c778f2cacced917fd9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40bd4ca63f344c778f2cacced917fd9a">&#9670;&nbsp;</a></span>handle_mask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def metplus.wrappers.command_builder.CommandBuilder.handle_mask </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>single_value</em> = <code>False</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read mask dictionary values and set them into env_var_list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">single_value</td><td>if True, only a single value for grid and poly are allowed. If False, they should be treated as as list </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01907">1907</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="pb2nc__wrapper_8py_source.html#l00043">metplus.wrappers.pb2nc_wrapper.PB2NCWrapper.create_c_dict()</a>.</p>
+
+</div>
+</div>
+<a id="ae56f2cbc42ee095b21af3433144af869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae56f2cbc42ee095b21af3433144af869">&#9670;&nbsp;</a></span>handle_obs_window_variables()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def metplus.wrappers.command_builder.CommandBuilder.handle_obs_window_variables </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>c_dict</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handle obs window config variables like OBS_&lt;app_name&gt;_WINDOW_[BEGIN/END]. </p>
+<p>Set c_dict values for begin and end to handle old method of setting env vars in MET config files, i.e. OBS_WINDOW_[BEGIN/END]. Set env_var_dict value if any of the values are set </p><pre class="fragment"> @param c_dict dictionary to read items from</pre> 
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00304">304</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="pb2nc__wrapper_8py_source.html#l00043">metplus.wrappers.pb2nc_wrapper.PB2NCWrapper.create_c_dict()</a>, <a class="el" href="point__stat__wrapper_8py_source.html#l00047">metplus.wrappers.point_stat_wrapper.PointStatWrapper.create_c_dict()</a>, and <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00101">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.create_c_dict()</a>.</p>
+
+</div>
+</div>
+<a id="a21806289170dd44655cc1100e3104709"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21806289170dd44655cc1100e3104709">&#9670;&nbsp;</a></span>handle_window_once()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def metplus.wrappers.command_builder.CommandBuilder.handle_window_once </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>input_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>default_val</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check and set window dictionary variables like OBS_WINDOW_BEG or FCST_FILE_WINDW_END. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_list</td><td>list of config keys to check for value </td></tr>
+    <tr><td class="paramname">default_val</td><td>value to use if none of the input keys found </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00291">291</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="command__builder_8py_source.html#l00337">metplus.wrappers.command_builder.CommandBuilder.handle_file_window_variables()</a>, and <a class="el" href="command__builder_8py_source.html#l00304">metplus.wrappers.command_builder.CommandBuilder.handle_obs_window_variables()</a>.</p>
 
 </div>
 </div>
@@ -1318,9 +1522,34 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>list of log messages </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00199">199</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00272">272</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="command__builder_8py_source.html#l01117">metplus.wrappers.command_builder.CommandBuilder.run_command()</a>, and <a class="el" href="command__builder_8py_source.html#l00150">metplus.wrappers.command_builder.CommandBuilder.set_environment_variables()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="command__builder_8py_source.html#l01254">metplus.wrappers.command_builder.CommandBuilder.run_command()</a>, and <a class="el" href="command__builder_8py_source.html#l00207">metplus.wrappers.command_builder.CommandBuilder.set_environment_variables()</a>.</p>
+
+</div>
+</div>
+<a id="afd64a03fdc3879d87ff6bccc5f5159b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd64a03fdc3879d87ff6bccc5f5159b4">&#9670;&nbsp;</a></span>read_mask_poly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def metplus.wrappers.command_builder.CommandBuilder.read_mask_poly </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read old or new config variables used to set mask.poly in MET config files. </p>
+<dl class="section return"><dt>Returns</dt><dd>value from config or empty string if neither variable is set </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01162">1162</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mode__wrapper_8py_source.html#l00052">metplus.wrappers.mode_wrapper.MODEWrapper.add_merge_config_file()</a>, <a class="el" href="point__stat__wrapper_8py_source.html#l00047">metplus.wrappers.point_stat_wrapper.PointStatWrapper.create_c_dict()</a>, and <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00101">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.create_c_dict()</a>.</p>
 
 </div>
 </div>
@@ -1360,9 +1589,9 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True on success, False otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01117">1117</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01254">1254</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="command__builder_8py_source.html#l01108">metplus.wrappers.command_builder.CommandBuilder.build()</a>, <a class="el" href="plot__data__plane__wrapper_8py_source.html#l00214">metplus.wrappers.plot_data_plane_wrapper.PlotDataPlaneWrapper.convert_to_png()</a>, and <a class="el" href="series__analysis__wrapper_8py_source.html#l00865">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.generate_animations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="command__builder_8py_source.html#l01245">metplus.wrappers.command_builder.CommandBuilder.build()</a>, <a class="el" href="plot__data__plane__wrapper_8py_source.html#l00214">metplus.wrappers.plot_data_plane_wrapper.PlotDataPlaneWrapper.convert_to_png()</a>, and <a class="el" href="series__analysis__wrapper_8py_source.html#l00881">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.generate_animations()</a>.</p>
 
 </div>
 </div>
@@ -1400,9 +1629,9 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00874">874</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00989">989</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="compare__gridded__wrapper_8py_source.html#l00302">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.process_fields()</a>, <a class="el" href="mode__wrapper_8py_source.html#l00190">metplus.wrappers.mode_wrapper.MODEWrapper.process_fields_one_thresh()</a>, and <a class="el" href="mtd__wrapper_8py_source.html#l00274">metplus.wrappers.mtd_wrapper.MTDWrapper.process_fields_one_thresh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="compare__gridded__wrapper_8py_source.html#l00313">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.process_fields()</a>, <a class="el" href="mode__wrapper_8py_source.html#l00207">metplus.wrappers.mode_wrapper.MODEWrapper.process_fields_one_thresh()</a>, and <a class="el" href="mtd__wrapper_8py_source.html#l00325">metplus.wrappers.mtd_wrapper.MTDWrapper.process_fields_one_thresh()</a>.</p>
 
 </div>
 </div>
@@ -1440,14 +1669,14 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00150">150</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00207">207</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00655">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.build_and_run_series_request()</a>, <a class="el" href="make__plots__wrapper_8py_source.html#l00092">metplus.wrappers.make_plots_wrapper.MakePlotsWrapper.create_c_dict()</a>, <a class="el" href="pcp__combine__wrapper_8py_source.html#l00401">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.get_accumulation()</a>, <a class="el" href="compare__gridded__wrapper_8py_source.html#l00302">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.process_fields()</a>, <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00684">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.process_fields()</a>, <a class="el" href="mode__wrapper_8py_source.html#l00190">metplus.wrappers.mode_wrapper.MODEWrapper.process_fields_one_thresh()</a>, <a class="el" href="mtd__wrapper_8py_source.html#l00274">metplus.wrappers.mtd_wrapper.MTDWrapper.process_fields_one_thresh()</a>, <a class="el" href="tc__pairs__wrapper_8py_source.html#l00178">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.run_all_times()</a>, <a class="el" href="py__embed__ingest__wrapper_8py_source.html#l00125">metplus.wrappers.py_embed_ingest_wrapper.PyEmbedIngestWrapper.run_at_time()</a>, <a class="el" href="tc__stat__wrapper_8py_source.html#l00174">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.run_at_time()</a>, <a class="el" href="gen__vx__mask__wrapper_8py_source.html#l00158">metplus.wrappers.gen_vx_mask_wrapper.GenVxMaskWrapper.run_at_time_all()</a>, <a class="el" href="tc__pairs__wrapper_8py_source.html#l00238">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.run_at_time_loop_string()</a>, <a class="el" href="user__script__wrapper_8py_source.html#l00056">metplus.wrappers.user_script_wrapper.UserScriptWrapper.run_at_time_once()</a>, <a class="el" href="grid__diag__wrapper_8py_source.html#l00123">metplus.wrappers.grid_diag_wrapper.GridDiagWrapper.run_at_time_once()</a>, <a class="el" href="plot__data__plane__wrapper_8py_source.html#l00140">metplus.wrappers.plot_data_plane_wrapper.PlotDataPlaneWrapper.run_at_time_once()</a>, <a class="el" href="point2grid__wrapper_8py_source.html#l00176">metplus.wrappers.point2grid_wrapper.Point2GridWrapper.run_at_time_once()</a>, <a class="el" href="pb2nc__wrapper_8py_source.html#l00258">metplus.wrappers.pb2nc_wrapper.PB2NCWrapper.run_at_time_once()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00282">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time_once()</a>, <a class="el" href="tc__gen__wrapper_8py_source.html#l00291">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.run_at_time_once()</a>, <a class="el" href="regrid__data__plane__wrapper_8py_source.html#l00412">metplus.wrappers.regrid_data_plane_wrapper.RegridDataPlaneWrapper.run_at_time_once()</a>, and <a class="el" href="stat__analysis__wrapper_8py_source.html#l01674">metplus.wrappers.stat_analysis_wrapper.StatAnalysisWrapper.run_stat_analysis_job()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00678">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.build_and_run_series_request()</a>, <a class="el" href="make__plots__wrapper_8py_source.html#l00092">metplus.wrappers.make_plots_wrapper.MakePlotsWrapper.create_c_dict()</a>, <a class="el" href="pcp__combine__wrapper_8py_source.html#l00401">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.get_accumulation()</a>, <a class="el" href="tc__pairs__wrapper_8py_source.html#l00506">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.process_data()</a>, <a class="el" href="compare__gridded__wrapper_8py_source.html#l00313">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.process_fields()</a>, <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00697">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.process_fields()</a>, <a class="el" href="mode__wrapper_8py_source.html#l00207">metplus.wrappers.mode_wrapper.MODEWrapper.process_fields_one_thresh()</a>, <a class="el" href="mtd__wrapper_8py_source.html#l00325">metplus.wrappers.mtd_wrapper.MTDWrapper.process_fields_one_thresh()</a>, <a class="el" href="tc__pairs__wrapper_8py_source.html#l00254">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.run_all_times()</a>, <a class="el" href="py__embed__ingest__wrapper_8py_source.html#l00125">metplus.wrappers.py_embed_ingest_wrapper.PyEmbedIngestWrapper.run_at_time()</a>, <a class="el" href="tc__stat__wrapper_8py_source.html#l00209">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.run_at_time()</a>, <a class="el" href="gen__vx__mask__wrapper_8py_source.html#l00158">metplus.wrappers.gen_vx_mask_wrapper.GenVxMaskWrapper.run_at_time_all()</a>, <a class="el" href="user__script__wrapper_8py_source.html#l00056">metplus.wrappers.user_script_wrapper.UserScriptWrapper.run_at_time_once()</a>, <a class="el" href="gempak__to__cf__wrapper_8py_source.html#l00098">metplus.wrappers.gempak_to_cf_wrapper.GempakToCFWrapper.run_at_time_once()</a>, <a class="el" href="grid__diag__wrapper_8py_source.html#l00138">metplus.wrappers.grid_diag_wrapper.GridDiagWrapper.run_at_time_once()</a>, <a class="el" href="plot__data__plane__wrapper_8py_source.html#l00140">metplus.wrappers.plot_data_plane_wrapper.PlotDataPlaneWrapper.run_at_time_once()</a>, <a class="el" href="point2grid__wrapper_8py_source.html#l00176">metplus.wrappers.point2grid_wrapper.Point2GridWrapper.run_at_time_once()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00229">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.run_at_time_once()</a>, <a class="el" href="pb2nc__wrapper_8py_source.html#l00237">metplus.wrappers.pb2nc_wrapper.PB2NCWrapper.run_at_time_once()</a>, <a class="el" href="tc__gen__wrapper_8py_source.html#l00338">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.run_at_time_once()</a>, <a class="el" href="regrid__data__plane__wrapper_8py_source.html#l00412">metplus.wrappers.regrid_data_plane_wrapper.RegridDataPlaneWrapper.run_at_time_once()</a>, and <a class="el" href="stat__analysis__wrapper_8py_source.html#l01709">metplus.wrappers.stat_analysis_wrapper.StatAnalysisWrapper.run_stat_analysis_job()</a>.</p>
 
 </div>
 </div>
-<a id="ac9fec0ccbefa0d5f6ed5f3f632d3f39c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9fec0ccbefa0d5f6ed5f3f632d3f39c">&#9670;&nbsp;</a></span>set_met_config_bool()</h2>
+<a id="a3de6caeff8d020957a1fec4292e1542f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3de6caeff8d020957a1fec4292e1542f">&#9670;&nbsp;</a></span>set_met_config_bool()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1468,7 +1697,7 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>mp_config_name</em>, </td>
+          <td class="paramname"><em>mp_config</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1500,7 +1729,7 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
 <p>Set c_dict item with boolean value expressed as a string. Args: </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">c_dict</td><td>configuration dictionary to set </td></tr>
-    <tr><td class="paramname">mp_config_name</td><td>METplus configuration variable name. Assumed to be in the [config] section. </td></tr>
+    <tr><td class="paramname">mp_config</td><td>METplus configuration variable name. Assumed to be in the [config] section. </td></tr>
     <tr><td class="paramname">met_config_name</td><td>name of MET configuration variable to set. Also used to determine the key in c_dict to set (upper-case) </td></tr>
     <tr><td class="paramname">c_dict_key</td><td>optional argument to specify c_dict key to store result. If set to None (default) then use upper-case of met_config_name </td></tr>
     <tr><td class="paramname">uppercase</td><td>If true, set value to TRUE or FALSE </td></tr>
@@ -1508,14 +1737,14 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01345">1345</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01460">1460</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00060">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.create_c_dict()</a>, <a class="el" href="tc__stat__wrapper_8py_source.html#l00099">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.set_met_config_for_environment_variables()</a>, and <a class="el" href="command__builder_8py_source.html#l01295">metplus.wrappers.command_builder.CommandBuilder.set_met_config_number()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mode__wrapper_8py_source.html#l00052">metplus.wrappers.mode_wrapper.MODEWrapper.add_merge_config_file()</a>, <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00101">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.create_c_dict()</a>, <a class="el" href="command__builder_8py_source.html#l01807">metplus.wrappers.command_builder.CommandBuilder.get_env_var_value()</a>, <a class="el" href="tc__stat__wrapper_8py_source.html#l00140">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.set_met_config_for_environment_variables()</a>, and <a class="el" href="command__builder_8py_source.html#l01401">metplus.wrappers.command_builder.CommandBuilder.set_met_config_number()</a>.</p>
 
 </div>
 </div>
-<a id="adb10b7e3accabd2be904dab0e116a2e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb10b7e3accabd2be904dab0e116a2e6">&#9670;&nbsp;</a></span>set_met_config_list()</h2>
+<a id="adaf9a551e9e10a24b08f6844b98ba1a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaf9a551e9e10a24b08f6844b98ba1a7">&#9670;&nbsp;</a></span>set_met_config_list()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1536,7 +1765,7 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>mp_config_name</em>, </td>
+          <td class="paramname"><em>mp_config</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1575,21 +1804,21 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
   <table class="params">
     <tr><td class="paramname">c_dict</td><td>configuration dictionary to set </td></tr>
     <tr><td class="paramname">mp_config_name</td><td>METplus configuration variable name. Assumed to be in the [config] section. Value can be a comma-separated list of items. </td></tr>
-    <tr><td class="paramname">met_config_name</td><td>name of MET configuration variable to set. Also used to determine the key in c_dict to set (upper-case) </td></tr>
+    <tr><td class="paramname">met_config</td><td>name of MET configuration variable to set. Also used to determine the key in c_dict to set (upper-case) </td></tr>
     <tr><td class="paramname">c_dict_key</td><td>optional argument to specify c_dict key to store result. If set to None (default) then use upper-case of met_config_name </td></tr>
     <tr><td class="paramname">allow_empty</td><td>if True, if METplus config variable is set but is an empty string, then set the c_dict value to an empty list. If False, behavior is the same as when the variable is not set at all, which is to not set anything for the c_dict value </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01231">1231</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01333">1333</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00055">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.create_c_dict()</a>, <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00060">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.create_c_dict()</a>, <a class="el" href="command__builder_8py_source.html#l01195">metplus.wrappers.command_builder.CommandBuilder.format_met_config_dict()</a>, and <a class="el" href="tc__stat__wrapper_8py_source.html#l00099">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.set_met_config_for_environment_variables()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pb2nc__wrapper_8py_source.html#l00043">metplus.wrappers.pb2nc_wrapper.PB2NCWrapper.create_c_dict()</a>, <a class="el" href="point__stat__wrapper_8py_source.html#l00047">metplus.wrappers.point_stat_wrapper.PointStatWrapper.create_c_dict()</a>, <a class="el" href="tc__pairs__wrapper_8py_source.html#l00070">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.create_c_dict()</a>, <a class="el" href="series__analysis__wrapper_8py_source.html#l00073">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.create_c_dict()</a>, <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00101">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.create_c_dict()</a>, <a class="el" href="command__builder_8py_source.html#l01807">metplus.wrappers.command_builder.CommandBuilder.get_env_var_value()</a>, <a class="el" href="command__builder_8py_source.html#l01790">metplus.wrappers.command_builder.CommandBuilder.handle_censor_val_and_thresh()</a>, <a class="el" href="command__builder_8py_source.html#l01907">metplus.wrappers.command_builder.CommandBuilder.handle_mask()</a>, <a class="el" href="command__builder_8py_source.html#l01305">metplus.wrappers.command_builder.CommandBuilder.run_all_times()</a>, and <a class="el" href="tc__stat__wrapper_8py_source.html#l00140">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.set_met_config_for_environment_variables()</a>.</p>
 
 </div>
 </div>
-<a id="ad7e834cd3d85c9a1e932675fe3bbc632"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7e834cd3d85c9a1e932675fe3bbc632">&#9670;&nbsp;</a></span>set_met_config_number()</h2>
+<a id="aa1a0b9cc40aa39d8e394f9a32ef8596d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1a0b9cc40aa39d8e394f9a32ef8596d">&#9670;&nbsp;</a></span>set_met_config_number()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1616,7 +1845,7 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>mp_config_name</em>, </td>
+          <td class="paramname"><em>mp_config</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1643,21 +1872,21 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
   <table class="params">
     <tr><td class="paramname">c_dict</td><td>configuration dictionary to set </td></tr>
     <tr><td class="paramname">num_type</td><td>type of number to get from config. If set to 'int', call getint function. If not, call getfloat function. </td></tr>
-    <tr><td class="paramname">mp_config_name</td><td>METplus configuration variable name. Assumed to be in the [config] section. Value can be a comma-separated list of items. </td></tr>
+    <tr><td class="paramname">mp_config</td><td>METplus configuration variable name. Assumed to be in the [config] section. Value can be a comma-separated list of items. </td></tr>
     <tr><td class="paramname">met_config_name</td><td>name of MET configuration variable to set. Also used to determine the key in c_dict to set (upper-case) if c_dict_key is None </td></tr>
     <tr><td class="paramname">c_dict_key</td><td>optional argument to specify c_dict key to store result. If set to None (default) then use upper-case of met_config_name </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01295">1295</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01401">1401</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="command__builder_8py_source.html#l01295">metplus.wrappers.command_builder.CommandBuilder.set_met_config_number()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="command__builder_8py_source.html#l01401">metplus.wrappers.command_builder.CommandBuilder.set_met_config_number()</a>.</p>
 
 </div>
 </div>
-<a id="a3b90f154ccea1aba31583d91cc8b21a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b90f154ccea1aba31583d91cc8b21a3">&#9670;&nbsp;</a></span>set_met_config_string()</h2>
+<a id="a76c6e55e05c081aeed1a24cea849f92a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76c6e55e05c081aeed1a24cea849f92a">&#9670;&nbsp;</a></span>set_met_config_string()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1678,7 +1907,7 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>mp_config_name</em>, </td>
+          <td class="paramname"><em>mp_config</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1710,16 +1939,16 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
 <p>Set c_dict item with formatted string. Args: </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">c_dict</td><td>configuration dictionary to set </td></tr>
-    <tr><td class="paramname">mp_config_name</td><td>METplus configuration variable name. Assumed to be in the [config] section. Value can be a comma-separated list of items. </td></tr>
+    <tr><td class="paramname">mp_config</td><td>METplus configuration variable name. Assumed to be in the [config] section. Value can be a comma-separated list of items. </td></tr>
     <tr><td class="paramname">met_config_name</td><td>name of MET configuration variable to set. Also used to determine the key in c_dict to set (upper-case) </td></tr>
     <tr><td class="paramname">c_dict_key</td><td>optional argument to specify c_dict key to store result. If set to None (default) then use upper-case of met_config_name </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01269">1269</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l01371">1371</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="compare__gridded__wrapper_8py_source.html#l00046">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.create_c_dict()</a>, <a class="el" href="series__analysis__wrapper_8py_source.html#l00055">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.create_c_dict()</a>, <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00060">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.create_c_dict()</a>, <a class="el" href="command__builder_8py_source.html#l01382">metplus.wrappers.command_builder.CommandBuilder.format_met_config_dictionary()</a>, <a class="el" href="tc__stat__wrapper_8py_source.html#l00099">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.set_met_config_for_environment_variables()</a>, and <a class="el" href="command__builder_8py_source.html#l01231">metplus.wrappers.command_builder.CommandBuilder.set_met_config_list()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mode__wrapper_8py_source.html#l00052">metplus.wrappers.mode_wrapper.MODEWrapper.add_merge_config_file()</a>, <a class="el" href="compare__gridded__wrapper_8py_source.html#l00046">metplus.wrappers.compare_gridded_wrapper.CompareGriddedWrapper.create_c_dict()</a>, <a class="el" href="tc__pairs__wrapper_8py_source.html#l00070">metplus.wrappers.tc_pairs_wrapper.TCPairsWrapper.create_c_dict()</a>, <a class="el" href="series__analysis__wrapper_8py_source.html#l00073">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.create_c_dict()</a>, <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00101">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.create_c_dict()</a>, <a class="el" href="command__builder_8py_source.html#l01520">metplus.wrappers.command_builder.CommandBuilder.format_met_config_dict()</a>, <a class="el" href="command__builder_8py_source.html#l01807">metplus.wrappers.command_builder.CommandBuilder.get_env_var_value()</a>, <a class="el" href="command__builder_8py_source.html#l01762">metplus.wrappers.command_builder.CommandBuilder.handle_flags()</a>, <a class="el" href="command__builder_8py_source.html#l01907">metplus.wrappers.command_builder.CommandBuilder.handle_mask()</a>, <a class="el" href="tc__stat__wrapper_8py_source.html#l00140">metplus.wrappers.tc_stat_wrapper.TCStatWrapper.set_met_config_for_environment_variables()</a>, and <a class="el" href="command__builder_8py_source.html#l01333">metplus.wrappers.command_builder.CommandBuilder.set_met_config_list()</a>.</p>
 
 </div>
 </div>
@@ -1772,9 +2001,9 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>climo_types</b> = ['M
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>path to output file </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00700">700</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__builder_8py_source.html#l00815">815</a> of file <a class="el" href="command__builder_8py_source.html">command_builder.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00493">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.create_ascii_storm_files_list()</a>, <a class="el" href="tc__gen__wrapper_8py_source.html#l00313">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.find_input_files()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00345">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.find_input_files()</a>, <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00485">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.find_model_members()</a>, <a class="el" href="series__analysis__wrapper_8py_source.html#l00865">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.generate_animations()</a>, <a class="el" href="mtd__wrapper_8py_source.html#l00141">metplus.wrappers.mtd_wrapper.MTDWrapper.run_at_time_loop_string()</a>, and <a class="el" href="grid__diag__wrapper_8py_source.html#l00259">metplus.wrappers.grid_diag_wrapper.GridDiagWrapper.subset_input_files()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="series__analysis__wrapper_8py_source.html#l00516">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.create_ascii_storm_files_list()</a>, <a class="el" href="tcrmw__wrapper_8py_source.html#l00293">metplus.wrappers.tcrmw_wrapper.TCRMWWrapper.find_input_files()</a>, <a class="el" href="tc__gen__wrapper_8py_source.html#l00360">metplus.wrappers.tc_gen_wrapper.TCGenWrapper.find_input_files()</a>, <a class="el" href="ensemble__stat__wrapper_8py_source.html#l00573">metplus.wrappers.ensemble_stat_wrapper.EnsembleStatWrapper.find_model_members()</a>, <a class="el" href="series__analysis__wrapper_8py_source.html#l00881">metplus.wrappers.series_analysis_wrapper.SeriesAnalysisWrapper.generate_animations()</a>, <a class="el" href="mtd__wrapper_8py_source.html#l00182">metplus.wrappers.mtd_wrapper.MTDWrapper.run_at_time_loop_string()</a>, and <a class="el" href="grid__diag__wrapper_8py_source.html#l00278">metplus.wrappers.grid_diag_wrapper.GridDiagWrapper.subset_input_files()</a>.</p>
 
 </div>
 </div>

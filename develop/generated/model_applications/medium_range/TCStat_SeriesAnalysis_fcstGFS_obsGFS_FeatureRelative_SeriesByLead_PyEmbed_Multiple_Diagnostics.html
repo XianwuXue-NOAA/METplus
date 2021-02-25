@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>5.2.6.9. Multi_Tool: Feature Relative by Lead using Multiple User-Defined Fields &mdash; METplus 4.0.0-rc1-dev documentation</title>
+  <title>5.2.7.9. Multi_Tool: Feature Relative by Lead using Multiple User-Defined Fields &mdash; METplus 4.0.0-beta4-dev documentation</title>
   
 
   
@@ -45,10 +45,10 @@
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="METplus 4.0.0-rc1-dev documentation" href="../../../index.html"/>
+    <link rel="top" title="METplus 4.0.0-beta4-dev documentation" href="../../../index.html"/>
         <link rel="up" title="5.2. Model Applications" href="../index.html"/>
-        <link rel="next" title="5.2.7.1. Grid-Stat: 24-hour QPF Use Case" href="../precipitation/GridStat_fcstGFS_obsCCPA_GRIB.html"/>
-        <link rel="prev" title="5.2.6.8. Multi_Tool: Feature Relative by Init" href="TCStat_SeriesAnalysis_fcstGFS_obsGFS_FeatureRelative_SeriesByInit.html"/> 
+        <link rel="next" title="5.2.8.1. Grid-Stat: 24-hour QPF Use Case" href="../precipitation/GridStat_fcstGFS_obsCCPA_GRIB.html"/>
+        <link rel="prev" title="5.2.7.8. Multi_Tool: Feature Relative by Init" href="TCStat_SeriesAnalysis_fcstGFS_obsGFS_FeatureRelative_SeriesByInit.html"/> 
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
@@ -132,11 +132,12 @@
 <li class="toctree-l4"><a class="reference internal" href="../index.html#convection-allowing-models">5.2.3. Convection Allowing Models</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../index.html#cryosphere">5.2.4. Cryosphere</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../index.html#data-assimilation">5.2.5. Data Assimilation</a></li>
-<li class="toctree-l4 current"><a class="reference internal" href="../index.html#medium-range">5.2.6. Medium Range</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#precipitation">5.2.7. Precipitation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#subseasonal-to-seasonal">5.2.8. Subseasonal to Seasonal</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#space-weather">5.2.9. Space Weather</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#tropical-cyclone-and-extra-tropical-cyclone">5.2.10. Tropical Cyclone and Extra Tropical Cyclone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#marine-and-coastal">5.2.6. Marine and Coastal</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="../index.html#medium-range">5.2.7. Medium Range</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#precipitation">5.2.8. Precipitation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#subseasonal-to-seasonal">5.2.9. Subseasonal to Seasonal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#space-weather">5.2.10. Space Weather</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#tropical-cyclone-and-extra-tropical-cyclone">5.2.11. Tropical Cyclone and Extra Tropical Cyclone</a></li>
 </ul>
 </li>
 </ul>
@@ -200,7 +201,7 @@
         
           <li><a href="../index.html"><span class="section-number">5.2. </span>Model Applications</a> &raquo;</li>
         
-      <li><span class="section-number">5.2.6.9. </span>Multi_Tool: Feature Relative by Lead using Multiple User-Defined Fields</li>
+      <li><span class="section-number">5.2.7.9. </span>Multi_Tool: Feature Relative by Lead using Multiple User-Defined Fields</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -221,7 +222,7 @@
             
   
 <div class="sphx-glr-example-title section" id="multi-tool-feature-relative-by-lead-using-multiple-user-defined-fields">
-<span id="sphx-glr-generated-model-applications-medium-range-tcstat-seriesanalysis-fcstgfs-obsgfs-featurerelative-seriesbylead-pyembed-multiple-diagnostics-py"></span><h1><span class="section-number">5.2.6.9. </span>Multi_Tool: Feature Relative by Lead using Multiple User-Defined Fields<a class="headerlink" href="#multi-tool-feature-relative-by-lead-using-multiple-user-defined-fields" title="Permalink to this headline">¶</a></h1>
+<span id="sphx-glr-generated-model-applications-medium-range-tcstat-seriesanalysis-fcstgfs-obsgfs-featurerelative-seriesbylead-pyembed-multiple-diagnostics-py"></span><h1><span class="section-number">5.2.7.9. </span>Multi_Tool: Feature Relative by Lead using Multiple User-Defined Fields<a class="headerlink" href="#multi-tool-feature-relative-by-lead-using-multiple-user-defined-fields" title="Permalink to this headline">¶</a></h1>
 <p>model_applications/medium_range/
 TCStat_SeriesAnalysis_fcstGFS
 _obsGFS_FeatureRelative
@@ -867,6 +868,8 @@ section on the ‘System Configuration’ page of the METplus User’s Guide for
 // The value should generally not be modified.
 //
 //version <span class="o">=</span> <span class="s2">&quot;V9.0&quot;</span><span class="p">;</span>
+
+<span class="si">${</span><span class="nv">METPLUS_MET_CONFIG_OVERRIDES</span><span class="si">}</span>
 </pre></div>
 </div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>////////////////////////////////////////////////////////////////////////////////
@@ -904,8 +907,7 @@ section on the ‘System Configuration’ page of the METplus User’s Guide for
 
 <span class="nv">censor_thresh</span> <span class="o">=</span> <span class="o">[]</span><span class="p">;</span>
 <span class="nv">censor_val</span>    <span class="o">=</span> <span class="o">[]</span><span class="p">;</span>
-//cat_thresh    <span class="o">=</span> <span class="o">[</span> NA <span class="o">]</span><span class="p">;</span>
-<span class="si">${</span><span class="nv">CAT_THRESH</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_CAT_THRESH</span><span class="si">}</span>
 <span class="nv">cnt_thresh</span>    <span class="o">=</span> <span class="o">[</span> NA <span class="o">]</span><span class="p">;</span>
 <span class="nv">cnt_logic</span>     <span class="o">=</span> UNION<span class="p">;</span>
 
@@ -913,14 +915,12 @@ section on the ‘System Configuration’ page of the METplus User’s Guide for
 // Forecast and observation fields to be verified
 //
 <span class="nv">fcst</span> <span class="o">=</span> <span class="o">{</span>
-   <span class="si">${</span><span class="nv">FCST_FILE_TYPE</span><span class="si">}</span>
-
-   <span class="nv">field</span> <span class="o">=</span> <span class="o">[</span> <span class="si">${</span><span class="nv">FCST_FIELD</span><span class="si">}</span> <span class="o">]</span><span class="p">;</span>
+   <span class="si">${</span><span class="nv">METPLUS_FCST_FILE_TYPE</span><span class="si">}</span>
+   <span class="si">${</span><span class="nv">METPLUS_FCST_FIELD</span><span class="si">}</span>
 <span class="o">}</span>
 <span class="nv">obs</span> <span class="o">=</span> <span class="o">{</span>
-   <span class="si">${</span><span class="nv">OBS_FILE_TYPE</span><span class="si">}</span>
-
-   <span class="nv">field</span> <span class="o">=</span> <span class="o">[</span> <span class="si">${</span><span class="nv">OBS_FIELD</span><span class="si">}</span> <span class="o">]</span><span class="p">;</span>
+   <span class="si">${</span><span class="nv">METPLUS_OBS_FILE_TYPE</span><span class="si">}</span>
+   <span class="si">${</span><span class="nv">METPLUS_OBS_FIELD</span><span class="si">}</span>
 <span class="o">}</span>
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -930,7 +930,7 @@ section on the ‘System Configuration’ page of the METplus User’s Guide for
 //
 <span class="nv">climo_mean</span> <span class="o">=</span> <span class="o">{</span>
 
-   <span class="nv">file_name</span> <span class="o">=</span> <span class="o">[</span> <span class="si">${</span><span class="nv">CLIMO_MEAN_FILE</span><span class="si">}</span> <span class="o">]</span><span class="p">;</span>
+   <span class="si">${</span><span class="nv">METPLUS_CLIMO_MEAN_FILE</span><span class="si">}</span>
    <span class="nv">field</span>     <span class="o">=</span> <span class="o">[]</span><span class="p">;</span>
 
    <span class="nv">regrid</span> <span class="o">=</span> <span class="o">{</span>
@@ -946,9 +946,7 @@ section on the ‘System Configuration’ page of the METplus User’s Guide for
 <span class="o">}</span>
 
 <span class="nv">climo_stdev</span> <span class="o">=</span> climo_mean<span class="p">;</span>
-<span class="nv">climo_stdev</span> <span class="o">=</span> <span class="o">{</span>
-   <span class="nv">file_name</span> <span class="o">=</span> <span class="o">[</span> <span class="si">${</span><span class="nv">CLIMO_STDEV_FILE</span><span class="si">}</span> <span class="o">]</span><span class="p">;</span>
-<span class="o">}</span>
+<span class="si">${</span><span class="nv">METPLUS_CLIMO_STDEV_FILE</span><span class="si">}</span>
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -979,14 +977,12 @@ section on the ‘System Configuration’ page of the METplus User’s Guide for
 // Number of grid points to be processed concurrently.  Set smaller to use
 // less memory but increase the number of passes through the data.
 //
-//block_size <span class="o">=</span> <span class="m">1024</span><span class="p">;</span>
-<span class="si">${</span><span class="nv">BLOCK_SIZE</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_BLOCK_SIZE</span><span class="si">}</span>
 
 //
 // Ratio of valid matched pairs to compute statistics <span class="k">for</span> a grid point
 //
-//vld_thresh <span class="o">=</span> <span class="m">1</span>.0<span class="p">;</span>
-<span class="si">${</span><span class="nv">VLD_THRESH</span><span class="si">}</span>
+<span class="si">${</span><span class="nv">METPLUS_VLD_THRESH</span><span class="si">}</span>
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -996,8 +992,7 @@ section on the ‘System Configuration’ page of the METplus User’s Guide for
 <span class="nv">output_stats</span> <span class="o">=</span> <span class="o">{</span>
    <span class="nv">fho</span>    <span class="o">=</span> <span class="o">[]</span><span class="p">;</span>
    <span class="nv">ctc</span>    <span class="o">=</span> <span class="o">[]</span><span class="p">;</span>
-//   <span class="nv">cts</span>    <span class="o">=</span> <span class="o">[]</span><span class="p">;</span>
-   <span class="si">${</span><span class="nv">CTS_LIST</span><span class="si">}</span>
+   <span class="si">${</span><span class="nv">METPLUS_CTS_LIST</span><span class="si">}</span>
    <span class="nv">mctc</span>   <span class="o">=</span> <span class="o">[]</span><span class="p">;</span>
    <span class="nv">mcts</span>   <span class="o">=</span> <span class="o">[]</span><span class="p">;</span>
    <span class="si">${</span><span class="nv">METPLUS_STAT_LIST</span><span class="si">}</span>
@@ -1016,6 +1011,8 @@ section on the ‘System Configuration’ page of the METplus User’s Guide for
 //version        <span class="o">=</span> <span class="s2">&quot;V10.0&quot;</span><span class="p">;</span>
 
 ////////////////////////////////////////////////////////////////////////////////
+
+<span class="si">${</span><span class="nv">METPLUS_MET_CONFIG_OVERRIDES</span><span class="si">}</span>
 </pre></div>
 </div>
 <p>See the following files for more information about the environment variables set in these configuration files.</p>
@@ -1507,14 +1504,14 @@ section on the ‘System Configuration’ page of the METplus User’s Guide for
 <p>This use case can be run two ways:</p>
 <p>1) Passing in TCStat_SeriesAnalysis_fcstGFS_obsGFS_FeatureRelative_SeriesByLead_PyEmbed_Multiple_Diagnostics.conf,
 then a user-specific system configuration file:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">master_metplus</span><span class="o">.</span><span class="n">py</span> \
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">run_metplus</span><span class="o">.</span><span class="n">py</span> \
 <span class="o">-</span><span class="n">c</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">METplus</span><span class="o">/</span><span class="n">parm</span><span class="o">/</span><span class="n">use_cases</span><span class="o">/</span><span class="n">model_applications</span><span class="o">/</span><span class="n">medium_range</span><span class="o">/</span><span class="n">TCStat_SeriesAnalysis_fcstGFS_obsGFS_FeatureRelative_SeriesByLead_PyEmbed_Multiple_Diagnostics</span><span class="o">.</span><span class="n">conf</span> \
 <span class="o">-</span><span class="n">c</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">user_system</span><span class="o">.</span><span class="n">conf</span>
 </pre></div>
 </div>
 <ol class="arabic" start="2">
 <li><p>Modifying the configurations in parm/metplus_config, then passing in TCStat_SeriesAnalysis_fcstGFS_obsGFS_FeatureRelative_SeriesByLead_PyEmbed_Multiple_Diagnostics.conf:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">master_metplus</span><span class="o">.</span><span class="n">py</span> \
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">run_metplus</span><span class="o">.</span><span class="n">py</span> \
 <span class="o">-</span><span class="n">c</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">METplus</span><span class="o">/</span><span class="n">parm</span><span class="o">/</span><span class="n">use_cases</span><span class="o">/</span><span class="n">model_applications</span><span class="o">/</span><span class="n">medium_range</span><span class="o">/</span><span class="n">TCStat_SeriesAnalysis_fcstGFS_obsGFS_FeatureRelative_SeriesByLead_PyEmbed_IVT</span><span class="o">.</span><span class="n">conf</span>
 </pre></div>
 </div>
@@ -1624,10 +1621,10 @@ Output for this use case will be found in subdirectories of the ‘series_analys
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../precipitation/GridStat_fcstGFS_obsCCPA_GRIB.html" class="btn btn-neutral float-right" title="5.2.7.1. Grid-Stat: 24-hour QPF Use Case" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../precipitation/GridStat_fcstGFS_obsCCPA_GRIB.html" class="btn btn-neutral float-right" title="5.2.8.1. Grid-Stat: 24-hour QPF Use Case" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="TCStat_SeriesAnalysis_fcstGFS_obsGFS_FeatureRelative_SeriesByInit.html" class="btn btn-neutral" title="5.2.6.8. Multi_Tool: Feature Relative by Init" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="TCStat_SeriesAnalysis_fcstGFS_obsGFS_FeatureRelative_SeriesByInit.html" class="btn btn-neutral" title="5.2.7.8. Multi_Tool: Feature Relative by Init" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1637,7 +1634,7 @@ Output for this use case will be found in subdirectories of the ‘series_analys
   <div role="contentinfo">
     <p>
         &copy; Copyright 2020, UCAR/NCAR, NOAA, CSU/CIRA, and CU/CIRES.
-      Last updated on Feb 11, 2021, 5:54:52 PM.
+      Last updated on Feb 25, 2021, 3:54:36 PM.
 
     </p>
   </div>

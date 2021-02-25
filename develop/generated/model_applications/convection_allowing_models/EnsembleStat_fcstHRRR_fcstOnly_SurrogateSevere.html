@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>5.2.3.7. Surrogate Severe Calculation: PCPCombine, EnsembleStat, and RegridDataPlane &mdash; METplus 4.0.0-rc1-dev documentation</title>
+  <title>5.2.3.7. Surrogate Severe Calculation: PCPCombine, EnsembleStat, and RegridDataPlane &mdash; METplus 4.0.0-beta4-dev documentation</title>
   
 
   
@@ -45,7 +45,7 @@
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="METplus 4.0.0-rc1-dev documentation" href="../../../index.html"/>
+    <link rel="top" title="METplus 4.0.0-beta4-dev documentation" href="../../../index.html"/>
         <link rel="up" title="5.2. Model Applications" href="../index.html"/>
         <link rel="next" title="5.2.4.1. Grid-Stat and MODE: Sea Ice Validation" href="../cryosphere/GridStat_MODE_fcstIMS_obsNCEP_sea_ice.html"/>
         <link rel="prev" title="5.2.3.6. Point2Grid: Calculate Practically Perfect Probabilities" href="Point2Grid_obsLSR_ObsOnly_PracticallyPerfect.html"/> 
@@ -132,11 +132,12 @@
 <li class="toctree-l4 current"><a class="reference internal" href="../index.html#convection-allowing-models">5.2.3. Convection Allowing Models</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../index.html#cryosphere">5.2.4. Cryosphere</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../index.html#data-assimilation">5.2.5. Data Assimilation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#medium-range">5.2.6. Medium Range</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#precipitation">5.2.7. Precipitation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#subseasonal-to-seasonal">5.2.8. Subseasonal to Seasonal</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#space-weather">5.2.9. Space Weather</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#tropical-cyclone-and-extra-tropical-cyclone">5.2.10. Tropical Cyclone and Extra Tropical Cyclone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#marine-and-coastal">5.2.6. Marine and Coastal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#medium-range">5.2.7. Medium Range</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#precipitation">5.2.8. Precipitation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#subseasonal-to-seasonal">5.2.9. Subseasonal to Seasonal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#space-weather">5.2.10. Space Weather</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#tropical-cyclone-and-extra-tropical-cyclone">5.2.11. Tropical Cyclone and Extra Tropical Cyclone</a></li>
 </ul>
 </li>
 </ul>
@@ -688,6 +689,8 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 //version          <span class="o">=</span> <span class="s2">&quot;V9.0&quot;</span><span class="p">;</span>
 
 ////////////////////////////////////////////////////////////////////////////////
+
+<span class="si">${</span><span class="nv">METPLUS_MET_CONFIG_OVERRIDES</span><span class="si">}</span>
 </pre></div>
 </div>
 <dl class="simple">
@@ -698,7 +701,7 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 <div class="section" id="running-metplus">
 <h2>Running METplus<a class="headerlink" href="#running-metplus" title="Permalink to this headline">¶</a></h2>
 <p>The command to run this use case is:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>master_metplus.py -c /path/to/METplus/parm/use_cases/model_applications/convection_allowing_models/EnsembleStat_fcstHRRR_fcstOnly_SurrogateSevere.conf
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>run_metplus.py -c /path/to/METplus/parm/use_cases/model_applications/convection_allowing_models/EnsembleStat_fcstHRRR_fcstOnly_SurrogateSevere.conf
 </pre></div>
 </div>
 </div>
@@ -770,7 +773,7 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
   <div role="contentinfo">
     <p>
         &copy; Copyright 2020, UCAR/NCAR, NOAA, CSU/CIRA, and CU/CIRES.
-      Last updated on Feb 11, 2021, 5:54:52 PM.
+      Last updated on Feb 25, 2021, 3:54:36 PM.
 
     </p>
   </div>

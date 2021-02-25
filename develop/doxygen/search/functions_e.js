@@ -2,11 +2,11 @@ var searchData=
 [
   ['read_5fclimo_5fwrapper_5fspecific',['read_climo_wrapper_specific',['../classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#a066a53ae121758c76d60a27bbfff955d',1,'metplus::wrappers::command_builder::CommandBuilder']]],
   ['read_5ffield_5flists_5ffrom_5fconfig',['read_field_lists_from_config',['../classmetplus_1_1wrappers_1_1stat__analysis__wrapper_1_1StatAnalysisWrapper.html#a98eaf47e8548a7feccde2f49b464d461',1,'metplus::wrappers::stat_analysis_wrapper::StatAnalysisWrapper']]],
+  ['read_5fmask_5fpoly',['read_mask_poly',['../classmetplus_1_1wrappers_1_1command__builder_1_1CommandBuilder.html#afd64a03fdc3879d87ff6bccc5f5159b4',1,'metplus::wrappers::command_builder::CommandBuilder']]],
   ['read_5fmodify_5fwrite_5ffile',['read_modify_write_file',['../classmetplus_1_1wrappers_1_1tc__pairs__wrapper_1_1TCPairsWrapper.html#a70bd0c42662bca5a2df051f90b24c380',1,'metplus::wrappers::tc_pairs_wrapper::TCPairsWrapper']]],
   ['readblock',['readblock',['../classconfdoc_1_1parsefile.html#aa4e9402c80ac2d0b7c2188682e824184',1,'confdoc::parsefile']]],
   ['readoption',['readoption',['../classconfdoc_1_1parsefile.html#a6354b65399790418d7a7ecff71c03b27',1,'confdoc::parsefile']]],
   ['reformat_5ffiles',['reformat_files',['../classmetplus_1_1wrappers_1_1tc__pairs__wrapper_1_1TCPairsWrapper.html#af15b396dafa8cdaed231aeea5ca556ad',1,'metplus::wrappers::tc_pairs_wrapper::TCPairsWrapper']]],
-  ['reformat_5fgrid_5fid',['reformat_grid_id',['../classmetplus_1_1wrappers_1_1pb2nc__wrapper_1_1PB2NCWrapper.html#a4fb1f0e74244c292bc7e83422625cd1a',1,'metplus::wrappers::pb2nc_wrapper::PB2NCWrapper']]],
   ['regrid_5fdata_5fplane_5finit',['regrid_data_plane_init',['../classmetplus_1_1wrappers_1_1extract__tiles__wrapper_1_1ExtractTilesWrapper.html#a11d0f72ed5697c4b0a0d36a6e29e867d',1,'metplus::wrappers::extract_tiles_wrapper::ExtractTilesWrapper']]],
   ['replace_5fconfig_5ffrom_5fsection',['replace_config_from_section',['../namespacemetplus_1_1util_1_1config__metplus.html#ab3adeee0582090de4e98f124cba385d7',1,'metplus::util::config_metplus']]],
   ['rescale_5flon',['rescale_lon',['../classmetplus_1_1wrappers_1_1cyclone__plotter__wrapper_1_1CyclonePlotterWrapper.html#adc02c00a0513cf54e323d4dc0932b78b',1,'metplus::wrappers::cyclone_plotter_wrapper::CyclonePlotterWrapper']]],

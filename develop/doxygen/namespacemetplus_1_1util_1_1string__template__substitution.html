@@ -110,8 +110,8 @@ def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="names
 <tr class="memitem:a231bebe9a5e50516dd0c01b3b3b3bab4"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemetplus_1_1util_1_1string__template__substitution.html#a231bebe9a5e50516dd0c01b3b3b3bab4">handle_format_delimiter</a> (split_string, idx, shift_seconds, truncate_seconds, kwargs)</td></tr>
 <tr class="memdesc:a231bebe9a5e50516dd0c01b3b3b3bab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for formatting/length request by splitting on FORMATTING_VALUE_DELIMITER split_string[1] Args:  <a href="#a231bebe9a5e50516dd0c01b3b3b3bab4">More...</a><br /></td></tr>
 <tr class="separator:a231bebe9a5e50516dd0c01b3b3b3bab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedd112970aa03882b053e35f8146bd08"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemetplus_1_1util_1_1string__template__substitution.html#aedd112970aa03882b053e35f8146bd08">do_string_sub</a> (tmpl, skip_missing_tags=False, kwargs)</td></tr>
-<tr class="separator:aedd112970aa03882b053e35f8146bd08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45de5cb0b5e343ae8b55bdc72667d37f"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemetplus_1_1util_1_1string__template__substitution.html#a45de5cb0b5e343ae8b55bdc72667d37f">do_string_sub</a> (tmpl, skip_missing_tags=False, recurse=False, attempt=MAX_ATTEMPTS, kwargs)</td></tr>
+<tr class="separator:a45de5cb0b5e343ae8b55bdc72667d37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc346064a278283a0ee42f2617ed51d8"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemetplus_1_1util_1_1string__template__substitution.html#adc346064a278283a0ee42f2617ed51d8">find_and_replace_tags_in_template</a> (match_list, tmpl, kwargs, skip_missing_tags=False)</td></tr>
 <tr class="memdesc:adc346064a278283a0ee42f2617ed51d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loop through tags from template and replace them with the correct time values.  <a href="#adc346064a278283a0ee42f2617ed51d8">More...</a><br /></td></tr>
 <tr class="separator:adc346064a278283a0ee42f2617ed51d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,6 +192,9 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>OFFSET_STRING</b> =
 <tr class="separator:a592bf27c3d751fcb383f9885fac7416f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa47fe39b26e1dfcf0a6591793ebcf361"><td class="memItemLeft" align="right" valign="top">dictionary&#160;</td><td class="memItemRight" valign="bottom"><b>LENGTH_DICT</b></td></tr>
 <tr class="separator:aa47fe39b26e1dfcf0a6591793ebcf361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5f677ddb45118a065341787347608d3"><td class="memItemLeft" align="right" valign="top"><a id="ae5f677ddb45118a065341787347608d3"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_ATTEMPTS</b> = 5</td></tr>
+<tr class="separator:ae5f677ddb45118a065341787347608d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ae41673294599268f3f42d7762e18f90c"></a>
@@ -243,9 +246,9 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>OFFSET_STRING</b> =
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00791">791</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00758">758</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00761">metplus.util.string_template_substitution.populate_output_dict()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00728">metplus.util.string_template_substitution.populate_output_dict()</a>.</p>
 
 </div>
 </div>
@@ -284,9 +287,9 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>OFFSET_STRING</b> =
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00825">825</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00792">792</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00761">metplus.util.string_template_substitution.populate_output_dict()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00728">metplus.util.string_template_substitution.populate_output_dict()</a>.</p>
 
 </div>
 </div>
@@ -325,9 +328,9 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>OFFSET_STRING</b> =
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00847">847</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00814">814</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00761">metplus.util.string_template_substitution.populate_output_dict()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00728">metplus.util.string_template_substitution.populate_output_dict()</a>.</p>
 
 </div>
 </div>
@@ -380,9 +383,9 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>OFFSET_STRING</b> =
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00179">179</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00180">180</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00685">metplus.util.string_template_substitution.get_fmt_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00652">metplus.util.string_template_substitution.get_fmt_info()</a>.</p>
 
 </div>
 </div>
@@ -428,9 +431,9 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>OFFSET_STRING</b> =
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>file path with post text removed or None if text does not match template </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00607">607</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00574">574</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00494">metplus.util.string_template_substitution.populate_match_dict()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00461">metplus.util.string_template_substitution.populate_match_dict()</a>.</p>
 
 </div>
 </div>
@@ -477,14 +480,14 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>OFFSET_STRING</b> =
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>file path with pre text removed or None if text does not match template </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00575">575</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00542">542</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00494">metplus.util.string_template_substitution.populate_match_dict()</a>, and <a class="el" href="string__template__substitution_8py_source.html#l00527">metplus.util.string_template_substitution.process_match_tags()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00461">metplus.util.string_template_substitution.populate_match_dict()</a>, and <a class="el" href="string__template__substitution_8py_source.html#l00494">metplus.util.string_template_substitution.process_match_tags()</a>.</p>
 
 </div>
 </div>
-<a id="aedd112970aa03882b053e35f8146bd08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedd112970aa03882b053e35f8146bd08">&#9670;&nbsp;</a></span>do_string_sub()</h2>
+<a id="a45de5cb0b5e343ae8b55bdc72667d37f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45de5cb0b5e343ae8b55bdc72667d37f">&#9670;&nbsp;</a></span>do_string_sub()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -505,6 +508,18 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>OFFSET_STRING</b> =
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>recurse</em> = <code>False</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>attempt</em> = <code>MAX_ATTEMPTS</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
           <td class="paramname"><em>kwargs</em>&#160;</td>
         </tr>
         <tr>
@@ -514,77 +529,40 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>OFFSET_STRING</b> =
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">log - log object
-tmpl_str - template string to populate
-kwargs - dictionary containing values for each template key
+<pre class="fragment">Perform string substitution on a template. Replace filename template
+    tags (found within curly braces) with values passed into the function
+    as arguments. In some cases, the template keys can have parameters
+    containing formatting information. datetime objects
+    set as the value of an argument can be formatted using Python datetime
+    strftime format syntax, i.e. {init?fmt=%Y%m%d}. Integers and
+    relativedelta objects passed as the value of an argument can be
+    formatted with %H, %M, %S, or %d (hour, minute, second, or day
+    respectively). Integers are assumed to be seconds.
 
-This class provides functionality for substituting values for
-string templates.
-
-Possible keys for vals:
-   init - datetime object
-   valid - datetime object
-   lead - must be in seconds
-   level - must be in seconds
-   model - the name of the model
-   domain - the domain number (01, 02, etc.) read in as a string
-   cycle - the cycle hour in HH format (00, 03, 06, etc.)
-   offset_hour - the offset hour in HH format to add
-                 to the init + cycl time:
-                  (YYYYMMDD + hh) + offset
-                 Indicate a negative offset by using a '-' sign
-                 in the
-   date - datetime object
-   region - the two-character (upper or lower case) region/basin designation
-   cyclone - a two-digit annual cyclone number (if ATCF_by_pairs) or
-             four-digit cyclone number (leading zeros)
-   misc - any string
-
-Populates the specified template with information from the
-       kwargs dictionary.  The template structure is comprised of
-       a fixed string populated with template place-holders inside curly
-       braces, for example {tmpl_str}.  The tmpl_str must be present as
-       a key in the kwargs dictionary, and the value will replace the
-       {tmpl_str} in the returned string.
-
-        In some cases, the template keys can have parameters containing
-        formatting information. The format of the template in this case
-        is {tmpl_str?parm=val}.  The supported parameters are:
-
-        init, valid:
-            fmt - specifies a strftime format for the date/time
-                  e.g. %Y%m%d%H%M%S, %Y%m%d%H
-
-          lead, level:
-            fmt -  specifies an amount of time in [H]HH[MMSS] format
-                   e.g. %HH, %HHH, %HH%MMSS, %HHH%MMSS
-
-          cycle, negative_offset, positive_offset:
-            fmt - specifies the cycle and offset hours in HH format. H and
-                  HHH format are supported, to anticipate any changes
-                  in prepbufr data.
-
-          The following were created to support processing of
-          tropical cyclone data:
-          cyclone:
-            fmt - specifies the annual cyclone number as a string.
-
-          region:
-            fmt - a string that specifies the region/basin of cyclone.
-                  For ATCF_by_pairs formatted data, this is a 2-character
-                  designation:
-                  AL|WP|CP|EP|SH|IO|LS lower case designations are
-                  observed in filenames.
-          date:
-            fmt - a string representation of the date format for a
-                  subdirectory in which track data resides, or the
-                  string representation of the date format in a file.
-                  Expected formats: YYYY, YYYYMM, YYYYMMDD, and YYYYMMDDhh
-          misc:
-            fmt -a string that represents any other miscellaneous feature
-                 of the track data, such as experiment name or some other descriptor
+    @param tmpl template to substitute values into
+    @param skip_missing_tags (Optional) argument to allow the function to
+     not fail if a tag cannot be substituted. This is useful when a
+     developer wants to substitute some of the tags in a template but
+     leave others alone before substituting them later. This is also needed
+     if the template contains curly braces that are part of a dictionary
+     (i.e. in a MET config variable) that should not be substituted. If
+     set to False (default) and a key to be substituted was not passed into
+     the function call, a TypeError exception will be raised.
+    @param recurse If True, try to substitute values recursively until max
+     number of attempts have been made. If False, only try once. Default
+     value is False.
+    @param attempt Counter to prevent infinite recursion if a set of curly
+     braces are expected to not be substituted. This argument shouldn't be
+     defined in the call to this function.
+    @param kwargs any additional arguments that are passed to the function.
+     These will be used to replace values in the template. For example, if
+     my_arg=my_value is passed to the function, any occurence of {my_arg}
+     in the template will be substituted with 'my_value'.
+    @returns template with tags substituted with values
 </pre> 
-<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00298">298</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00303">303</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00248">metplus.util.string_template_substitution.handle_format_delimiter()</a>.</p>
 
 </div>
 </div>
@@ -636,9 +614,9 @@ Populates the specified template with information from the
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00401">401</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00368">368</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00298">metplus.util.string_template_substitution.do_string_sub()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00303">metplus.util.string_template_substitution.do_string_sub()</a>.</p>
 
 </div>
 </div>
@@ -677,9 +655,9 @@ Populates the specified template with information from the
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00112">112</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00113">113</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00247">metplus.util.string_template_substitution.handle_format_delimiter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00248">metplus.util.string_template_substitution.handle_format_delimiter()</a>.</p>
 
 </div>
 </div>
@@ -725,9 +703,9 @@ Populates the specified template with information from the
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00082">82</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00083">83</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00112">metplus.util.string_template_substitution.format_hms()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00113">metplus.util.string_template_substitution.format_hms()</a>.</p>
 
 </div>
 </div>
@@ -781,9 +759,9 @@ Populates the specified template with information from the
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of characters processed from the filename if success, -1 if failed to parse all format items in template tag </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00685">685</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00652">652</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00630">metplus.util.string_template_substitution.get_format_and_shift()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00597">metplus.util.string_template_substitution.get_format_and_shift()</a>.</p>
 
 </div>
 </div>
@@ -843,9 +821,9 @@ Populates the specified template with information from the
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>tuple of the length of the formatted time info (i.e. 8 for Ymd) and valid shift value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00630">630</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00597">597</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00527">metplus.util.string_template_substitution.process_match_tags()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00494">metplus.util.string_template_substitution.process_match_tags()</a>.</p>
 
 </div>
 </div>
@@ -891,9 +869,9 @@ Populates the specified template with information from the
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>integer number of seconds that correspond to the item, i.e. -3600 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00206">206</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00207">207</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00401">metplus.util.string_template_substitution.find_and_replace_tags_in_template()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00368">metplus.util.string_template_substitution.find_and_replace_tags_in_template()</a>.</p>
 
 </div>
 </div>
@@ -916,7 +894,7 @@ Populates the specified template with information from the
 <p>Parse template and pull out all wildcard characters (* or ?) and all tags, i.e. </p>
 <p>{init?fmt=H}. Used to pull out information from a template that contains wildcards and add that information when filled out another template Returns a list of wildcards and tag names found, i.e. [ '*', 'init', 'lead'] </p>
 
-<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00059">59</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00060">60</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
 
 </div>
 </div>
@@ -973,9 +951,9 @@ Populates the specified template with information from the
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00247">247</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00248">248</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00401">metplus.util.string_template_substitution.find_and_replace_tags_in_template()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00368">metplus.util.string_template_substitution.find_and_replace_tags_in_template()</a>.</p>
 
 </div>
 </div>
@@ -1006,9 +984,9 @@ Populates the specified template with information from the
 </div><div class="memdoc">
 <pre class="fragment">Helper function for do_string_sub. Replace in 'text' all occurrences of any key in the
 given dictionary by its corresponding value.  Returns the new string. </pre> 
-<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00049">49</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00050">50</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00401">metplus.util.string_template_substitution.find_and_replace_tags_in_template()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00368">metplus.util.string_template_substitution.find_and_replace_tags_in_template()</a>.</p>
 
 </div>
 </div>
@@ -1054,7 +1032,7 @@ given dictionary by its corresponding value.  Returns the new string. </pre>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>time_info dictionary with time information if successful, None if not </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00467">467</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00434">434</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
 
 </div>
 </div>
@@ -1100,9 +1078,9 @@ given dictionary by its corresponding value.  Returns the new string. </pre>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>tuple of match dictionary and valid shift value if success, i.e. ({'init+Y': '2019'}, -30) Returns (None, None) if could not extract time info </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00494">494</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00461">461</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00467">metplus.util.string_template_substitution.parse_template()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00434">metplus.util.string_template_substitution.parse_template()</a>.</p>
 
 </div>
 </div>
@@ -1142,9 +1120,9 @@ given dictionary by its corresponding value.  Returns the new string. </pre>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>output dictionary containing the extracted time information </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00761">761</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00728">728</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00467">metplus.util.string_template_substitution.parse_template()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00434">metplus.util.string_template_substitution.parse_template()</a>.</p>
 
 </div>
 </div>
@@ -1191,9 +1169,9 @@ given dictionary by its corresponding value.  Returns the new string. </pre>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>tuple containing dictionary with match information and valid shift value if applicable, or (None, None) could not parse information </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00527">527</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="string__template__substitution_8py_source.html#l00494">494</a> of file <a class="el" href="string__template__substitution_8py_source.html">string_template_substitution.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00494">metplus.util.string_template_substitution.populate_match_dict()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="string__template__substitution_8py_source.html#l00461">metplus.util.string_template_substitution.populate_match_dict()</a>.</p>
 
 </div>
 </div>

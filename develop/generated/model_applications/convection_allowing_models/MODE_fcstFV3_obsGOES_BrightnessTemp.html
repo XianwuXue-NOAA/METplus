@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>5.2.3.1. MODE: Brightness Temperature Verification &mdash; METplus 4.0.0-rc1-dev documentation</title>
+  <title>5.2.3.1. MODE: Brightness Temperature Verification &mdash; METplus 4.0.0-beta4-dev documentation</title>
   
 
   
@@ -45,7 +45,7 @@
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="METplus 4.0.0-rc1-dev documentation" href="../../../index.html"/>
+    <link rel="top" title="METplus 4.0.0-beta4-dev documentation" href="../../../index.html"/>
         <link rel="up" title="5.2. Model Applications" href="../index.html"/>
         <link rel="next" title="5.2.3.2. Grid-Stat: Surrogate Severe and Practically Perfect Probabilistic Evaluation" href="GridStat_fcstHRRR_obsPracPerfect_SurrogateSevereProb.html"/>
         <link rel="prev" title="5.2.2.2. Grid-Stat: CESM and GFS Analysis CONUS Temp" href="../climate/GridStat_fcstCESM_obsGFS_ConusTemp.html"/> 
@@ -132,11 +132,12 @@
 <li class="toctree-l4 current"><a class="reference internal" href="../index.html#convection-allowing-models">5.2.3. Convection Allowing Models</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../index.html#cryosphere">5.2.4. Cryosphere</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../index.html#data-assimilation">5.2.5. Data Assimilation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#medium-range">5.2.6. Medium Range</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#precipitation">5.2.7. Precipitation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#subseasonal-to-seasonal">5.2.8. Subseasonal to Seasonal</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#space-weather">5.2.9. Space Weather</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../index.html#tropical-cyclone-and-extra-tropical-cyclone">5.2.10. Tropical Cyclone and Extra Tropical Cyclone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#marine-and-coastal">5.2.6. Marine and Coastal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#medium-range">5.2.7. Medium Range</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#precipitation">5.2.8. Precipitation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#subseasonal-to-seasonal">5.2.9. Subseasonal to Seasonal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#space-weather">5.2.10. Space Weather</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../index.html#tropical-cyclone-and-extra-tropical-cyclone">5.2.11. Tropical Cyclone and Extra Tropical Cyclone</a></li>
 </ul>
 </li>
 </ul>
@@ -246,7 +247,7 @@ below 235 K.</p>
 </div>
 <div class="section" id="metplus-workflow">
 <h2>METplus Workflow<a class="headerlink" href="#metplus-workflow" title="Permalink to this headline">¶</a></h2>
-<p>The MODE tool is run for each of the 4 ensemble members and for eachtime. This
+<p>The MODE tool is run for each of 2 ensemble members and for eachtime. This
 example loops by initialization time.  It processes 2 lead times, listed below.</p>
 <div class="line-block">
 <div class="line"><strong>Valid:</strong> 2019-05-21_01Z</div>
@@ -324,9 +325,6 @@ with the -c option, i.e. -c parm/use_cases/model_applications/convection_allowin
 
 <span class="c1"># Output Data Location</span>
 <span class="nv">MODE_OUTPUT_DIR</span> <span class="o">=</span> <span class="o">{</span>OUTPUT_BASE<span class="o">}</span>/convection_allowing_models/brightness_temperature
-
-<span class="c1"># Metplus final .conf location</span>
-<span class="nv">METPLUS_CONF</span> <span class="o">=</span> <span class="o">{</span>MODE_OUTPUT_DIR<span class="o">}</span>/metplus_final.conf
 
 <span class="o">[</span>filename_templates<span class="o">]</span>
 <span class="c1"># Forecast Filename Template</span>
@@ -610,12 +608,12 @@ These variables are referenced in the MET configuration file. <strong>YOU SHOULD
 <p>This use case can be run two ways:</p>
 <ol class="arabic">
 <li><p>Passing in MODE_fcstFV3_obsGOES_BrightnessTemp.conf then a user-specific system configuration file:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>master_metplus.py -c /path/to/METplus/parm/use_cases/model_applications/convection_allowing_models/MODE_fcstFV3_obsGOES_BrightnessTemp.conf -c /path/to/user_system.conf
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>run_metplus.py -c /path/to/METplus/parm/use_cases/model_applications/convection_allowing_models/MODE_fcstFV3_obsGOES_BrightnessTemp.conf -c /path/to/user_system.conf
 </pre></div>
 </div>
 </li>
 <li><p>Modifying the configurations in parm/metplus_config, then passing in MODE_fcstFV3_obsGOES_BrightnessTemp.conf:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>master_metplus.py -c /path/to/METplus/parm/use_cases/model_applications/convection_allowing_models/MODE_fcstFV3_obsGOES_BrightnessTemp.conf
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>run_metplus.py -c /path/to/METplus/parm/use_cases/model_applications/convection_allowing_models/MODE_fcstFV3_obsGOES_BrightnessTemp.conf
 </pre></div>
 </div>
 </li>
@@ -659,23 +657,7 @@ mode_FV3_core_mp1_010000L_20190521_010000V_NAA.ps
 mode_FV3_core_mp1_010000L_20190521_020000V_NAA_cts.txt
 mode_FV3_core_mp1_010000L_20190521_020000V_NAA_obj.nc
 mode_FV3_core_mp1_010000L_20190521_020000V_NAA_obj.txt
-mode_FV3_core_mp1_010000L_20190521_020000V_NAA.ps
-mode_FV3_core_mp2_010000L_20190521_010000V_NAA_cts.txt
-mode_FV3_core_mp2_010000L_20190521_010000V_NAA_obj.nc
-mode_FV3_core_mp2_010000L_20190521_010000V_NAA_obj.txt
-mode_FV3_core_mp2_010000L_20190521_010000V_NAA.ps
-mode_FV3_core_mp2_010000L_20190521_020000V_NAA_cts.txt
-mode_FV3_core_mp2_010000L_20190521_020000V_NAA_obj.nc
-mode_FV3_core_mp2_010000L_20190521_020000V_NAA_obj.txt
-mode_FV3_core_mp2_010000L_20190521_020000V_NAA.ps
-mode_FV3_core_pbl1_010000L_20190521_010000V_NAA_cts.txt
-mode_FV3_core_pbl1_010000L_20190521_010000V_NAA_obj.nc
-mode_FV3_core_pbl1_010000L_20190521_010000V_NAA_obj.txt
-mode_FV3_core_pbl1_010000L_20190521_010000V_NAA.ps
-mode_FV3_core_pbl1_010000L_20190521_020000V_NAA_cts.txt
-mode_FV3_core_pbl1_010000L_20190521_020000V_NAA_obj.nc
-mode_FV3_core_pbl1_010000L_20190521_020000V_NAA_obj.txt
-mode_FV3_core_pbl1_010000L_20190521_020000V_NAA.ps</p>
+mode_FV3_core_mp1_010000L_20190521_020000V_NAA.ps</p>
 </div>
 <div class="section" id="keywords">
 <h2>Keywords<a class="headerlink" href="#keywords" title="Permalink to this headline">¶</a></h2>
@@ -686,7 +668,9 @@ mode_FV3_core_pbl1_010000L_20190521_020000V_NAA.ps</p>
 <a class="reference external" href="https://dtcenter.github.io/METplus/search.html?q=MODEToolUseCase&amp;check_keywords=yes&amp;area=default">MODEToolUseCase</a>,
 <a class="reference external" href="https://dtcenter.github.io/METplus/search.html?q=ConvectionAllowingModelsAppUseCase&amp;check_keywords=yes&amp;area=default">ConvectionAllowingModelsAppUseCase</a>,
 <a class="reference external" href="https://dtcenter.github.io/METplus/search.html?q=NetCDFFileUseCase&amp;chek_keywords=yes&amp;area=default">NetCDFFileUseCase</a>,
-<a class="reference external" href="https://dtcenter.github.io/METplus/search.html?q=NCAROrgUseCase&amp;check_keywords=yes&amp;area=default">NCAROrgUseCase</a>,</p>
+<a class="reference external" href="https://dtcenter.github.io/METplus/search.html?q=NOAAEMCOrgUseCase&amp;check_keywords=yes&amp;area=default">NOAAEMCOrgUseCase</a>,
+<a class="reference external" href="https://dtcenter.github.io/METplus/search.html?q=NOAAHWTOrgUseCase&amp;check_keywords=yes&amp;area=default">NOAAHWTOrgUseCase</a>,
+<a class="reference external" href="https://dtcenter.github.io/METplus/search.html?q=ValidationUseCase&amp;check_keywords=yes&amp;area=default">ValidationUseCase</a></p>
 </div>
 
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-generated-model-applications-convection-allowing-models-mode-fcstfv3-obsgoes-brightnesstemp-py">
@@ -724,7 +708,7 @@ mode_FV3_core_pbl1_010000L_20190521_020000V_NAA.ps</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2020, UCAR/NCAR, NOAA, CSU/CIRA, and CU/CIRES.
-      Last updated on Feb 11, 2021, 5:54:52 PM.
+      Last updated on Feb 25, 2021, 3:54:36 PM.
 
     </p>
   </div>
