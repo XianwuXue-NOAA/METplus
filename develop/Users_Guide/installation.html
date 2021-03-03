@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>2. Software Installation/Getting Started &mdash; METplus 4.0.0-beta4-dev documentation</title>
+  <title>2. Software Installation/Getting Started &mdash; METplus 4.0.0-beta4 documentation</title>
   
 
   
@@ -45,7 +45,7 @@
         <link rel="index" title="Index"
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="METplus 4.0.0-beta4-dev documentation" href="../index.html"/>
+    <link rel="top" title="METplus 4.0.0-beta4 documentation" href="../index.html"/>
         <link rel="up" title="User’s Guide" href="index.html"/>
         <link rel="next" title="3. System Configuration" href="systemconfiguration.html"/>
         <link rel="prev" title="1. Overview" href="overview.html"/> 
@@ -537,7 +537,7 @@ For example, FCST_VAR1_NAME and FCST_VAR1_LEVELS are used to define forecast nam
 <h3><span class="section-number">2.11.3. </span>PCPCombine Input Levels<a class="headerlink" href="#pcpcombine-input-levels" title="Permalink to this headline">¶</a></h3>
 <p>Prior to METplus 3.0, the PCPCombine wrapper only allowed the user to define a single input accumulation amount to be used to build a desired accumulation. However, some data sets include more than one accumulation field.
 PCPCombine wrapper was enhanced in version 3.0 to allow users to specify a list of accumulations available in the input data.
-Instead of only being able to specify FCST_PCP_COMBINE_INPUT_LEVEL, users can now specify a list of accumulations with <a class="reference internal" href="glossary.html#term-fcst-pcp-combine-input-accums"><span class="xref std std-term">FCST_PCP_COMBINE_INPUT_ACCUMS</span></a>.</p>
+Instead of only being able to specify FCST_PCP_COMBINE_INPUT_LEVEL, users can now specify a list of accumulations with <a class="reference internal" href="glossary.html#term-FCST_PCP_COMBINE_INPUT_ACCUMS"><span class="xref std std-term">FCST_PCP_COMBINE_INPUT_ACCUMS</span></a>.</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">met_util</span><span class="o">.</span><span class="n">py</span><span class="p">)</span> <span class="n">ERROR</span><span class="p">:</span> <span class="p">[</span><span class="n">config</span><span class="p">]</span> <span class="n">OBS_PCP_COMBINE_INPUT_LEVEL</span> <span class="n">should</span> <span class="n">be</span> <span class="n">replaced</span> <span class="k">with</span> <span class="n">OBS_PCP_COMBINE_INPUT_ACCUMS</span>
 </pre></div>
@@ -547,7 +547,7 @@ Instead of only being able to specify FCST_PCP_COMBINE_INPUT_LEVEL, users can no
 <div class="section" id="met-configuration-files">
 <h3><span class="section-number">2.11.4. </span>MET Configuration Files<a class="headerlink" href="#met-configuration-files" title="Permalink to this headline">¶</a></h3>
 <p>The METplus wrappers set environment variables that are read by the MET configuration files to customize each run. Some of the environment variables that were previously set by METplus wrappers to handle very specific use cases are no longer set in favor of using a common set of variables across the MET tools. The following are examples of changes that have occurred in METplus regarding environment variables.</p>
-<p>EnsembleStat previously set $GRID_VX to define the grid to use to regrid data within the tool. In version 3.0, MET tools that have a ‘to_grid’ value in the ‘grid’ dictionary of the MET config file have a uniformly named METplus configuration variable called &lt;MET-tool&gt;_REGRID_TO_GRID (i.e. <a class="reference internal" href="glossary.html#term-ensemble-stat-regrid-to-grid"><span class="xref std std-term">ENSEMBLE_STAT_REGRID_TO_GRID</span></a>) that is used to define this value:</p>
+<p>EnsembleStat previously set $GRID_VX to define the grid to use to regrid data within the tool. In version 3.0, MET tools that have a ‘to_grid’ value in the ‘grid’ dictionary of the MET config file have a uniformly named METplus configuration variable called &lt;MET-tool&gt;_REGRID_TO_GRID (i.e. <a class="reference internal" href="glossary.html#term-ENSEMBLE_STAT_REGRID_TO_GRID"><span class="xref std std-term">ENSEMBLE_STAT_REGRID_TO_GRID</span></a>) that is used to define this value:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Before:
    to_grid    = ${GRID_VX};
 
@@ -555,7 +555,7 @@ After:
    to_grid    = ${REGRID_TO_GRID};
 </pre></div>
 </div>
-<p>MET_VALID_HHMM was used by GridStat wrapper to set part of the climatology file path. This was replaced by the METplus configuration variables &lt;MET-tool&gt;_CLIMO_[MEAN/STDEV]_INPUT_[DIR/TEMPLATE] (i.e. <a class="reference internal" href="glossary.html#term-grid-stat-climo-mean-input-template"><span class="xref std std-term">GRID_STAT_CLIMO_MEAN_INPUT_TEMPLATE</span></a>):</p>
+<p>MET_VALID_HHMM was used by GridStat wrapper to set part of the climatology file path. This was replaced by the METplus configuration variables &lt;MET-tool&gt;_CLIMO_[MEAN/STDEV]_INPUT_[DIR/TEMPLATE] (i.e. <a class="reference internal" href="glossary.html#term-GRID_STAT_CLIMO_MEAN_INPUT_TEMPLATE"><span class="xref std std-term">GRID_STAT_CLIMO_MEAN_INPUT_TEMPLATE</span></a>):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Before:
    file_name = [ &quot;${INPUT_BASE}/grid_to_grid/nwprod/fix/cmean_1d.1959${MET_VALID_HHMM}&quot; ];
 
@@ -563,7 +563,7 @@ After:
    file_name = [ ${CLIMO_MEAN_FILE} ];
 </pre></div>
 </div>
-<p>The output_prefix variable in the MET config files was previously set by referencing variable environment variables set by METplus. This has since been changed so that output_prefix references the $OUTPUT_PREFIX environment variable. This value is now set in the METplus configuration files using the wrapper-specific configuration variable, such as <a class="reference internal" href="glossary.html#term-grid-stat-output-prefix"><span class="xref std std-term">GRID_STAT_OUTPUT_PREFIX</span></a> or <a class="reference internal" href="glossary.html#term-ensemble-stat-output-prefix"><span class="xref std std-term">ENSEMBLE_STAT_OUTPUT_PREFIX</span></a>:</p>
+<p>The output_prefix variable in the MET config files was previously set by referencing variable environment variables set by METplus. This has since been changed so that output_prefix references the $OUTPUT_PREFIX environment variable. This value is now set in the METplus configuration files using the wrapper-specific configuration variable, such as <a class="reference internal" href="glossary.html#term-GRID_STAT_OUTPUT_PREFIX"><span class="xref std std-term">GRID_STAT_OUTPUT_PREFIX</span></a> or <a class="reference internal" href="glossary.html#term-ENSEMBLE_STAT_OUTPUT_PREFIX"><span class="xref std std-term">ENSEMBLE_STAT_OUTPUT_PREFIX</span></a>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Before</span><span class="p">:</span>
    <span class="n">output_prefix</span>    <span class="o">=</span> <span class="s2">&quot;$</span><span class="si">{FCST_VAR}</span><span class="s2">_vs_$</span><span class="si">{OBS_VAR}</span><span class="s2">&quot;</span><span class="p">;</span>
 
@@ -611,8 +611,8 @@ After:
 <span class="n">validate_config</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">c</span> <span class="o">./</span><span class="n">my_conf</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">c</span> <span class="o">./</span><span class="n">another_config</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
-<p>You must pass a valid configuration to the script, as in you must properly set <a class="reference internal" href="glossary.html#term-met-install-dir"><span class="xref std std-term">MET_INSTALL_DIR</span></a>, <a class="reference internal" href="glossary.html#term-input-base"><span class="xref std std-term">INPUT_BASE</span></a>, and <a class="reference internal" href="glossary.html#term-output-base"><span class="xref std std-term">OUTPUT_BASE</span></a>, or it will not run.</p>
-<p>The script will evaluate all of the configuration files, including any MET configuration file that is referenced in a _CONFIG_FILE variable, such as <a class="reference internal" href="glossary.html#term-grid-stat-config-file"><span class="xref std std-term">GRID_STAT_CONFIG_FILE</span></a>.  For each deprecated item that is found, the script will suggest a replacement for the file where the deprecated item was found.</p>
+<p>You must pass a valid configuration to the script, as in you must properly set <a class="reference internal" href="glossary.html#term-MET_INSTALL_DIR"><span class="xref std std-term">MET_INSTALL_DIR</span></a>, <a class="reference internal" href="glossary.html#term-INPUT_BASE"><span class="xref std std-term">INPUT_BASE</span></a>, and <a class="reference internal" href="glossary.html#term-OUTPUT_BASE"><span class="xref std std-term">OUTPUT_BASE</span></a>, or it will not run.</p>
+<p>The script will evaluate all of the configuration files, including any MET configuration file that is referenced in a _CONFIG_FILE variable, such as <a class="reference internal" href="glossary.html#term-GRID_STAT_CONFIG_FILE"><span class="xref std std-term">GRID_STAT_CONFIG_FILE</span></a>.  For each deprecated item that is found, the script will suggest a replacement for the file where the deprecated item was found.</p>
 <p>Example 1 (Simple Rename):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>The following replacement is suggested for ./deprecated.conf
 
@@ -805,7 +805,7 @@ Copy and paste the following into an empty text file and name it ‘my_user_conf
   <div role="contentinfo">
     <p>
         &copy; Copyright 2020, UCAR/NCAR, NOAA, CSU/CIRA, and CU/CIRES.
-      Last updated on Feb 25, 2021, 3:54:36 PM.
+      Last updated on Mar 2, 2021, 5:54:33 PM.
 
     </p>
   </div>

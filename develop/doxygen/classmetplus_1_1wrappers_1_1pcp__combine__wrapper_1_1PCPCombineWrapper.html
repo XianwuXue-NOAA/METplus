@@ -129,6 +129,9 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>get_template_accum</b>
 <tr class="memitem:acfb59a4677b24d1519974284ea6590e7"><td class="memItemLeft" align="right" valign="top"><a id="acfb59a4677b24d1519974284ea6590e7"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>get_command</b> (self)</td></tr>
 <tr class="separator:acfb59a4677b24d1519974284ea6590e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7fe068e258389a64c70a78cdfd7c862"><td class="memItemLeft" align="right" valign="top"><a id="ab7fe068e258389a64c70a78cdfd7c862"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>get_extra_fields</b> (self, data_src)</td></tr>
+<tr class="separator:ab7fe068e258389a64c70a78cdfd7c862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8f68553759d35cd64a6cfc2f2c589a4"><td class="memItemLeft" align="right" valign="top"><a id="af8f68553759d35cd64a6cfc2f2c589a4"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>run_at_time_once</b> (self, time_info, var_list, data_src)</td></tr>
 <tr class="separator:af8f68553759d35cd64a6cfc2f2c589a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,6 +213,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aa291842808f2c241f5e2c96d5205c15e"><td class="memItemLeft" align="right" valign="top"><a id="aa291842808f2c241f5e2c96d5205c15e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>field_extra</b></td></tr>
 <tr class="separator:aa291842808f2c241f5e2c96d5205c15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50e0bce8754781a5dcedf04e6e15df62"><td class="memItemLeft" align="right" valign="top"><a id="a50e0bce8754781a5dcedf04e6e15df62"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>extra_fields</b></td></tr>
+<tr class="separator:a50e0bce8754781a5dcedf04e6e15df62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48aad6f46b82e3e3a5539996b8484a55"><td class="memItemLeft" align="right" valign="top"><a id="a48aad6f46b82e3e3a5539996b8484a55"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>outfile</b></td></tr>
 <tr class="separator:a48aad6f46b82e3e3a5539996b8484a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -276,9 +282,9 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>valid_run_methods</b>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if full set of files to build accumulation is found </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pcp__combine__wrapper_8py_source.html#l00401">401</a> of file <a class="el" href="pcp__combine__wrapper_8py_source.html">pcp_combine_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcp__combine__wrapper_8py_source.html#l00412">412</a> of file <a class="el" href="pcp__combine__wrapper_8py_source.html">pcp_combine_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pcp__combine__wrapper_8py_source.html#l00838">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.setup_add_method()</a>, and <a class="el" href="pcp__combine__wrapper_8py_source.html#l00897">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.setup_derive_method()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pcp__combine__wrapper_8py_source.html#l00869">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.setup_add_method()</a>, and <a class="el" href="pcp__combine__wrapper_8py_source.html#l00928">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.setup_derive_method()</a>.</p>
 
 </div>
 </div>
@@ -338,9 +344,9 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>valid_run_methods</b>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if file was added to output list, False if not </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pcp__combine__wrapper_8py_source.html#l00252">252</a> of file <a class="el" href="pcp__combine__wrapper_8py_source.html">pcp_combine_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcp__combine__wrapper_8py_source.html#l00263">263</a> of file <a class="el" href="pcp__combine__wrapper_8py_source.html">pcp_combine_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pcp__combine__wrapper_8py_source.html#l00401">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.get_accumulation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pcp__combine__wrapper_8py_source.html#l00412">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.get_accumulation()</a>.</p>
 
 </div>
 </div>
@@ -392,9 +398,9 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>valid_run_methods</b>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Path to file with the lowest forecast hour </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pcp__combine__wrapper_8py_source.html#l00202">202</a> of file <a class="el" href="pcp__combine__wrapper_8py_source.html">pcp_combine_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcp__combine__wrapper_8py_source.html#l00213">213</a> of file <a class="el" href="pcp__combine__wrapper_8py_source.html">pcp_combine_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pcp__combine__wrapper_8py_source.html#l00252">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.get_daily_file()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pcp__combine__wrapper_8py_source.html#l00263">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.get_daily_file()</a>.</p>
 
 </div>
 </div>
@@ -446,9 +452,9 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>valid_run_methods</b>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>path to output file </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pcp__combine__wrapper_8py_source.html#l00838">838</a> of file <a class="el" href="pcp__combine__wrapper_8py_source.html">pcp_combine_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcp__combine__wrapper_8py_source.html#l00869">869</a> of file <a class="el" href="pcp__combine__wrapper_8py_source.html">pcp_combine_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pcp__combine__wrapper_8py_source.html#l00401">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.get_accumulation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pcp__combine__wrapper_8py_source.html#l00412">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.get_accumulation()</a>.</p>
 
 </div>
 </div>
@@ -500,9 +506,9 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>valid_run_methods</b>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>path to output file </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pcp__combine__wrapper_8py_source.html#l00897">897</a> of file <a class="el" href="pcp__combine__wrapper_8py_source.html">pcp_combine_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcp__combine__wrapper_8py_source.html#l00928">928</a> of file <a class="el" href="pcp__combine__wrapper_8py_source.html">pcp_combine_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pcp__combine__wrapper_8py_source.html#l00401">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.get_accumulation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pcp__combine__wrapper_8py_source.html#l00412">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.get_accumulation()</a>.</p>
 
 </div>
 </div>
@@ -554,9 +560,9 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>valid_run_methods</b>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>path to output file </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pcp__combine__wrapper_8py_source.html#l00642">642</a> of file <a class="el" href="pcp__combine__wrapper_8py_source.html">pcp_combine_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcp__combine__wrapper_8py_source.html#l00673">673</a> of file <a class="el" href="pcp__combine__wrapper_8py_source.html">pcp_combine_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pcp__combine__wrapper_8py_source.html#l00401">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.get_accumulation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pcp__combine__wrapper_8py_source.html#l00412">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.get_accumulation()</a>.</p>
 
 </div>
 </div>
@@ -608,9 +614,9 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>valid_run_methods</b>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>path to output file </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pcp__combine__wrapper_8py_source.html#l00756">756</a> of file <a class="el" href="pcp__combine__wrapper_8py_source.html">pcp_combine_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcp__combine__wrapper_8py_source.html#l00787">787</a> of file <a class="el" href="pcp__combine__wrapper_8py_source.html">pcp_combine_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pcp__combine__wrapper_8py_source.html#l00401">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.get_accumulation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pcp__combine__wrapper_8py_source.html#l00412">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.get_accumulation()</a>.</p>
 
 </div>
 </div>
@@ -656,14 +662,14 @@ list&#160;</td><td class="memItemRight" valign="bottom"><b>valid_run_methods</b>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>path to output file </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="pcp__combine__wrapper_8py_source.html#l00956">956</a> of file <a class="el" href="pcp__combine__wrapper_8py_source.html">pcp_combine_wrapper.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pcp__combine__wrapper_8py_source.html#l00987">987</a> of file <a class="el" href="pcp__combine__wrapper_8py_source.html">pcp_combine_wrapper.py</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="pcp__combine__wrapper_8py_source.html#l00401">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.get_accumulation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="pcp__combine__wrapper_8py_source.html#l00412">metplus.wrappers.pcp_combine_wrapper.PCPCombineWrapper.get_accumulation()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/d1/personal/jpresto/METplus/git/METplus/metplus/wrappers/<a class="el" href="pcp__combine__wrapper_8py_source.html">pcp_combine_wrapper.py</a></li>
+<li>/home/mccabe/create-4.0.0-beta4-release/METplus/metplus/wrappers/<a class="el" href="pcp__combine__wrapper_8py_source.html">pcp_combine_wrapper.py</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

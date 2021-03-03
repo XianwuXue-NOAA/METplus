@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>5.1.26.3. UserScript: Run Once For Each Runtime Use Case &mdash; METplus 4.0.0-beta4-dev documentation</title>
+  <title>5.1.26.4. UserScript: Run Once For Each Runtime Use Case &mdash; METplus 4.0.0-beta4 documentation</title>
   
 
   
@@ -45,10 +45,10 @@
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="METplus 4.0.0-beta4-dev documentation" href="../../../index.html"/>
+    <link rel="top" title="METplus 4.0.0-beta4 documentation" href="../../../index.html"/>
         <link rel="up" title="5.1. MET tools" href="../index.html"/>
-        <link rel="next" title="5.1.26.4. UserScript: Run Once Per Valid Use Case" href="UserScript_run_once_per_valid.html"/>
-        <link rel="prev" title="5.1.26.2. UserScript: Run Once Per Init Use Case" href="UserScript_run_once_per_init.html"/> 
+        <link rel="next" title="5.1.26.5. UserScript: Run Once Per Valid Use Case" href="UserScript_run_once_per_valid.html"/>
+        <link rel="prev" title="5.1.26.3. UserScript: Run Once Use Case" href="UserScript_run_once.html"/> 
 
   
   <script src="../../../_static/js/modernizr.min.js"></script>
@@ -216,7 +216,7 @@
         
           <li><a href="../index.html"><span class="section-number">5.1. </span>MET tools</a> &raquo;</li>
         
-      <li><span class="section-number">5.1.26.3. </span>UserScript: Run Once For Each Runtime Use Case</li>
+      <li><span class="section-number">5.1.26.4. </span>UserScript: Run Once For Each Runtime Use Case</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -237,7 +237,7 @@
             
   
 <div class="sphx-glr-example-title section" id="userscript-run-once-for-each-runtime-use-case">
-<span id="sphx-glr-generated-met-tool-wrapper-userscript-userscript-run-once-for-each-py"></span><h1><span class="section-number">5.1.26.3. </span>UserScript: Run Once For Each Runtime Use Case<a class="headerlink" href="#userscript-run-once-for-each-runtime-use-case" title="Permalink to this headline">¶</a></h1>
+<span id="sphx-glr-generated-met-tool-wrapper-userscript-userscript-run-once-for-each-py"></span><h1><span class="section-number">5.1.26.4. </span>UserScript: Run Once For Each Runtime Use Case<a class="headerlink" href="#userscript-run-once-for-each-runtime-use-case" title="Permalink to this headline">¶</a></h1>
 <p>met_tool_wrapper/UserScript/UserScript_run_once_for_each.conf</p>
 <div class="section" id="scientific-objective">
 <h2>Scientific Objective<a class="headerlink" href="#scientific-objective" title="Permalink to this headline">¶</a></h2>
@@ -340,7 +340,7 @@ with the -c option, i.e. -c parm/use_cases/met_tool_wrapper/UserScript/UserScrip
 <span class="nv">USER_SCRIPT_RUNTIME_FREQ</span> <span class="o">=</span> RUN_ONCE_FOR_EACH
 
 <span class="nv">USER_SCRIPT_INPUT_TEMPLATE</span> <span class="o">=</span> init_<span class="o">{</span>init?fmt<span class="o">=</span>%Y%m%d%H%M%S<span class="o">}</span>_valid_<span class="o">{</span>valid?fmt<span class="o">=</span>%Y%m%d%H%M%S<span class="o">}</span>_lead_<span class="o">{</span>lead?fmt<span class="o">=</span>%3H<span class="o">}</span>.<span class="o">{</span>custom<span class="o">}</span>
-<span class="nv">USER_SCRIPT_INPUT_DIR</span> <span class="o">=</span> <span class="o">{</span>METPLUS_BASE<span class="o">}</span>/internal_tests/data/user_script
+<span class="nv">USER_SCRIPT_INPUT_DIR</span> <span class="o">=</span> <span class="o">{</span>INPUT_BASE<span class="o">}</span>/met_test/new/test
 
 <span class="nv">USER_SCRIPT_COMMAND</span> <span class="o">=</span> ls <span class="o">{</span>USER_SCRIPT_INPUT_DIR<span class="o">}</span>/<span class="o">{</span>USER_SCRIPT_INPUT_TEMPLATE<span class="o">}</span>
 </pre></div>
@@ -432,10 +432,10 @@ contain the results of the directory listing command(s)</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="UserScript_run_once_per_valid.html" class="btn btn-neutral float-right" title="5.1.26.4. UserScript: Run Once Per Valid Use Case" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="UserScript_run_once_per_valid.html" class="btn btn-neutral float-right" title="5.1.26.5. UserScript: Run Once Per Valid Use Case" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="UserScript_run_once_per_init.html" class="btn btn-neutral" title="5.1.26.2. UserScript: Run Once Per Init Use Case" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="UserScript_run_once.html" class="btn btn-neutral" title="5.1.26.3. UserScript: Run Once Use Case" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -445,7 +445,7 @@ contain the results of the directory listing command(s)</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2020, UCAR/NCAR, NOAA, CSU/CIRA, and CU/CIRES.
-      Last updated on Feb 25, 2021, 3:54:36 PM.
+      Last updated on Mar 2, 2021, 5:54:33 PM.
 
     </p>
   </div>

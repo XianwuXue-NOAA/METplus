@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3. System Configuration &mdash; METplus 4.0.0-beta4-dev documentation</title>
+  <title>3. System Configuration &mdash; METplus 4.0.0-beta4 documentation</title>
   
 
   
@@ -45,7 +45,7 @@
         <link rel="index" title="Index"
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="METplus 4.0.0-beta4-dev documentation" href="../index.html"/>
+    <link rel="top" title="METplus 4.0.0-beta4 documentation" href="../index.html"/>
         <link rel="up" title="User’s Guide" href="index.html"/>
         <link rel="next" title="4. Python Wrappers" href="wrappers.html"/>
         <link rel="prev" title="2. Software Installation/Getting Started" href="installation.html"/> 
@@ -286,10 +286,10 @@ used to control which times are processed. It also covers functionality that
 is useful for processing data in realtime by setting run times based on the
 clock time when the METplus wrappers are run.</p>
 <div class="section" id="loop-by">
-<span id="loop-by-ref"></span><h4><span class="section-number">3.3.1.1. </span><a class="reference internal" href="glossary.html#term-loop-by"><span class="xref std std-term">LOOP_BY</span></a><a class="headerlink" href="#loop-by" title="Permalink to this headline">¶</a></h4>
+<span id="loop-by-ref"></span><h4><span class="section-number">3.3.1.1. </span><a class="reference internal" href="glossary.html#term-LOOP_BY"><span class="xref std std-term">LOOP_BY</span></a><a class="headerlink" href="#loop-by" title="Permalink to this headline">¶</a></h4>
 <p>The METplus wrappers can be configured to loop over a set of valid times or a
 set of initialization times. This is controlled by the configuration variable
-called <a class="reference internal" href="glossary.html#term-loop-by"><span class="xref std std-term">LOOP_BY</span></a>. If the value of this variable is set to INIT or
+called <a class="reference internal" href="glossary.html#term-LOOP_BY"><span class="xref std std-term">LOOP_BY</span></a>. If the value of this variable is set to INIT or
 RETRO, looping will be relative to initialization time. If the value is set
 to VALID or REALTIME, looping will be relative to valid time.</p>
 </div>
@@ -297,7 +297,7 @@ to VALID or REALTIME, looping will be relative to valid time.</p>
 <span id="id1"></span><h4><span class="section-number">3.3.1.2. </span>Looping by Valid Time<a class="headerlink" href="#looping-by-valid-time" title="Permalink to this headline">¶</a></h4>
 <p>When looping over valid time (<cite>LOOP_BY</cite> = VALID or REALTIME), the following
 variables must be set:</p>
-<p><a class="reference internal" href="glossary.html#term-valid-time-fmt"><span class="xref std std-term">VALID_TIME_FMT</span></a>:
+<p><a class="reference internal" href="glossary.html#term-VALID_TIME_FMT"><span class="xref std std-term">VALID_TIME_FMT</span></a>:
 This is the format of the valid times the user can configure in the METplus
 Wrappers. The value of <cite>VALID_BEG</cite> and <cite>VALID_END</cite> must correspond to this
 format.</p>
@@ -307,14 +307,14 @@ format.</p>
 </div>
 <p>Using this format, the valid time range values specified must be defined
 as YYYYMMDDHH, i.e. 2019020112.</p>
-<p><a class="reference internal" href="glossary.html#term-valid-beg"><span class="xref std std-term">VALID_BEG</span></a>:
+<p><a class="reference internal" href="glossary.html#term-VALID_BEG"><span class="xref std std-term">VALID_BEG</span></a>:
 This is the first valid time that will be processed. The format of this
-variable is controlled by <a class="reference internal" href="glossary.html#term-valid-time-fmt"><span class="xref std std-term">VALID_TIME_FMT</span></a>. For example, if
+variable is controlled by <a class="reference internal" href="glossary.html#term-VALID_TIME_FMT"><span class="xref std std-term">VALID_TIME_FMT</span></a>. For example, if
 VALID_TIME_FMT=%Y%m%d, then VALID_BEG must be set to a valid time matching
 YYYYMMDD, such as 20190201.</p>
-<p><a class="reference internal" href="glossary.html#term-valid-end"><span class="xref std std-term">VALID_END</span></a>:
+<p><a class="reference internal" href="glossary.html#term-VALID_END"><span class="xref std std-term">VALID_END</span></a>:
 This is the last valid time that can be processed. The format of this
-variable is controlled by <a class="reference internal" href="glossary.html#term-valid-time-fmt"><span class="xref std std-term">VALID_TIME_FMT</span></a>. For example, if
+variable is controlled by <a class="reference internal" href="glossary.html#term-VALID_TIME_FMT"><span class="xref std std-term">VALID_TIME_FMT</span></a>. For example, if
 VALID_TIME_FMT=%Y%m%d, then VALID_END must be set to a valid time matching
 YYYYMMDD, such as 20190202.</p>
 <div class="admonition note">
@@ -325,11 +325,11 @@ For example, if METplus Wrappers is configured to start at 20190201 and
 end at 20190202 processing data in 48 hour increments, it will process
 valid time 20190201 then increment the run time to 20190203. This is
 later than the VALID_END value, so execution will stop. However, if the
-increment is set to 24 hours (see <a class="reference internal" href="glossary.html#term-valid-increment"><span class="xref std std-term">VALID_INCREMENT</span></a>), then METplus
+increment is set to 24 hours (see <a class="reference internal" href="glossary.html#term-VALID_INCREMENT"><span class="xref std std-term">VALID_INCREMENT</span></a>), then METplus
 Wrappers will process valid times 20190201 and 20190202 before ending
 execution.</p>
 </div>
-<p><a class="reference internal" href="glossary.html#term-valid-increment"><span class="xref std std-term">VALID_INCREMENT</span></a>:
+<p><a class="reference internal" href="glossary.html#term-VALID_INCREMENT"><span class="xref std std-term">VALID_INCREMENT</span></a>:
 This is the time interval to add to each run time to determine the next run
 time to process. See <a class="reference internal" href="#time-interval-units"><span class="std std-ref">Time Interval Units</span></a> for information on time
 interval formatting. Units of hours are assumed if no units are specified.
@@ -350,18 +350,18 @@ wrappers currently do not support processing intervals of less than one minute.<
 </div>
 <div class="section" id="looping-by-initialization-time">
 <span id="id2"></span><h4><span class="section-number">3.3.1.3. </span>Looping by Initialization Time<a class="headerlink" href="#looping-by-initialization-time" title="Permalink to this headline">¶</a></h4>
-<p>When looping over initialization time (<a class="reference internal" href="glossary.html#term-loop-by"><span class="xref std std-term">LOOP_BY</span></a> = INIT or LOOP_BY = RETRO), the following variables must be set:</p>
-<p><a class="reference internal" href="glossary.html#term-init-time-fmt"><span class="xref std std-term">INIT_TIME_FMT</span></a>:
-This is the format of the initialization times the user can configure in METplus Wrappers. The value of <a class="reference internal" href="glossary.html#term-init-beg"><span class="xref std std-term">INIT_BEG</span></a> and <a class="reference internal" href="glossary.html#term-init-end"><span class="xref std std-term">INIT_END</span></a> must correspond to this format. Example: INIT_TIME_FMT = %Y%m%d%H. Using this format, the initialization time range values specified must be defined as YYYYMMDDHH, i.e. 2019020112.</p>
-<p><a class="reference internal" href="glossary.html#term-init-beg"><span class="xref std std-term">INIT_BEG</span></a>:
-This is the first initialization time that will be processed. The format of this variable is controlled by <a class="reference internal" href="glossary.html#term-init-time-fmt"><span class="xref std std-term">INIT_TIME_FMT</span></a>. For example, if INIT_TIME_FMT = %Y%m%d, then INIT_BEG must be set to an initialization time matching YYYYMMDD, such as 20190201.</p>
-<p><a class="reference internal" href="glossary.html#term-init-end"><span class="xref std std-term">INIT_END</span></a>:
+<p>When looping over initialization time (<a class="reference internal" href="glossary.html#term-LOOP_BY"><span class="xref std std-term">LOOP_BY</span></a> = INIT or LOOP_BY = RETRO), the following variables must be set:</p>
+<p><a class="reference internal" href="glossary.html#term-INIT_TIME_FMT"><span class="xref std std-term">INIT_TIME_FMT</span></a>:
+This is the format of the initialization times the user can configure in METplus Wrappers. The value of <a class="reference internal" href="glossary.html#term-INIT_BEG"><span class="xref std std-term">INIT_BEG</span></a> and <a class="reference internal" href="glossary.html#term-INIT_END"><span class="xref std std-term">INIT_END</span></a> must correspond to this format. Example: INIT_TIME_FMT = %Y%m%d%H. Using this format, the initialization time range values specified must be defined as YYYYMMDDHH, i.e. 2019020112.</p>
+<p><a class="reference internal" href="glossary.html#term-INIT_BEG"><span class="xref std std-term">INIT_BEG</span></a>:
+This is the first initialization time that will be processed. The format of this variable is controlled by <a class="reference internal" href="glossary.html#term-INIT_TIME_FMT"><span class="xref std std-term">INIT_TIME_FMT</span></a>. For example, if INIT_TIME_FMT = %Y%m%d, then INIT_BEG must be set to an initialization time matching YYYYMMDD, such as 20190201.</p>
+<p><a class="reference internal" href="glossary.html#term-INIT_END"><span class="xref std std-term">INIT_END</span></a>:
 This is the last initialization time that can be processed. The format of this variable is controlled by INIT_TIME_FMT. For example, if INIT_TIME_FMT = %Y%m%d, then INIT_END must be set to an initialization time matching YYYYMMDD, such as 20190202.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The time specified for this variable will not necessarily be processed. It is used to determine the cutoff of run times that can be processed. For example, if METplus Wrappers is configured to start at 2019-02-01 and end at 2019-02-02 processing data in 48 hour increments, it will process 2019-02-01 then increment the run time to 2019-02-03. This is later than the INIT_END valid, so execution will stop. However, if the increment is set to 24 hours (see INIT_INCREMENT), then METplus Wrappers will process initialization times 2019-02-01 and 2019-02-02 before ending executaion.</p>
 </div>
-<p><a class="reference internal" href="glossary.html#term-init-increment"><span class="xref std std-term">INIT_INCREMENT</span></a>:
+<p><a class="reference internal" href="glossary.html#term-INIT_INCREMENT"><span class="xref std std-term">INIT_INCREMENT</span></a>:
 This is the time interval to add to each run time to determine the next run time to process. See <a class="reference internal" href="#time-interval-units"><span class="std std-ref">Time Interval Units</span></a> for information on time interval formatting. Units of hours are assumed if no units are specified. This value must be greater than or equal to 60 seconds because the METplus wrappers currently do not support processing intervals of less than one minute.</p>
 <p>The following is a configuration that will process initialization time 2019-02-01 at 00Z until 2019-02-02 at 00Z in 6 hour (21600 second) increments:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">config</span><span class="p">]</span>
@@ -382,7 +382,7 @@ This is the time interval to add to each run time to determine the next run time
 <span id="id3"></span><h4><span class="section-number">3.3.1.4. </span>Looping over Forecast Leads<a class="headerlink" href="#looping-over-forecast-leads" title="Permalink to this headline">¶</a></h4>
 <p>Many of the wrappers will also loop over a list of forecast leads relative to the current valid/initialization time that is being processed.</p>
 <div class="section" id="lead-seq">
-<h5><a class="reference internal" href="glossary.html#term-lead-seq"><span class="xref std std-term">LEAD_SEQ</span></a><a class="headerlink" href="#lead-seq" title="Permalink to this headline">¶</a></h5>
+<h5><a class="reference internal" href="glossary.html#term-LEAD_SEQ"><span class="xref std std-term">LEAD_SEQ</span></a><a class="headerlink" href="#lead-seq" title="Permalink to this headline">¶</a></h5>
 <p>This variable can be set to a comma-separated list of integer values (with
 optional units) to define the forecast leads that will be processed relative
 to the initialization/valid time. See <a class="reference internal" href="#time-interval-units"><span class="std std-ref">Time Interval Units</span></a> for
@@ -392,21 +392,21 @@ units are specified. For example:</p>
 <span class="n">LEAD_SEQ</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">9</span>
 </pre></div>
 </div>
-<p>If <a class="reference internal" href="glossary.html#term-loop-by"><span class="xref std std-term">LOOP_BY</span></a> = VALID and the current run time is 2019-02-01 at 00Z,
+<p>If <a class="reference internal" href="glossary.html#term-LOOP_BY"><span class="xref std std-term">LOOP_BY</span></a> = VALID and the current run time is 2019-02-01 at 00Z,
 then three times will be processed:</p>
 <ol class="arabic simple">
 <li><p>Initialized on 2019-01-31 at 21Z / valid on 2019-02-01 at 00Z</p></li>
 <li><p>Initialized on 2019-01-31 at 18Z / valid on 2019-02-01 at 00Z</p></li>
 <li><p>Initialized on 2019-01-31 at 15Z / valid on 2019-02-01 at 00Z</p></li>
 </ol>
-<p>If <a class="reference internal" href="glossary.html#term-loop-by"><span class="xref std std-term">LOOP_BY</span></a> = INIT and the current run time is 2019-02-01 at 00Z,
+<p>If <a class="reference internal" href="glossary.html#term-LOOP_BY"><span class="xref std std-term">LOOP_BY</span></a> = INIT and the current run time is 2019-02-01 at 00Z,
 then three times will be processed:</p>
 <ol class="arabic simple">
 <li><p>Initialized on 2019-02-01 at 00Z / valid on 2019-02-01 at 03Z</p></li>
 <li><p>Initialized on 2019-02-01 at 00Z / valid on 2019-02-01 at 06Z</p></li>
 <li><p>Initialized on 2019-02-01 at 00Z / valid on 2019-02-01 at 09Z</p></li>
 </ol>
-<p>You can also define <a class="reference internal" href="glossary.html#term-lead-seq"><span class="xref std std-term">LEAD_SEQ</span></a> using a special notation for many
+<p>You can also define <a class="reference internal" href="glossary.html#term-LEAD_SEQ"><span class="xref std std-term">LEAD_SEQ</span></a> using a special notation for many
 forecast leads. The notation is <strong>begin_end_incr(b,e,i)</strong> where b = the
 first lead value, e = the last lead value (inclusive), and
 i = the increment between leads. For example:</p>
@@ -420,17 +420,17 @@ i = the increment between leads. For example:</p>
 </pre></div>
 </div>
 <p>Grouping forecast leads is possible as well using a special version of
-the <a class="reference internal" href="glossary.html#term-lead-seq"><span class="xref std std-term">LEAD_SEQ</span></a> variable for the
+the <a class="reference internal" href="glossary.html#term-LEAD_SEQ"><span class="xref std std-term">LEAD_SEQ</span></a> variable for the
 <strong>SeriesByLead Wrapper Only</strong>.
-If <a class="reference internal" href="glossary.html#term-series-by-lead-group-fcsts"><span class="xref std std-term">SERIES_BY_LEAD_GROUP_FCSTS</span></a> = True, then you can define groups of
+If <a class="reference internal" href="glossary.html#term-SERIES_BY_LEAD_GROUP_FCSTS"><span class="xref std std-term">SERIES_BY_LEAD_GROUP_FCSTS</span></a> = True, then you can define groups of
 forecast leads that will be evaluated together. You can define any number of
 these groups by setting
-configuration variables LEAD_SEQ_1, LEAD_SEQ_2, …, <a class="reference internal" href="glossary.html#term-lead-seq-n"><span class="xref std std-term">LEAD_SEQ_&lt;n&gt;</span></a>.
+configuration variables LEAD_SEQ_1, LEAD_SEQ_2, …, <a class="reference internal" href="glossary.html#term-LEAD_SEQ_-n"><span class="xref std std-term">LEAD_SEQ_&lt;n&gt;</span></a>.
 You can define the value with a
 comma-separated list of integers (currently only hours are supported here)
 or using the special begin_end_incr(b,e,i) notation described just
-above. Each <a class="reference internal" href="glossary.html#term-lead-seq-n"><span class="xref std std-term">LEAD_SEQ_&lt;n&gt;</span></a> must have a corresponding
-variable <a class="reference internal" href="glossary.html#term-lead-seq-n-label"><span class="xref std std-term">LEAD_SEQ_&lt;n&gt;_LABEL</span></a>. For example:</p>
+above. Each <a class="reference internal" href="glossary.html#term-LEAD_SEQ_-n"><span class="xref std std-term">LEAD_SEQ_&lt;n&gt;</span></a> must have a corresponding
+variable <a class="reference internal" href="glossary.html#term-LEAD_SEQ_-n-_LABEL"><span class="xref std std-term">LEAD_SEQ_&lt;n&gt;_LABEL</span></a>. For example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">config</span><span class="p">]</span>
 <span class="n">LEAD_SEQ_1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">18</span>
 <span class="n">LEAD_SEQ_1_LABEL</span> <span class="o">=</span> <span class="n">Day1</span>
@@ -440,9 +440,9 @@ variable <a class="reference internal" href="glossary.html#term-lead-seq-n-label
 </div>
 </div>
 <div class="section" id="init-seq">
-<h5><a class="reference internal" href="glossary.html#term-init-seq"><span class="xref std std-term">INIT_SEQ</span></a><a class="headerlink" href="#init-seq" title="Permalink to this headline">¶</a></h5>
+<h5><a class="reference internal" href="glossary.html#term-INIT_SEQ"><span class="xref std std-term">INIT_SEQ</span></a><a class="headerlink" href="#init-seq" title="Permalink to this headline">¶</a></h5>
 <p>If METplus Wrappers is configured to loop by valid time
-(<a class="reference internal" href="glossary.html#term-loop-by"><span class="xref std std-term">LOOP_BY</span></a> = VALID), you can use INIT_SEQ instead of <a class="reference internal" href="glossary.html#term-lead-seq"><span class="xref std std-term">LEAD_SEQ</span></a>.
+(<a class="reference internal" href="glossary.html#term-LOOP_BY"><span class="xref std std-term">LOOP_BY</span></a> = VALID), you can use INIT_SEQ instead of <a class="reference internal" href="glossary.html#term-LEAD_SEQ"><span class="xref std std-term">LEAD_SEQ</span></a>.
 This is a list of initialization hours that are available in the data. This
 is useful if you know when the data is initialized and you need to use a
 different list of forecast leads depending on the valid time being
@@ -456,8 +456,8 @@ evaluated. For example:</p>
 forecast lead list of 0, 6, 12, 18, 24, 30, etc. and at valid time
 2019-02-01 01Z, this initialization sequence will build a forecast lead
 list of 1, 7, 13, 19, 25, 31, etc.</p>
-<p>If you utilize <a class="reference internal" href="glossary.html#term-lead-seq"><span class="xref std std-term">LEAD_SEQ</span></a>, you should restrict the forecast leads
-that will be used by setting <a class="reference internal" href="glossary.html#term-lead-seq-min"><span class="xref std std-term">LEAD_SEQ_MIN</span></a> and <a class="reference internal" href="glossary.html#term-lead-seq-max"><span class="xref std std-term">LEAD_SEQ_MAX</span></a>.
+<p>If you utilize <a class="reference internal" href="glossary.html#term-LEAD_SEQ"><span class="xref std std-term">LEAD_SEQ</span></a>, you should restrict the forecast leads
+that will be used by setting <a class="reference internal" href="glossary.html#term-LEAD_SEQ_MIN"><span class="xref std std-term">LEAD_SEQ_MIN</span></a> and <a class="reference internal" href="glossary.html#term-LEAD_SEQ_MAX"><span class="xref std std-term">LEAD_SEQ_MAX</span></a>.
 For example, if you want to only process forecast leads between 12 and 24
 you can set:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">config</span><span class="p">]</span>
@@ -469,16 +469,16 @@ you can set:</p>
 forecast lead list of 12, 18, 24 and at valid time 2019-02-01 01Z, this
 initialization sequence will build a forecast lead list of 13, 19.</p>
 <p>Setting minimum and maximum values will also affect the list of forecast
-leads if you use <a class="reference internal" href="glossary.html#term-lead-seq"><span class="xref std std-term">LEAD_SEQ</span></a>. <a class="reference internal" href="glossary.html#term-lead-seq"><span class="xref std std-term">LEAD_SEQ</span></a> takes precedence over
-<a class="reference internal" href="glossary.html#term-init-seq"><span class="xref std std-term">INIT_SEQ</span></a>, so if you have both variables set in your configuration,
-<a class="reference internal" href="glossary.html#term-init-seq"><span class="xref std std-term">INIT_SEQ</span></a> will be ignored in favor of <a class="reference internal" href="glossary.html#term-lead-seq"><span class="xref std std-term">LEAD_SEQ</span></a>.</p>
+leads if you use <a class="reference internal" href="glossary.html#term-LEAD_SEQ"><span class="xref std std-term">LEAD_SEQ</span></a>. <a class="reference internal" href="glossary.html#term-LEAD_SEQ"><span class="xref std std-term">LEAD_SEQ</span></a> takes precedence over
+<a class="reference internal" href="glossary.html#term-INIT_SEQ"><span class="xref std std-term">INIT_SEQ</span></a>, so if you have both variables set in your configuration,
+<a class="reference internal" href="glossary.html#term-INIT_SEQ"><span class="xref std std-term">INIT_SEQ</span></a> will be ignored in favor of <a class="reference internal" href="glossary.html#term-LEAD_SEQ"><span class="xref std std-term">LEAD_SEQ</span></a>.</p>
 </div>
 </div>
 <div class="section" id="time-interval-units">
 <span id="id4"></span><h4><span class="section-number">3.3.1.5. </span>Time Interval Units<a class="headerlink" href="#time-interval-units" title="Permalink to this headline">¶</a></h4>
 <p>Time intervals defined in configuration variables each have default values:
-<a class="reference internal" href="glossary.html#term-lead-seq"><span class="xref std std-term">LEAD_SEQ</span></a> and <a class="reference internal" href="glossary.html#term-init-seq"><span class="xref std std-term">INIT_SEQ</span></a> default to hours,
-<a class="reference internal" href="glossary.html#term-valid-increment"><span class="xref std std-term">VALID_INCREMENT</span></a> and <a class="reference internal" href="glossary.html#term-init-increment"><span class="xref std std-term">INIT_INCREMENT</span></a> default to seconds.
+<a class="reference internal" href="glossary.html#term-LEAD_SEQ"><span class="xref std std-term">LEAD_SEQ</span></a> and <a class="reference internal" href="glossary.html#term-INIT_SEQ"><span class="xref std std-term">INIT_SEQ</span></a> default to hours,
+<a class="reference internal" href="glossary.html#term-VALID_INCREMENT"><span class="xref std std-term">VALID_INCREMENT</span></a> and <a class="reference internal" href="glossary.html#term-INIT_INCREMENT"><span class="xref std std-term">INIT_INCREMENT</span></a> default to seconds.
 Units of years, months, days, hours, minutes, or seconds can also be
 specified by adding a letter (Y, m, d, H, M, or S respectively) to the end
 of the number.
@@ -501,7 +501,7 @@ cannot be expressed in seconds unless the run time value is available.</p>
 <div class="section" id="skipping-times">
 <h4><span class="section-number">3.3.1.6. </span>Skipping Times<a class="headerlink" href="#skipping-times" title="Permalink to this headline">¶</a></h4>
 <p>New in 3.1 is the ability to skip certain valid times. The configuration
-variable <a class="reference internal" href="glossary.html#term-skip-times"><span class="xref std std-term">SKIP_TIMES</span></a> can be used to
+variable <a class="reference internal" href="glossary.html#term-SKIP_TIMES"><span class="xref std std-term">SKIP_TIMES</span></a> can be used to
 provide a list of time formats each with a list of times to not process.
 The format and time list are separated by
 a colon. Any numeric python strftime formatting directive can be used as
@@ -559,7 +559,7 @@ Using a wrapper-specific variable will ignore the generic SKIP_TIMES values.</p>
 </div>
 <p>This will skip the months March through November for GridStat wrapper only.
 All other wrappers in the
-<a class="reference internal" href="glossary.html#term-process-list"><span class="xref std std-term">PROCESS_LIST</span></a> will skip the 31st day of each month. Note that the
+<a class="reference internal" href="glossary.html#term-PROCESS_LIST"><span class="xref std std-term">PROCESS_LIST</span></a> will skip the 31st day of each month. Note that the
 SKIP_TIMES values are not applied to GridStat in this case.</p>
 </div>
 <div class="section" id="realtime-looping">
@@ -574,7 +574,7 @@ and you start the METplus Wrappers with:</p>
 VALID_END = {now?fmt=%Y%m%d%H}
 </pre></div>
 </div>
-<p>then the value of <a class="reference internal" href="glossary.html#term-valid-end"><span class="xref std std-term">VALID_END</span></a> will be set to 2019042608. You can also
+<p>then the value of <a class="reference internal" href="glossary.html#term-VALID_END"><span class="xref std std-term">VALID_END</span></a> will be set to 2019042608. You can also
 use {today} to substitute the
 current YYYYMMDD, i.e. 20190426. You cannot change the formatting for
 the ‘today’ keyword.</p>
@@ -588,10 +588,10 @@ the METplus Wrappers at the same clock time with:</p>
 VALID_BEG = {now?fmt=%Y%m%d%H?shift=-86400}
 </pre></div>
 </div>
-<p>then the value of <a class="reference internal" href="glossary.html#term-valid-beg"><span class="xref std std-term">VALID_BEG</span></a> will be set to the current clock
+<p>then the value of <a class="reference internal" href="glossary.html#term-VALID_BEG"><span class="xref std std-term">VALID_BEG</span></a> will be set to the current clock
 time shifted by -86400 seconds (24 hours backwards), or 2019-04-25 08Z.</p>
 <p>The value defined for ‘shift’  also supported <a class="reference internal" href="#time-interval-units"><span class="std std-ref">Time Interval Units</span></a></p>
-<p>If <a class="reference internal" href="glossary.html#term-valid-increment"><span class="xref std std-term">VALID_INCREMENT</span></a> is set to 21600 seconds (6 hours), then the
+<p>If <a class="reference internal" href="glossary.html#term-VALID_INCREMENT"><span class="xref std std-term">VALID_INCREMENT</span></a> is set to 21600 seconds (6 hours), then the
 METplus Wrappers will process the following valid times:</p>
 <div class="line-block">
 <div class="line">2019-04-25 08Z</div>
@@ -829,7 +829,7 @@ SERIES_ANALYSIS_OUTPUT_DIR = {OUTPUT_BASE}/SA/{custom?fmt=%s}
 be used to define field information that is sent to the MET applications to
 read forecast and observation fields.</p>
 <div class="section" id="fcst-var-n-name">
-<h4><span class="section-number">3.3.5.1. </span><a class="reference internal" href="glossary.html#term-fcst-var-n-name"><span class="xref std std-term">FCST_VAR&lt;n&gt;_NAME</span></a><a class="headerlink" href="#fcst-var-n-name" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">3.3.5.1. </span><a class="reference internal" href="glossary.html#term-FCST_VAR-n-_NAME"><span class="xref std std-term">FCST_VAR&lt;n&gt;_NAME</span></a><a class="headerlink" href="#fcst-var-n-name" title="Permalink to this headline">¶</a></h4>
 <p>Set this to the name of a forecast variable that you want to evaluate.
 &lt;n&gt; is any integer greater than or equal to 1, i.e.:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">config</span><span class="p">]</span>
@@ -842,7 +842,7 @@ OBS_VAR&lt;n&gt;_NAME must be set. If the value for forecast and observation
 data are the same, BOTH_VAR&lt;n&gt;_NAME can be used instead.</p>
 </div>
 <div class="section" id="fcst-var-n-levels">
-<h4><span class="section-number">3.3.5.2. </span><a class="reference internal" href="glossary.html#term-fcst-var-n-levels"><span class="xref std std-term">FCST_VAR&lt;n&gt;_LEVELS</span></a><a class="headerlink" href="#fcst-var-n-levels" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">3.3.5.2. </span><a class="reference internal" href="glossary.html#term-FCST_VAR-n-_LEVELS"><span class="xref std std-term">FCST_VAR&lt;n&gt;_LEVELS</span></a><a class="headerlink" href="#fcst-var-n-levels" title="Permalink to this headline">¶</a></h4>
 <p>Set this to a comma-separated list of levels or a single value.
 FCST_VAR1_LEVELS corresponds to FCST_VAR1_NAME, FCST_VAR2_LEVELS
 corresponds to FCST_VAR2_NAME, etc. For example:</p>
@@ -857,14 +857,14 @@ OBS_VAR&lt;n&gt;_NAME must be set. If the value for forecast and observation
 data are the same, BOTH_VAR&lt;n&gt;_NAME and BOTH_VAR&lt;n&gt;_LEVELS can be used instead.</p>
 </div>
 <div class="section" id="obs-var-n-name">
-<h4><span class="section-number">3.3.5.3. </span><a class="reference internal" href="glossary.html#term-obs-var-n-name"><span class="xref std std-term">OBS_VAR&lt;n&gt;_NAME</span></a><a class="headerlink" href="#obs-var-n-name" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">3.3.5.3. </span><a class="reference internal" href="glossary.html#term-OBS_VAR-n-_NAME"><span class="xref std std-term">OBS_VAR&lt;n&gt;_NAME</span></a><a class="headerlink" href="#obs-var-n-name" title="Permalink to this headline">¶</a></h4>
 <p>Set this to the corresponding observation variable that you want to evaluate
 with FCST_VAR&lt;n&gt;_NAME. If this value is set for a given &lt;n&gt; value, then
 the corresponding FCST_VAR&lt;n&gt;_NAME must be set. If the value for forecast
 and observation data are the same, BOTH_VAR&lt;n&gt;_NAME can be used instead.</p>
 </div>
 <div class="section" id="obs-var-n-levels">
-<h4><span class="section-number">3.3.5.4. </span><a class="reference internal" href="glossary.html#term-obs-var-n-levels"><span class="xref std std-term">OBS_VAR&lt;n&gt;_LEVELS</span></a><a class="headerlink" href="#obs-var-n-levels" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">3.3.5.4. </span><a class="reference internal" href="glossary.html#term-OBS_VAR-n-_LEVELS"><span class="xref std std-term">OBS_VAR&lt;n&gt;_LEVELS</span></a><a class="headerlink" href="#obs-var-n-levels" title="Permalink to this headline">¶</a></h4>
 <p>Set this to a comma-separated list of levels or a single value. If
 OBS_VAR&lt;n&gt;_LEVELS and OBS_VAR&lt;n&gt;_NAME are set, then the corresponding
 FCST_VAR&lt;n&gt;_LEVELS and FCST_VAR&lt;n&gt;_NAME must be set. If the value for
@@ -962,7 +962,7 @@ time of the current run.</p>
 </div>
 </div>
 <div class="section" id="fcst-var-n-thresh-obs-var-n-thresh">
-<h4><span class="section-number">3.3.5.5. </span><a class="reference internal" href="glossary.html#term-fcst-var-n-thresh"><span class="xref std std-term">FCST_VAR&lt;n&gt;_THRESH</span></a> / <a class="reference internal" href="glossary.html#term-obs-var-n-thresh"><span class="xref std std-term">OBS_VAR&lt;n&gt;_THRESH</span></a><a class="headerlink" href="#fcst-var-n-thresh-obs-var-n-thresh" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">3.3.5.5. </span><a class="reference internal" href="glossary.html#term-FCST_VAR-n-_THRESH"><span class="xref std std-term">FCST_VAR&lt;n&gt;_THRESH</span></a> / <a class="reference internal" href="glossary.html#term-OBS_VAR-n-_THRESH"><span class="xref std std-term">OBS_VAR&lt;n&gt;_THRESH</span></a><a class="headerlink" href="#fcst-var-n-thresh-obs-var-n-thresh" title="Permalink to this headline">¶</a></h4>
 <p>Set this to a comma-separated list of threshold values to use in the
 comparison. Each of these values must begin with a comparison operator
 (&gt;, &gt;=, =, ==, !=, &lt;, &lt;=, gt, ge, eq, ne, lt, or le). For example, setting:</p>
@@ -981,7 +981,7 @@ threshold list is the same for both forecast and observation data,
 BOTH_VAR&lt;n&gt;_THRESH can be used instead.</p>
 </div>
 <div class="section" id="fcst-var-n-options-obs-var-n-options">
-<h4><span class="section-number">3.3.5.6. </span><a class="reference internal" href="glossary.html#term-fcst-var-n-options"><span class="xref std std-term">FCST_VAR&lt;n&gt;_OPTIONS</span></a> /  <a class="reference internal" href="glossary.html#term-obs-var-n-options"><span class="xref std std-term">OBS_VAR&lt;n&gt;_OPTIONS</span></a><a class="headerlink" href="#fcst-var-n-options-obs-var-n-options" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">3.3.5.6. </span><a class="reference internal" href="glossary.html#term-FCST_VAR-n-_OPTIONS"><span class="xref std std-term">FCST_VAR&lt;n&gt;_OPTIONS</span></a> /  <a class="reference internal" href="glossary.html#term-OBS_VAR-n-_OPTIONS"><span class="xref std std-term">OBS_VAR&lt;n&gt;_OPTIONS</span></a><a class="headerlink" href="#fcst-var-n-options-obs-var-n-options" title="Permalink to this headline">¶</a></h4>
 <p>Set this to add additional information to the field dictionary in the MET
 config file. The item must end with a semi-colon. For example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">config</span><span class="p">]</span>
@@ -997,8 +997,8 @@ config file. The item must end with a semi-colon. For example:</p>
 <p>If FCST_VAR&lt;n&gt;_OPTIONS is set, OBS_VAR&lt;n&gt;_OPTIONS does not need to be set,
 and vice-versa. If the extra options are the same for both forecast and
 observation data, BOTH_VAR&lt;n&gt;_OPTIONS can be used instead.</p>
-<p><a class="reference internal" href="glossary.html#term-ens-var-n-name"><span class="xref std std-term">ENS_VAR&lt;n&gt;_NAME</span></a> / <a class="reference internal" href="glossary.html#term-ens-var-n-levels"><span class="xref std std-term">ENS_VAR&lt;n&gt;_LEVELS</span></a>/
-<a class="reference internal" href="glossary.html#term-ens-var-n-thresh"><span class="xref std std-term">ENS_VAR&lt;n&gt;_THRESH</span></a> / <a class="reference internal" href="glossary.html#term-ens-var-n-options"><span class="xref std std-term">ENS_VAR&lt;n&gt;_OPTIONS</span></a>:
+<p><a class="reference internal" href="glossary.html#term-ENS_VAR-n-_NAME"><span class="xref std std-term">ENS_VAR&lt;n&gt;_NAME</span></a> / <a class="reference internal" href="glossary.html#term-ENS_VAR-n-_LEVELS"><span class="xref std std-term">ENS_VAR&lt;n&gt;_LEVELS</span></a>/
+<a class="reference internal" href="glossary.html#term-ENS_VAR-n-_THRESH"><span class="xref std std-term">ENS_VAR&lt;n&gt;_THRESH</span></a> / <a class="reference internal" href="glossary.html#term-ENS_VAR-n-_OPTIONS"><span class="xref std std-term">ENS_VAR&lt;n&gt;_OPTIONS</span></a>:
 <strong>Used with EnsembleStat Wrapper only.</strong> Users may want to define the ens
 dictionary item in the MET EnsembleStat config file differently than the
 fcst dictionary item. If this is the case, you can use these variables. If
@@ -1024,7 +1024,7 @@ example, EnsembleStat, then pass the output into GridStat.</p>
 <span class="n">FCST_GRID_STAT_VAR1_LEVELS</span> <span class="o">=</span> <span class="s2">&quot;(*,*)&quot;</span>
 </pre></div>
 </div>
-<p>If the generic <a class="reference internal" href="glossary.html#term-fcst-var-n-name"><span class="xref std std-term">FCST_VAR&lt;n&gt;_NAME</span></a> variables are used, the same values
+<p>If the generic <a class="reference internal" href="glossary.html#term-FCST_VAR-n-_NAME"><span class="xref std std-term">FCST_VAR&lt;n&gt;_NAME</span></a> variables are used, the same values
 will be applied to all tools that don’t have wrapper specific fields
 defined. If wrapper specific fields are defined, any generic fields will
 be ignored.</p>
@@ -1237,8 +1237,8 @@ wrapper. Consider the following configuration:</p>
 <p>Using the above configuration, PCPCombine will use +/- 0 hours and require
 exact file times. GridStat will use -1800/+1800 for observation data and
 EnsembleStat will use -0/+3600 for observation data.
-<a class="reference internal" href="glossary.html#term-obs-ensemble-stat-file-window-begin"><span class="xref std std-term">OBS_ENSEMBLE_STAT_FILE_WINDOW_BEGIN</span></a> was not set, so the
-EnsembleStat wrapper will use <a class="reference internal" href="glossary.html#term-obs-file-window-begin"><span class="xref std std-term">OBS_FILE_WINDOW_BEGIN</span></a>.</p>
+<a class="reference internal" href="glossary.html#term-OBS_ENSEMBLE_STAT_FILE_WINDOW_BEGIN"><span class="xref std std-term">OBS_ENSEMBLE_STAT_FILE_WINDOW_BEGIN</span></a> was not set, so the
+EnsembleStat wrapper will use <a class="reference internal" href="glossary.html#term-OBS_FILE_WINDOW_BEGIN"><span class="xref std std-term">OBS_FILE_WINDOW_BEGIN</span></a>.</p>
 </div>
 </div>
 <div class="section" id="runtime-frequency">
@@ -1250,9 +1250,9 @@ aggregate the output in a variety of ways. The wrappers that support this
 functionality (along with the configuration variable that controls the setting)
 include:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="wrappers.html#series-analysis-wrapper"><span class="std std-ref">SeriesAnalysis</span></a> :   <a class="reference internal" href="glossary.html#term-series-analysis-runtime-freq"><span class="xref std std-term">SERIES_ANALYSIS_RUNTIME_FREQ</span></a></p></li>
-<li><p><a class="reference internal" href="wrappers.html#grid-diag-wrapper"><span class="std std-ref">GridDiag</span></a> :   <a class="reference internal" href="glossary.html#term-grid-diag-runtime-freq"><span class="xref std std-term">GRID_DIAG_RUNTIME_FREQ</span></a></p></li>
-<li><p><a class="reference internal" href="wrappers.html#user-script-wrapper"><span class="std std-ref">UserScript</span></a> :   <a class="reference internal" href="glossary.html#term-user-script-runtime-freq"><span class="xref std std-term">USER_SCRIPT_RUNTIME_FREQ</span></a></p></li>
+<li><p><a class="reference internal" href="wrappers.html#series-analysis-wrapper"><span class="std std-ref">SeriesAnalysis</span></a> :   <a class="reference internal" href="glossary.html#term-SERIES_ANALYSIS_RUNTIME_FREQ"><span class="xref std std-term">SERIES_ANALYSIS_RUNTIME_FREQ</span></a></p></li>
+<li><p><a class="reference internal" href="wrappers.html#grid-diag-wrapper"><span class="std std-ref">GridDiag</span></a> :   <a class="reference internal" href="glossary.html#term-GRID_DIAG_RUNTIME_FREQ"><span class="xref std std-term">GRID_DIAG_RUNTIME_FREQ</span></a></p></li>
+<li><p><a class="reference internal" href="wrappers.html#user-script-wrapper"><span class="std std-ref">UserScript</span></a> :   <a class="reference internal" href="glossary.html#term-USER_SCRIPT_RUNTIME_FREQ"><span class="xref std std-term">USER_SCRIPT_RUNTIME_FREQ</span></a></p></li>
 </ul>
 <p>At the start of execution of the wrapper (SeriesAnalysis and GridDiag),
 a full list of all available files will be obtained. Then the wrapper will
@@ -1275,7 +1275,7 @@ If LOOP_BY = VALID, * is substituted for init and lead.</p></li>
 (init or valid and forecast lead combination).
 All filename templates are substituted with values.</p></li>
 </ul>
-<p>Note that <a class="reference internal" href="glossary.html#term-loop-order"><span class="xref std std-term">LOOP_ORDER</span></a> must be set to processes to run these wrappers.
+<p>Note that <a class="reference internal" href="glossary.html#term-LOOP_ORDER"><span class="xref std std-term">LOOP_ORDER</span></a> must be set to processes to run these wrappers.
 Also note that the following example may not contain all of the configuration
 variables that are required for a successful run. The are intended to show
 how these variables affect how the data is processed.</p>
@@ -1677,7 +1677,7 @@ value of a local environment variable, use the following syntax:</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2020, UCAR/NCAR, NOAA, CSU/CIRA, and CU/CIRES.
-      Last updated on Feb 25, 2021, 3:54:36 PM.
+      Last updated on Mar 2, 2021, 5:54:33 PM.
 
     </p>
   </div>

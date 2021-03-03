@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>5.2.6.1. PlotDataPlane: Python Embedding of tripolar coordinate file &mdash; METplus 4.0.0-beta4-dev documentation</title>
+  <title>5.2.6.1. PlotDataPlane: Python Embedding of tripolar coordinate file &mdash; METplus 4.0.0-beta4 documentation</title>
   
 
   
@@ -45,9 +45,9 @@
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="METplus 4.0.0-beta4-dev documentation" href="../../../index.html"/>
+    <link rel="top" title="METplus 4.0.0-beta4 documentation" href="../../../index.html"/>
         <link rel="up" title="5.2. Model Applications" href="../index.html"/>
-        <link rel="next" title="5.2.7.1. Grid-Stat: Compute Anomaly Correlation using Climatology" href="../medium_range/GridStat_fcstGFS_obsGFS_climoNCEP_MultiField.html"/>
+        <link rel="next" title="5.2.7.1. Point-Stat: Standard Verification of Global Upper Air" href="../medium_range/PointStat_fcstGFS_obsGDAS_UpperAir_MultiField_PrepBufr.html"/>
         <link rel="prev" title="5.2.5.1. StatAnalysis: JEDI" href="../data_assimilation/StatAnalysis_fcstHAFS_obsPrepBufr_JEDI_IODA_interface.html"/> 
 
   
@@ -540,12 +540,12 @@ with the -c option, i.e. -c parm/use_cases/model_applications/marine_and_coastal
 <p>This use case can be run two ways:</p>
 <ol class="arabic">
 <li><p>Passing in PlotDataPlane_obsHYCOM_coordTripolar.conf then a user-specific system configuration file:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">master_metplus</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">c</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">METplus</span><span class="o">/</span><span class="n">parm</span><span class="o">/</span><span class="n">use_cases</span><span class="o">/</span><span class="n">model_applications</span><span class="o">/</span><span class="n">marine_and_coastal</span><span class="o">/</span><span class="n">PlotDataPlane_obsHYCOM_coordTripolar</span><span class="o">.</span><span class="n">conf</span> <span class="o">-</span><span class="n">c</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">user_system</span><span class="o">.</span><span class="n">conf</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">run_metplus</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">c</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">METplus</span><span class="o">/</span><span class="n">parm</span><span class="o">/</span><span class="n">use_cases</span><span class="o">/</span><span class="n">model_applications</span><span class="o">/</span><span class="n">marine_and_coastal</span><span class="o">/</span><span class="n">PlotDataPlane_obsHYCOM_coordTripolar</span><span class="o">.</span><span class="n">conf</span> <span class="o">-</span><span class="n">c</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">user_system</span><span class="o">.</span><span class="n">conf</span>
 </pre></div>
 </div>
 </li>
 <li><p>Modifying the configurations in parm/metplus_config, then passing in PlotDataPlane_obsHYCOM_coordTripolar.conf:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">master_metplus</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">c</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">METplus</span><span class="o">/</span><span class="n">parm</span><span class="o">/</span><span class="n">use_cases</span><span class="o">/</span><span class="n">model_applications</span><span class="o">/</span><span class="n">marine_and_coastal</span><span class="o">/</span><span class="n">PlotDataPlane_obsHYCOM_coordTripolar</span><span class="o">.</span><span class="n">conf</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">run_metplus</span><span class="o">.</span><span class="n">py</span> <span class="o">-</span><span class="n">c</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">METplus</span><span class="o">/</span><span class="n">parm</span><span class="o">/</span><span class="n">use_cases</span><span class="o">/</span><span class="n">model_applications</span><span class="o">/</span><span class="n">marine_and_coastal</span><span class="o">/</span><span class="n">PlotDataPlane_obsHYCOM_coordTripolar</span><span class="o">.</span><span class="n">conf</span>
 </pre></div>
 </div>
 </li>
@@ -611,7 +611,7 @@ and will contain the following files:</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../medium_range/GridStat_fcstGFS_obsGFS_climoNCEP_MultiField.html" class="btn btn-neutral float-right" title="5.2.7.1. Grid-Stat: Compute Anomaly Correlation using Climatology" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../medium_range/PointStat_fcstGFS_obsGDAS_UpperAir_MultiField_PrepBufr.html" class="btn btn-neutral float-right" title="5.2.7.1. Point-Stat: Standard Verification of Global Upper Air" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../data_assimilation/StatAnalysis_fcstHAFS_obsPrepBufr_JEDI_IODA_interface.html" class="btn btn-neutral" title="5.2.5.1. StatAnalysis: JEDI" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -624,7 +624,7 @@ and will contain the following files:</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2020, UCAR/NCAR, NOAA, CSU/CIRA, and CU/CIRES.
-      Last updated on Feb 25, 2021, 3:54:36 PM.
+      Last updated on Mar 2, 2021, 5:54:33 PM.
 
     </p>
   </div>

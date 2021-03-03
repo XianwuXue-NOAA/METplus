@@ -25,11 +25,33 @@ ASCII2NC
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/ASCII2NC/ASCII2NC.conf">
+
+.. only:: html
+
+ .. figure:: /generated/met_tool_wrapper/ASCII2NC/images/thumb/sphx_glr_ASCII2NC_thumb.png
+     :alt: ASCII2NC:Basic Use Case
+
+     :ref:`sphx_glr_generated_met_tool_wrapper_ASCII2NC_ASCII2NC.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /generated/met_tool_wrapper/ASCII2NC/ASCII2NC
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/ASCII2NC/ASCII2NC_python_embedding _user_py.conf">
 
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/ASCII2NC/images/thumb/sphx_glr_ASCII2NC_python_embedding_user_py_thumb.png
+     :alt: ASCII2NC: Using Python Embedding with MET_PYTHON_EXE
 
      :ref:`sphx_glr_generated_met_tool_wrapper_ASCII2NC_ASCII2NC_python_embedding_user_py.py`
 
@@ -50,6 +72,7 @@ ASCII2NC
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/ASCII2NC/images/thumb/sphx_glr_ASCII2NC_python_embedding_thumb.png
+     :alt: ASCII2NC: Using Python Embedding
 
      :ref:`sphx_glr_generated_met_tool_wrapper_ASCII2NC_ASCII2NC_python_embedding.py`
 
@@ -62,26 +85,6 @@ ASCII2NC
    :hidden:
 
    /generated/met_tool_wrapper/ASCII2NC/ASCII2NC_python_embedding
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/ASCII2NC/ASCII2NC.conf">
-
-.. only:: html
-
- .. figure:: /generated/met_tool_wrapper/ASCII2NC/images/thumb/sphx_glr_ASCII2NC_thumb.png
-
-     :ref:`sphx_glr_generated_met_tool_wrapper_ASCII2NC_ASCII2NC.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /generated/met_tool_wrapper/ASCII2NC/ASCII2NC
 .. raw:: html
 
     <div class="sphx-glr-clear"></div>
@@ -102,6 +105,7 @@ Cyclone Plotter
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/CyclonePlotter/images/thumb/sphx_glr_CyclonePlotter_thumb.png
+     :alt: CyclonePlotter: Basic Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_CyclonePlotter_CyclonePlotter.py`
 
@@ -129,31 +133,12 @@ EnsembleStat
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/EnsembleStat/EnsembleStat_python _embedding.conf">
-
-.. only:: html
-
- .. figure:: /generated/met_tool_wrapper/EnsembleStat/images/thumb/sphx_glr_EnsembleStat_python_embedding_thumb.png
-
-     :ref:`sphx_glr_generated_met_tool_wrapper_EnsembleStat_EnsembleStat_python_embedding.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /generated/met_tool_wrapper/EnsembleStat/EnsembleStat_python_embedding
-
-.. raw:: html
-
     <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/EnsembleStat/EnsembleStat.conf">
 
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/EnsembleStat/images/thumb/sphx_glr_EnsembleStat_thumb.png
+     :alt: EnsembleStat: Basic Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_EnsembleStat_EnsembleStat.py`
 
@@ -166,6 +151,27 @@ EnsembleStat
    :hidden:
 
    /generated/met_tool_wrapper/EnsembleStat/EnsembleStat
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/EnsembleStat/EnsembleStat_python _embedding.conf">
+
+.. only:: html
+
+ .. figure:: /generated/met_tool_wrapper/EnsembleStat/images/thumb/sphx_glr_EnsembleStat_python_embedding_thumb.png
+     :alt: EnsembleStat: Using Python Embedding
+
+     :ref:`sphx_glr_generated_met_tool_wrapper_EnsembleStat_EnsembleStat_python_embedding.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /generated/met_tool_wrapper/EnsembleStat/EnsembleStat_python_embedding
 .. raw:: html
 
     <div class="sphx-glr-clear"></div>
@@ -186,6 +192,7 @@ Example
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/Example/images/thumb/sphx_glr_Example_thumb.png
+     :alt: Example: Introductory Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_Example_Example.py`
 
@@ -218,6 +225,7 @@ ExtractTiles
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/ExtractTiles/images/thumb/sphx_glr_ExtractTiles_thumb.png
+     :alt: ExtractTiles: Basic Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_ExtractTiles_ExtractTiles.py`
 
@@ -250,6 +258,7 @@ GempakToCF
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/GempakToCF/images/thumb/sphx_glr_GempakToCF_thumb.png
+     :alt: GempakToCF: Basic Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_GempakToCF_GempakToCF.py`
 
@@ -282,6 +291,7 @@ GenVxMask
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/GenVxMask/images/thumb/sphx_glr_GenVxMask_multiple_thumb.png
+     :alt: GenVxMask: Multiple Masks
 
      :ref:`sphx_glr_generated_met_tool_wrapper_GenVxMask_GenVxMask_multiple.py`
 
@@ -302,6 +312,7 @@ GenVxMask
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/GenVxMask/images/thumb/sphx_glr_GenVxMask_with_arguments_thumb.png
+     :alt: GenVxMask: Using Arguments
 
      :ref:`sphx_glr_generated_met_tool_wrapper_GenVxMask_GenVxMask_with_arguments.py`
 
@@ -322,6 +333,7 @@ GenVxMask
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/GenVxMask/images/thumb/sphx_glr_GenVxMask_thumb.png
+     :alt: GenVxMask: Basic Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_GenVxMask_GenVxMask.py`
 
@@ -354,6 +366,7 @@ GridDiag
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/GridDiag/images/thumb/sphx_glr_GridDiag_thumb.png
+     :alt: GridDiag: Basic Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_GridDiag_GridDiag.py`
 
@@ -381,31 +394,12 @@ GridStat
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/GridStat/GridStat_python_embedding.conf">
-
-.. only:: html
-
- .. figure:: /generated/met_tool_wrapper/GridStat/images/thumb/sphx_glr_GridStat_python_embedding_thumb.png
-
-     :ref:`sphx_glr_generated_met_tool_wrapper_GridStat_GridStat_python_embedding.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /generated/met_tool_wrapper/GridStat/GridStat_python_embedding
-
-.. raw:: html
-
     <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/GridStat/GridStat_multiple_config _files.conf">
 
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/GridStat/images/thumb/sphx_glr_GridStat_multiple_config_files_thumb.png
+     :alt: GridStat: Multiple Config Files Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_GridStat_GridStat_multiple_config_files.py`
 
@@ -426,6 +420,7 @@ GridStat
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/GridStat/images/thumb/sphx_glr_GridStat_thumb.png
+     :alt: GridStat: Basic Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_GridStat_GridStat.py`
 
@@ -438,6 +433,27 @@ GridStat
    :hidden:
 
    /generated/met_tool_wrapper/GridStat/GridStat
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/GridStat/GridStat_python_embedding.conf">
+
+.. only:: html
+
+ .. figure:: /generated/met_tool_wrapper/GridStat/images/thumb/sphx_glr_GridStat_python_embedding_thumb.png
+     :alt: GridStat: Using Python Embedding
+
+     :ref:`sphx_glr_generated_met_tool_wrapper_GridStat_GridStat_python_embedding.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /generated/met_tool_wrapper/GridStat/GridStat_python_embedding
 .. raw:: html
 
     <div class="sphx-glr-clear"></div>
@@ -458,6 +474,7 @@ MODE
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/MODE/images/thumb/sphx_glr_MODE_thumb.png
+     :alt: MODE: Basic Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_MODE_MODE.py`
 
@@ -490,6 +507,7 @@ MTD
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/MTD/images/thumb/sphx_glr_MTD_python_embedding_thumb.png
+     :alt: MTD using Python Embedding
 
      :ref:`sphx_glr_generated_met_tool_wrapper_MTD_MTD_python_embedding.py`
 
@@ -510,6 +528,7 @@ MTD
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/MTD/images/thumb/sphx_glr_MTD_thumb.png
+     :alt: Basic MTD Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_MTD_MTD.py`
 
@@ -542,6 +561,7 @@ PB2NC
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/PB2NC/images/thumb/sphx_glr_PB2NC_thumb.png
+     :alt: PB2NC: Basic Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_PB2NC_PB2NC.py`
 
@@ -569,31 +589,12 @@ PCPCombine
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="met_tools_wrapper/PCPCombine/PCPCombine_subtract.conf">
-
-.. only:: html
-
- .. figure:: /generated/met_tool_wrapper/PCPCombine/images/thumb/sphx_glr_PCPCombine_subtract_thumb.png
-
-     :ref:`sphx_glr_generated_met_tool_wrapper_PCPCombine_PCPCombine_subtract.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /generated/met_tool_wrapper/PCPCombine/PCPCombine_subtract
-
-.. raw:: html
-
     <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/PCPCombine/PCPCombine_user_defined.conf">
 
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/PCPCombine/images/thumb/sphx_glr_PCPCombine_user_defined_thumb.png
+     :alt: PCPCombine: User-defined Command Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_PCPCombine_PCPCombine_user_defined.py`
 
@@ -609,71 +610,12 @@ PCPCombine
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/PCPCombine/PCPCombine_loop_custom.conf">
-
-.. only:: html
-
- .. figure:: /generated/met_tool_wrapper/PCPCombine/images/thumb/sphx_glr_PCPCombine_loop_custom_thumb.png
-
-     :ref:`sphx_glr_generated_met_tool_wrapper_PCPCombine_PCPCombine_loop_custom.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /generated/met_tool_wrapper/PCPCombine/PCPCombine_loop_custom
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/PCPCombine/PCPCombine_derive.conf">
-
-.. only:: html
-
- .. figure:: /generated/met_tool_wrapper/PCPCombine/images/thumb/sphx_glr_PCPCombine_derive_thumb.png
-
-     :ref:`sphx_glr_generated_met_tool_wrapper_PCPCombine_PCPCombine_derive.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /generated/met_tool_wrapper/PCPCombine/PCPCombine_derive
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/PCPCombine/PCPCombine_bucket.conf">
-
-.. only:: html
-
- .. figure:: /generated/met_tool_wrapper/PCPCombine/images/thumb/sphx_glr_PCPCombine_bucket_thumb.png
-
-     :ref:`sphx_glr_generated_met_tool_wrapper_PCPCombine_PCPCombine_bucket.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /generated/met_tool_wrapper/PCPCombine/PCPCombine_bucket
-
-.. raw:: html
-
     <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/PCPCombine/PCPCombine_add.conf">
 
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/PCPCombine/images/thumb/sphx_glr_PCPCombine_add_thumb.png
+     :alt: PCPCombine: ADD Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_PCPCombine_PCPCombine_add.py`
 
@@ -689,13 +631,14 @@ PCPCombine
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/PCPCombine/PCPCombine_python_embedding.conf">
+    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/PCPCombine/PCPCombine_derive.conf">
 
 .. only:: html
 
- .. figure:: /generated/met_tool_wrapper/PCPCombine/images/thumb/sphx_glr_PCPCombine_python_embedding_thumb.png
+ .. figure:: /generated/met_tool_wrapper/PCPCombine/images/thumb/sphx_glr_PCPCombine_derive_thumb.png
+     :alt: PCPCombine: DERIVE Use Case
 
-     :ref:`sphx_glr_generated_met_tool_wrapper_PCPCombine_PCPCombine_python_embedding.py`
+     :ref:`sphx_glr_generated_met_tool_wrapper_PCPCombine_PCPCombine_derive.py`
 
 .. raw:: html
 
@@ -705,7 +648,70 @@ PCPCombine
 .. toctree::
    :hidden:
 
-   /generated/met_tool_wrapper/PCPCombine/PCPCombine_python_embedding
+   /generated/met_tool_wrapper/PCPCombine/PCPCombine_derive
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="met_tools_wrapper/PCPCombine/PCPCombine_subtract.conf">
+
+.. only:: html
+
+ .. figure:: /generated/met_tool_wrapper/PCPCombine/images/thumb/sphx_glr_PCPCombine_subtract_thumb.png
+     :alt: PCPCombine: SUBTRACT Use Case
+
+     :ref:`sphx_glr_generated_met_tool_wrapper_PCPCombine_PCPCombine_subtract.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /generated/met_tool_wrapper/PCPCombine/PCPCombine_subtract
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/PCPCombine/PCPCombine_loop_custom.conf">
+
+.. only:: html
+
+ .. figure:: /generated/met_tool_wrapper/PCPCombine/images/thumb/sphx_glr_PCPCombine_loop_custom_thumb.png
+     :alt: PCPCombine: Custom String Looping Use Case
+
+     :ref:`sphx_glr_generated_met_tool_wrapper_PCPCombine_PCPCombine_loop_custom.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /generated/met_tool_wrapper/PCPCombine/PCPCombine_loop_custom
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/PCPCombine/PCPCombine_bucket.conf">
+
+.. only:: html
+
+ .. figure:: /generated/met_tool_wrapper/PCPCombine/images/thumb/sphx_glr_PCPCombine_bucket_thumb.png
+     :alt: PCPCombine: Bucket Interval Use Case
+
+     :ref:`sphx_glr_generated_met_tool_wrapper_PCPCombine_PCPCombine_bucket.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /generated/met_tool_wrapper/PCPCombine/PCPCombine_bucket
 
 .. raw:: html
 
@@ -714,6 +720,7 @@ PCPCombine
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/PCPCombine/images/thumb/sphx_glr_PCPCombine_sum_thumb.png
+     :alt: PCPCombine: SUM Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_PCPCombine_PCPCombine_sum.py`
 
@@ -726,6 +733,27 @@ PCPCombine
    :hidden:
 
    /generated/met_tool_wrapper/PCPCombine/PCPCombine_sum
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/PCPCombine/PCPCombine_python_embedding.conf">
+
+.. only:: html
+
+ .. figure:: /generated/met_tool_wrapper/PCPCombine/images/thumb/sphx_glr_PCPCombine_python_embedding_thumb.png
+     :alt: PCPCombine: Python Embedding Use Case
+
+     :ref:`sphx_glr_generated_met_tool_wrapper_PCPCombine_PCPCombine_python_embedding.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /generated/met_tool_wrapper/PCPCombine/PCPCombine_python_embedding
 .. raw:: html
 
     <div class="sphx-glr-clear"></div>
@@ -741,13 +769,14 @@ PlotDataPlane
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/PlotDataPlane/PlotDataPlane_python_embedding.conf">
+    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/PlotDataPlane/PlotDataPlane_netcdf.conf">
 
 .. only:: html
 
- .. figure:: /generated/met_tool_wrapper/PlotDataPlane/images/thumb/sphx_glr_PlotDataPlane_python_embedding_thumb.png
+ .. figure:: /generated/met_tool_wrapper/PlotDataPlane/images/thumb/sphx_glr_PlotDataPlane_netcdf_thumb.png
+     :alt: PlotDataPlane: NetCDF Input
 
-     :ref:`sphx_glr_generated_met_tool_wrapper_PlotDataPlane_PlotDataPlane_python_embedding.py`
+     :ref:`sphx_glr_generated_met_tool_wrapper_PlotDataPlane_PlotDataPlane_netcdf.py`
 
 .. raw:: html
 
@@ -757,7 +786,7 @@ PlotDataPlane
 .. toctree::
    :hidden:
 
-   /generated/met_tool_wrapper/PlotDataPlane/PlotDataPlane_python_embedding
+   /generated/met_tool_wrapper/PlotDataPlane/PlotDataPlane_netcdf
 
 .. raw:: html
 
@@ -766,6 +795,7 @@ PlotDataPlane
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/PlotDataPlane/images/thumb/sphx_glr_PlotDataPlane_grib1_thumb.png
+     :alt: PlotDataPlane: GRIB1 Input
 
      :ref:`sphx_glr_generated_met_tool_wrapper_PlotDataPlane_PlotDataPlane_grib1.py`
 
@@ -781,13 +811,14 @@ PlotDataPlane
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/PlotDataPlane/PlotDataPlane_netcdf.conf">
+    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/PlotDataPlane/PlotDataPlane_python_embedding.conf">
 
 .. only:: html
 
- .. figure:: /generated/met_tool_wrapper/PlotDataPlane/images/thumb/sphx_glr_PlotDataPlane_netcdf_thumb.png
+ .. figure:: /generated/met_tool_wrapper/PlotDataPlane/images/thumb/sphx_glr_PlotDataPlane_python_embedding_thumb.png
+     :alt: PlotDataPlane: Python Embedding Input
 
-     :ref:`sphx_glr_generated_met_tool_wrapper_PlotDataPlane_PlotDataPlane_netcdf.py`
+     :ref:`sphx_glr_generated_met_tool_wrapper_PlotDataPlane_PlotDataPlane_python_embedding.py`
 
 .. raw:: html
 
@@ -797,7 +828,7 @@ PlotDataPlane
 .. toctree::
    :hidden:
 
-   /generated/met_tool_wrapper/PlotDataPlane/PlotDataPlane_netcdf
+   /generated/met_tool_wrapper/PlotDataPlane/PlotDataPlane_python_embedding
 .. raw:: html
 
     <div class="sphx-glr-clear"></div>
@@ -818,6 +849,7 @@ Point2Grid
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/Point2Grid/images/thumb/sphx_glr_Point2Grid_thumb.png
+     :alt: Point2Grid: Basic Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_Point2Grid_Point2Grid.py`
 
@@ -850,6 +882,7 @@ PointStat
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/PointStat/images/thumb/sphx_glr_PointStat_once_per_field_thumb.png
+     :alt: PointStat: Once Per Field
 
      :ref:`sphx_glr_generated_met_tool_wrapper_PointStat_PointStat_once_per_field.py`
 
@@ -870,6 +903,7 @@ PointStat
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/PointStat/images/thumb/sphx_glr_PointStat_thumb.png
+     :alt: PointStat: Basic Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_PointStat_PointStat.py`
 
@@ -902,6 +936,7 @@ PyEmbedIngest
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/PyEmbedIngest/images/thumb/sphx_glr_PyEmbedIngest_thumb.png
+     :alt: PyEmbedIngest: Basic Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_PyEmbedIngest_PyEmbedIngest.py`
 
@@ -922,6 +957,7 @@ PyEmbedIngest
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/PyEmbedIngest/images/thumb/sphx_glr_PyEmbedIngest_multi_field_one_file_thumb.png
+     :alt: PyEmbedIngest: Multiple Fields in One File
 
      :ref:`sphx_glr_generated_met_tool_wrapper_PyEmbedIngest_PyEmbedIngest_multi_field_one_file.py`
 
@@ -949,13 +985,14 @@ RegridDataPlane
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/RegridDataPlane/RegridDataPlane_python _embedding.conf">
+    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/RegridDataPlane/RegridDataPlane_multi_field _multi_file.conf">
 
 .. only:: html
 
- .. figure:: /generated/met_tool_wrapper/RegridDataPlane/images/thumb/sphx_glr_RegridDataPlane_python_embedding_thumb.png
+ .. figure:: /generated/met_tool_wrapper/RegridDataPlane/images/thumb/sphx_glr_RegridDataPlane_multi_field_multi_file_thumb.png
+     :alt: RegridDataPlane: Run once per field
 
-     :ref:`sphx_glr_generated_met_tool_wrapper_RegridDataPlane_RegridDataPlane_python_embedding.py`
+     :ref:`sphx_glr_generated_met_tool_wrapper_RegridDataPlane_RegridDataPlane_multi_field_multi_file.py`
 
 .. raw:: html
 
@@ -965,27 +1002,7 @@ RegridDataPlane
 .. toctree::
    :hidden:
 
-   /generated/met_tool_wrapper/RegridDataPlane/RegridDataPlane_python_embedding
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/RegridDataPlane/RegridDataPlane.conf">
-
-.. only:: html
-
- .. figure:: /generated/met_tool_wrapper/RegridDataPlane/images/thumb/sphx_glr_RegridDataPlane_thumb.png
-
-     :ref:`sphx_glr_generated_met_tool_wrapper_RegridDataPlane_RegridDataPlane.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /generated/met_tool_wrapper/RegridDataPlane/RegridDataPlane
+   /generated/met_tool_wrapper/RegridDataPlane/RegridDataPlane_multi_field_multi_file
 
 .. raw:: html
 
@@ -994,6 +1011,7 @@ RegridDataPlane
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/RegridDataPlane/images/thumb/sphx_glr_RegridDataPlane_multi_field_one_file_thumb.png
+     :alt: RegridDataPlane: Process all fields
 
      :ref:`sphx_glr_generated_met_tool_wrapper_RegridDataPlane_RegridDataPlane_multi_field_one_file.py`
 
@@ -1009,13 +1027,14 @@ RegridDataPlane
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/RegridDataPlane/RegridDataPlane_multi_field _multi_file.conf">
+    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/RegridDataPlane/RegridDataPlane.conf">
 
 .. only:: html
 
- .. figure:: /generated/met_tool_wrapper/RegridDataPlane/images/thumb/sphx_glr_RegridDataPlane_multi_field_multi_file_thumb.png
+ .. figure:: /generated/met_tool_wrapper/RegridDataPlane/images/thumb/sphx_glr_RegridDataPlane_thumb.png
+     :alt: RegridDataPlane: Basic Use Case
 
-     :ref:`sphx_glr_generated_met_tool_wrapper_RegridDataPlane_RegridDataPlane_multi_field_multi_file.py`
+     :ref:`sphx_glr_generated_met_tool_wrapper_RegridDataPlane_RegridDataPlane.py`
 
 .. raw:: html
 
@@ -1025,7 +1044,28 @@ RegridDataPlane
 .. toctree::
    :hidden:
 
-   /generated/met_tool_wrapper/RegridDataPlane/RegridDataPlane_multi_field_multi_file
+   /generated/met_tool_wrapper/RegridDataPlane/RegridDataPlane
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/RegridDataPlane/RegridDataPlane_python _embedding.conf">
+
+.. only:: html
+
+ .. figure:: /generated/met_tool_wrapper/RegridDataPlane/images/thumb/sphx_glr_RegridDataPlane_python_embedding_thumb.png
+     :alt: RegridDataPlane: Using Python Embedding
+
+     :ref:`sphx_glr_generated_met_tool_wrapper_RegridDataPlane_RegridDataPlane_python_embedding.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /generated/met_tool_wrapper/RegridDataPlane/RegridDataPlane_python_embedding
 .. raw:: html
 
     <div class="sphx-glr-clear"></div>
@@ -1041,31 +1081,12 @@ SeriesAnalysis
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/SeriesAnalysis/SeriesAnalysis_python _embedding.conf">
-
-.. only:: html
-
- .. figure:: /generated/met_tool_wrapper/SeriesAnalysis/images/thumb/sphx_glr_SeriesAnalysis_python_embedding_thumb.png
-
-     :ref:`sphx_glr_generated_met_tool_wrapper_SeriesAnalysis_SeriesAnalysis_python_embedding.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /generated/met_tool_wrapper/SeriesAnalysis/SeriesAnalysis_python_embedding
-
-.. raw:: html
-
     <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/SeriesAnalysis/SeriesAnalysis.conf">
 
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/SeriesAnalysis/images/thumb/sphx_glr_SeriesAnalysis_thumb.png
+     :alt: SeriesAnalysis: Basic Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_SeriesAnalysis_SeriesAnalysis.py`
 
@@ -1078,6 +1099,27 @@ SeriesAnalysis
    :hidden:
 
    /generated/met_tool_wrapper/SeriesAnalysis/SeriesAnalysis
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/SeriesAnalysis/SeriesAnalysis_python _embedding.conf">
+
+.. only:: html
+
+ .. figure:: /generated/met_tool_wrapper/SeriesAnalysis/images/thumb/sphx_glr_SeriesAnalysis_python_embedding_thumb.png
+     :alt: SeriesAnalysis: Using Python Embedding
+
+     :ref:`sphx_glr_generated_met_tool_wrapper_SeriesAnalysis_SeriesAnalysis_python_embedding.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /generated/met_tool_wrapper/SeriesAnalysis/SeriesAnalysis_python_embedding
 .. raw:: html
 
     <div class="sphx-glr-clear"></div>
@@ -1098,6 +1140,7 @@ StatAnalysis
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/StatAnalysis/images/thumb/sphx_glr_StatAnalysis_thumb.png
+     :alt: StatAnalysis: Basic Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_StatAnalysis_StatAnalysis.py`
 
@@ -1118,6 +1161,7 @@ StatAnalysis
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/StatAnalysis/images/thumb/sphx_glr_StatAnalysis_python_embedding_thumb.png
+     :alt: StatAnalysis: Using Python Embedding
 
      :ref:`sphx_glr_generated_met_tool_wrapper_StatAnalysis_StatAnalysis_python_embedding.py`
 
@@ -1150,6 +1194,7 @@ TCGen
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/TCGen/images/thumb/sphx_glr_TCGen_thumb.png
+     :alt: TCGen: Basic Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_TCGen_TCGen.py`
 
@@ -1182,6 +1227,7 @@ TCMPRPlotter
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/TCMPRPlotter/images/thumb/sphx_glr_TCMPRPlotter_thumb.png
+     :alt: TCMPRPlotter: Basic Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_TCMPRPlotter_TCMPRPlotter.py`
 
@@ -1209,31 +1255,12 @@ TCPairs
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/TCPairs/TCPairs_tropical.conf">
-
-.. only:: html
-
- .. figure:: /generated/met_tool_wrapper/TCPairs/images/thumb/sphx_glr_TCPairs_tropical_thumb.png
-
-     :ref:`sphx_glr_generated_met_tool_wrapper_TCPairs_TCPairs_tropical.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /generated/met_tool_wrapper/TCPairs/TCPairs_tropical
-
-.. raw:: html
-
     <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/TCPairs/TCPairs_extra_tropical.conf">
 
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/TCPairs/images/thumb/sphx_glr_TCPairs_extra_tropical_thumb.png
+     :alt: TCPairs: Basic Use Case for Extra Tropical Cyclones
 
      :ref:`sphx_glr_generated_met_tool_wrapper_TCPairs_TCPairs_extra_tropical.py`
 
@@ -1246,6 +1273,27 @@ TCPairs
    :hidden:
 
    /generated/met_tool_wrapper/TCPairs/TCPairs_extra_tropical
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/TCPairs/TCPairs_tropical.conf">
+
+.. only:: html
+
+ .. figure:: /generated/met_tool_wrapper/TCPairs/images/thumb/sphx_glr_TCPairs_tropical_thumb.png
+     :alt: TCPairs: Basic Use Case for Tropical Cyclones
+
+     :ref:`sphx_glr_generated_met_tool_wrapper_TCPairs_TCPairs_tropical.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /generated/met_tool_wrapper/TCPairs/TCPairs_tropical
 .. raw:: html
 
     <div class="sphx-glr-clear"></div>
@@ -1266,6 +1314,7 @@ TCRMW
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/TCRMW/images/thumb/sphx_glr_TCRMW_thumb.png
+     :alt: TCRMW: Basic Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_TCRMW_TCRMW.py`
 
@@ -1298,6 +1347,7 @@ TCStat
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/TCStat/images/thumb/sphx_glr_TCStat_thumb.png
+     :alt: TCStat: Basic Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_TCStat_TCStat.py`
 
@@ -1325,31 +1375,12 @@ UserScript
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/UserScript/UserScript_run_once_per_lead.conf">
-
-.. only:: html
-
- .. figure:: /generated/met_tool_wrapper/UserScript/images/thumb/sphx_glr_UserScript_run_once_per_lead_thumb.png
-
-     :ref:`sphx_glr_generated_met_tool_wrapper_UserScript_UserScript_run_once_per_lead.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /generated/met_tool_wrapper/UserScript/UserScript_run_once_per_lead
-
-.. raw:: html
-
     <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/UserScript/UserScript_run_once_per_init.conf">
 
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/UserScript/images/thumb/sphx_glr_UserScript_run_once_per_init_thumb.png
+     :alt: UserScript: Run Once Per Init Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_UserScript_UserScript_run_once_per_init.py`
 
@@ -1365,11 +1396,54 @@ UserScript
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/UserScript/UserScript_run_once_per_lead.conf">
+
+.. only:: html
+
+ .. figure:: /generated/met_tool_wrapper/UserScript/images/thumb/sphx_glr_UserScript_run_once_per_lead_thumb.png
+     :alt: UserScript: Run Once Per Lead Use Case
+
+     :ref:`sphx_glr_generated_met_tool_wrapper_UserScript_UserScript_run_once_per_lead.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /generated/met_tool_wrapper/UserScript/UserScript_run_once_per_lead
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/UserScript/UserScript_run_once.conf">
+
+.. only:: html
+
+ .. figure:: /generated/met_tool_wrapper/UserScript/images/thumb/sphx_glr_UserScript_run_once_thumb.png
+     :alt: UserScript: Run Once Use Case
+
+     :ref:`sphx_glr_generated_met_tool_wrapper_UserScript_UserScript_run_once.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /generated/met_tool_wrapper/UserScript/UserScript_run_once
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/UserScript/UserScript_run_once_for_each.conf">
 
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/UserScript/images/thumb/sphx_glr_UserScript_run_once_for_each_thumb.png
+     :alt: UserScript: Run Once For Each Runtime Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_UserScript_UserScript_run_once_for_each.py`
 
@@ -1390,6 +1464,7 @@ UserScript
 .. only:: html
 
  .. figure:: /generated/met_tool_wrapper/UserScript/images/thumb/sphx_glr_UserScript_run_once_per_valid_thumb.png
+     :alt: UserScript: Run Once Per Valid Use Case
 
      :ref:`sphx_glr_generated_met_tool_wrapper_UserScript_UserScript_run_once_per_valid.py`
 
@@ -1402,26 +1477,6 @@ UserScript
    :hidden:
 
    /generated/met_tool_wrapper/UserScript/UserScript_run_once_per_valid
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="met_tool_wrapper/UserScript/UserScript_run_once.conf">
-
-.. only:: html
-
- .. figure:: /generated/met_tool_wrapper/UserScript/images/thumb/sphx_glr_UserScript_run_once_thumb.png
-
-     :ref:`sphx_glr_generated_met_tool_wrapper_UserScript_UserScript_run_once.py`
-
-.. raw:: html
-
-    </div>
-
-
-.. toctree::
-   :hidden:
-
-   /generated/met_tool_wrapper/UserScript/UserScript_run_once
 .. raw:: html
 
     <div class="sphx-glr-clear"></div>
@@ -1436,13 +1491,13 @@ UserScript
 
   .. container:: sphx-glr-download sphx-glr-download-python
 
-    :download:`Download all examples in Python source code: met_tool_wrapper_python.zip <//d1/personal/jpresto/METplus/git/METplus/docs/generated/met_tool_wrapper/met_tool_wrapper_python.zip>`
+    :download:`Download all examples in Python source code: met_tool_wrapper_python.zip <//home/mccabe/create-4.0.0-beta4-release/METplus/docs/generated/met_tool_wrapper/met_tool_wrapper_python.zip>`
 
 
 
   .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-    :download:`Download all examples in Jupyter notebooks: met_tool_wrapper_jupyter.zip <//d1/personal/jpresto/METplus/git/METplus/docs/generated/met_tool_wrapper/met_tool_wrapper_jupyter.zip>`
+    :download:`Download all examples in Jupyter notebooks: met_tool_wrapper_jupyter.zip <//home/mccabe/create-4.0.0-beta4-release/METplus/docs/generated/met_tool_wrapper/met_tool_wrapper_jupyter.zip>`
 
 
 .. only:: html
